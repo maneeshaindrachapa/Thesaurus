@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SearchbarComponent } from './components/firstpage/searchbar/searchbar.component';
 import { CardComponent } from './components/firstpage/card/card.component';
 import { FullfirstpageComponent } from './components/firstpage/fullfirstpage/fullfirstpage.component';
+import { FooterComponent } from './components/firstpage/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchbarComponent,
     CardComponent,
-    FullfirstpageComponent
+    FullfirstpageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
