@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullfirstpageComponent implements OnInit {
 
-  constructor() { }
+  public language = 'EN';
+
+  constructor() {
+    const savedLang = localStorage.getItem('lang');
+    if (savedLang) {
+      this.language = savedLang;
+    }
+  }
 
   ngOnInit() {
+  }
+
+  changeLang(lang) {
+    this.language = lang;
+    localStorage.setItem('lang', lang);
   }
 
 }

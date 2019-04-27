@@ -1,9 +1,12 @@
 #custom-search-input{
   padding: 3px;
   border: solid 1px #E4E4E4;
-  border-radius: 6px;
   background-color: #fff;
   border-radius: 25px;
+}
+
+#custom-search-input:focus-within{
+  box-shadow: 4px 5px 5px lightgray;
 }
 
 #custom-search-input input{
@@ -24,7 +27,6 @@
   border: 0;
   box-shadow: none;
   cursor: pointer;
-
 }
 
 .features{
