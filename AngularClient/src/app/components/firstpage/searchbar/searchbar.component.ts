@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-searchbar',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchbarComponent implements OnInit {
 
-  constructor() { }
+  public input_word;
+  public input_lang = 'EN';
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  search() {
+    console.log('Search called!');
+    this.router.navigate(['/results'], { queryParams: { word: this.input_word, lang: this.input_lang } });
+  }
+
+  langIdentifier() {
+    console.log('Lang identifier called!');
+  }
 }

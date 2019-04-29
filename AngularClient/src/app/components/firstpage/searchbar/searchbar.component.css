@@ -1,12 +1,12 @@
 #custom-search-input{
-  padding: 3px;
+  padding: 8px;
   border: solid 1px #E4E4E4;
   background-color: #fff;
   border-radius: 25px;
 }
 
 #custom-search-input:focus-within{
-  box-shadow: 4px 5px 5px lightgray;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.15);
 }
 
 #custom-search-input input{

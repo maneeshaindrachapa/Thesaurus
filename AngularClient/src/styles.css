@@ -3,3 +3,23 @@
   src: url(assets/fonts/Kiona-Regular.ttf) format("truetype");
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255,193,7,0.6);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,193,7,1);
+  cursor: pointer;
+}
