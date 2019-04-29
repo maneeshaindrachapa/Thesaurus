@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-fullfirstpage',
   templateUrl: './fullfirstpage.component.html',
-  styleUrls: ['./fullfirstpage.component.css']
+  styleUrls: ['./fullfirstpage.component.css'],
 })
 export class FullfirstpageComponent implements OnInit {
 
-  public language = 'EN';
+  public language = 'en';
 
-  constructor() {
+  constructor(private translateService: TranslateService) {
     const savedLang = localStorage.getItem('lang');
     if (savedLang) {
       this.language = savedLang;
@@ -21,6 +22,8 @@ export class FullfirstpageComponent implements OnInit {
 
   changeLang(lang) {
     this.language = lang;
+    this.translateService.use(lang);
+    this.translateService.setDefaultLang(lang);
     localStorage.setItem('lang', lang);
   }
 
