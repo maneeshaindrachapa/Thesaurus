@@ -3,5 +3,11 @@
   "SYNONYMS" : "Synonyms",
   "DEFINITION" : "Definition",
   "TRANSLATION" : "Translation",
-  "EXAMPLE_SENTENCES" : "Example sentences"
+  "EXAMPLE_SENTENCES" : "Example sentences",
+  "ABOUT" : "About",
+  "ENGLISH_WORD" : "English Word",
+  "SINHALA_WORD" : "Sinhala Word",
+  "SYNONYMS_WITH_TRANSLATION" : "Synonyms with Translation",
+  "DEFINITION_OF_WORD" : "Definition of Word",
+  "EXAMPLE_SENTENCE_FOR_WORD" : "Example Sentence for Word"
 }

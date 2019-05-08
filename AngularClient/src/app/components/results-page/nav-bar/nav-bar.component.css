@@ -59,3 +59,7 @@
   }
 
 }
+
+.about:hover{
+  cursor: pointer;
+}

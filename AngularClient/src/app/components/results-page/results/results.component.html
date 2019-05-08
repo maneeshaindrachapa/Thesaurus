@@ -5,47 +5,19 @@
 
   <div class="row full-height full-width m-0">
     <div class="col-md-6 gray-panel left-panel">
-      <h4 class="card-title" align="center">Synonyms with translation</h4>
+      <h4 class="card-title" align="center">{{'SYNONYMS_WITH_TRANSLATION' | translate }}</h4>
       <hr/>
-      <table class="table table-hover borderless text-center">
+      <table class="table table-hover borderless text-center synonyms">
         <thead>
         <tr>
-          <th scope="col" class="text-center">English word</th>
-          <th scope="col" class="text-center">සිංහල වචනය</th>
+          <th scope="col" class="text-center">{{'ENGLISH_WORD' | translate }}</th>
+          <th scope="col" class="text-center">{{'SINHALA_WORD' | translate }}</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>Dog</td>
+        <tr *ngFor="let word  of response_data?.synonyms" >
+          <td (click)="search(word[0],'EN')">{{ word[0] }} <span class="pos-tag"><i>( {{ word[1] }} )</i></span></td>
           <td>බල්ලා</td>
-        </tr>
-        <tr>
-          <td>Cat</td>
-          <td>බළලා</td>
-        </tr>
-        <tr>
-          <td>Cat</td>
-          <td>බළලා</td>
-        </tr>
-        <tr>
-          <td>Cat</td>
-          <td>බළලා</td>
-        </tr>
-        <tr>
-          <td>Cat</td>
-          <td>බළලා</td>
-        </tr>
-        <tr>
-          <td>Cat</td>
-          <td>බළලා</td>
-        </tr>
-        <tr>
-          <td>Cat</td>
-          <td>බළලා</td>
-        </tr>
-        <tr>
-          <td>Cat</td>
-          <td>බළලා</td>
         </tr>
         </tbody>
       </table>
@@ -55,21 +27,21 @@
         <div class="col-md-12">
           <h5 class="card-title" align="center">Part-of-speech Tag</h5>
           <hr/>
-
+          <p class="text-center" [innerHTML]="posTagService.getPosTagData(response_data?.synonyms[0][1])"></p>
         </div>
       </div>
       <div class="row gray-panel right-panel">
         <div class="col-md-12">
-          <h5 class="card-title" align="center">Definition of word</h5>
+          <h5 class="card-title" align="center">{{'DEFINITION_OF_WORD' | translate }}</h5>
           <hr/>
-
+          <p class="text-center">{{ response_data?.definition }}</p>
         </div>
       </div>
       <div class="row gray-panel right-panel mb-0">
         <div class="col-md-12">
-          <h5 class="card-title" align="center">Example sentence for word</h5>
+          <h5 class="card-title" align="center">{{'EXAMPLE_SENTENCE_FOR_WORD' | translate }}</h5>
           <hr/>
-
+          <p class="text-center">{{ response_data?.examples }}</p>
         </div>
       </div>
     </div>

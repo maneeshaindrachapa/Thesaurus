@@ -13,6 +13,8 @@ import {FormsModule} from '@angular/forms';
 import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {ThesaurusService} from './services/thesaurus.service';
+import {PosTagService} from './services/pos-tag.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
       }
     })
   ],
-  providers: [],
+  providers: [ThesaurusService, PosTagService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
