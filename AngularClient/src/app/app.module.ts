@@ -15,6 +15,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {ThesaurusService} from './services/thesaurus.service';
 import {PosTagService} from './services/pos-tag.service';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import {PosTagService} from './services/pos-tag.service';
         useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
-    })
+    }),
+    LoadingBarHttpClientModule,
+
   ],
   providers: [ThesaurusService, PosTagService],
   bootstrap: [AppComponent]
