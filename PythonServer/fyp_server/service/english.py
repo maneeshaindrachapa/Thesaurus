@@ -3,10 +3,13 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import wordnet as wn
 from nltk.tag import pos_tag, map_tag
 
+# nltk.download('wordnet')
+# nltk.download('universal_tagset')
+# nltk.download('averaged_perceptron_tagger')
+
 #Get postagger using the nltk tagger
 def getPosTag(word):
-    #nltk.download('universal_tagset')
-    #nltk.download('averaged_perceptron_tagger')
+
     token = word_tokenize(word)
     tagged = nltk.pos_tag(token)
     simplifiedTags = [(word, map_tag('en-ptb', 'universal', tag)) for word, tag in tagged]

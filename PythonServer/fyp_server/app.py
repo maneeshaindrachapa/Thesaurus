@@ -14,7 +14,7 @@ def thesaurus():
     requestData = request.get_json(force=True)
     input_word = requestData['word']
     input_lang = requestData['lang']
-    if(input_lang=="EN"):
+    if(input_lang=="En"):
         synonyms = getSynonyms(input_word)
         definition = getDefinition(input_word)
         examples = getExamples(input_word)
@@ -25,7 +25,15 @@ def thesaurus():
         }
         return jsonify(response_body)
     else:
-        response_body = "Not Configured yet"
+        #Change below to sinhala
+        synonyms = getSynonyms(input_word)
+        definition = getDefinition(input_word)
+        examples = getExamples(input_word)
+        response_body = {
+            "synonyms": synonyms,
+            "definition": definition,
+            "examples": examples
+        }
         return jsonify(response_body)
 
 

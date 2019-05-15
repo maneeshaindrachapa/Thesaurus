@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf32d5c0-f7e0-4fbd-ad94-e3e5d47cdd7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pre_install.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/.idea/lang_identifier.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/en.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/final.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/nural_net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../WorkInProgress/lang_identifier/vectorize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularClient/src/app/components/firstpage/searchbar/searchbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/src/app/components/firstpage/searchbar/searchbar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularClient/src/app/components/firstpage/searchbar/searchbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/src/app/components/firstpage/searchbar/searchbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularClient/src/app/components/firstpage/searchbar/searchbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/src/app/components/firstpage/searchbar/searchbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularClient/src/app/components/results-page/nav-bar/nav-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/src/app/components/results-page/nav-bar/nav-bar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularClient/src/app/components/results-page/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/src/app/components/results-page/nav-bar/nav-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularClient/src/app/components/results-page/nav-bar/nav-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/src/app/components/results-page/nav-bar/nav-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularClient/src/assets/i18n/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/src/assets/i18n/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AngularClient/src/assets/i18n/si.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/src/assets/i18n/si.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fyp_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fyp_server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/english.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="141">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -24,11 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pre_install.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/english.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="119">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -51,14 +84,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/pre_install.txt" />
         <option value="$PROJECT_DIR$/service/english.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-3" />
+    <option name="y" value="53" />
     <option name="width" value="1346" />
     <option name="height" value="696" />
   </component>
@@ -91,9 +125,10 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Language Predictor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -114,7 +149,7 @@
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\thili\Desktop\Language Predictor\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -138,23 +173,29 @@
       <workItem from="1557258058299" duration="2751000" />
       <workItem from="1557295885296" duration="6349000" />
       <workItem from="1557726214923" duration="614000" />
-      <workItem from="1557739620180" duration="328000" />
+      <workItem from="1557739620180" duration="1451000" />
+      <workItem from="1557744823580" duration="58000" />
+      <workItem from="1557745072380" duration="548000" />
+      <workItem from="1557745674469" duration="535000" />
+      <workItem from="1557806248265" duration="546000" />
+      <workItem from="1557809264884" duration="1818000" />
+      <workItem from="1557849283803" duration="147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10703000" />
+    <option name="totallyTimeSpent" value="15478000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
+    <frame x="-3" y="53" width="1346" height="696" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2978227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36187398" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39786857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -176,23 +217,30 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/fyp_server$fyp_server.coverage" NAME="fyp_server Coverage Results" MODIFIED="1557739621777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fyp_server$fyp_server.coverage" NAME="fyp_server Coverage Results" MODIFIED="1557817676105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="141">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pre_install.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service/english.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="119">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
