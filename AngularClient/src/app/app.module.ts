@@ -17,6 +17,8 @@ import {ThesaurusService} from './services/thesaurus.service';
 import {PosTagService} from './services/pos-tag.service';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
+import {LanguagePredictService} from './services/language-predict.service';
+import {ServerConfig} from './services/serverConfig';
 
 
 @NgModule({
@@ -45,7 +47,7 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     LoadingBarHttpClientModule,
 
   ],
-  providers: [ThesaurusService, PosTagService],
+  providers: [ThesaurusService, PosTagService, LanguagePredictService, ServerConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

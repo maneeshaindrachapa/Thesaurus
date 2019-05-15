@@ -1,6 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ThesaurusService} from '../../../services/thesaurus.service';
+import {LanguagePredictService} from '../../../services/language-predict.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -11,8 +12,8 @@ import {ThesaurusService} from '../../../services/thesaurus.service';
 export class NavBarComponent implements OnInit {
 
   public input_word;
-  public input_lang = 'En';
-  constructor(private router: Router, private route: ActivatedRoute, private thesaurusService: ThesaurusService) {
+  public input_lang = 'en';
+  constructor(private router: Router, private route: ActivatedRoute, private thesaurusService: ThesaurusService, private langPredictService: LanguagePredictService) {
 
     thesaurusService.search_event.subscribe((data) => {
       this.router.navigate(['/results'], { queryParams: { word: data[0], lang: data[1] } });
@@ -34,7 +35,9 @@ export class NavBarComponent implements OnInit {
   }
 
   langIdentifier() {
-    console.log('Lang identifier called!');
+    this.langPredictService.predict(this.input_word).subscribe((data) => {
+      this.input_lang = data['lang'];
+    });
   }
 
 

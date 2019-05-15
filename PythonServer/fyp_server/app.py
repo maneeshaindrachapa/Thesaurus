@@ -1,5 +1,6 @@
-from flask import Flask, request, render_template, jsonify, json
-from service.english import *
+from flask import Flask, request, jsonify
+import modules.main.english as main_en
+import modules.lang_identifier.lang_identifier as lang_identifier
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -14,10 +15,10 @@ def thesaurus():
     requestData = request.get_json(force=True)
     input_word = requestData['word']
     input_lang = requestData['lang']
-    if(input_lang=="En"):
-        synonyms = getSynonyms(input_word)
-        definition = getDefinition(input_word)
-        examples = getExamples(input_word)
+    if(input_lang=="en"):
+        synonyms = main_en.getSynonyms(input_word)
+        definition = main_en.getDefinition(input_word)
+        examples = main_en.getExamples(input_word)
         response_body = {
             "synonyms": synonyms,
             "definition": definition,
@@ -26,9 +27,9 @@ def thesaurus():
         return jsonify(response_body)
     else:
         #Change below to sinhala
-        synonyms = getSynonyms(input_word)
-        definition = getDefinition(input_word)
-        examples = getExamples(input_word)
+        synonyms = main_en.getSynonyms(input_word)
+        definition = main_en.getDefinition(input_word)
+        examples = main_en.getExamples(input_word)
         response_body = {
             "synonyms": synonyms,
             "definition": definition,
@@ -37,7 +38,16 @@ def thesaurus():
         return jsonify(response_body)
 
 
-    #return jsonify(content)
+@app.route('/language', methods=["POST"])
+def lang_predict():
+    request_data = request.get_json(force=True)
+    input_word = request_data['word']
+    lang = lang_identifier.predict_lang(input_word)
+    response_body = {
+        "lang": lang
+    }
+    return jsonify(response_body)
+
 
 if __name__ == '__main__':
     app.run()

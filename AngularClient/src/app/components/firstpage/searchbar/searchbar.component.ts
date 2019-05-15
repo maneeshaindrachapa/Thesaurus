@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {LanguagePredictService} from '../../../services/language-predict.service';
 
 @Component({
   selector: 'app-searchbar',
@@ -9,9 +10,9 @@ import {Router} from '@angular/router';
 export class SearchbarComponent implements OnInit {
 
   public input_word;
-  public input_lang = 'En';
-
-  constructor(private router: Router) { }
+  public input_lang = 'en';
+  public lang_detected = false;
+  constructor(private router: Router, private langPredictService: LanguagePredictService) { }
 
   ngOnInit() {
   }
@@ -22,6 +23,8 @@ export class SearchbarComponent implements OnInit {
   }
 
   langIdentifier() {
-    console.log('Lang identifier called!');
+    this.langPredictService.predict(this.input_word).subscribe((data) => {
+      this.input_lang = data['lang'];
+    });
   }
 }

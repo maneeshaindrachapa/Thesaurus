@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { ThesaurusService } from './thesaurus.service';
 
 describe('ThesaurusService', () => {

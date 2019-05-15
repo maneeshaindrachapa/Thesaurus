@@ -1,6 +1,6 @@
 from keras.models import Sequential
 from keras.layers import Dense
-from config import max_letters, language_tags
+from modules.lang_identifier.config import max_letters, language_tags
 import numpy as np
 from unidecode import unidecode
 
@@ -27,7 +27,7 @@ network.add(Dense(150, activation='sigmoid'))
 network.add(Dense(100, activation='sigmoid'))
 network.add(Dense(100, activation='sigmoid'))
 network.add(Dense(len(language_tags), activation='softmax'))
-network.load_weights('weights.hdf5')
+network.load_weights('modules/lang_identifier/weights.hdf5')
 network.compile(loss='binary_crossentropy', optimizer='sgd', metrics=['accuracy'])
 
 def predict_lang(word):
@@ -49,6 +49,7 @@ def predict_lang(word):
         scores.append(prediction_vct[0][i])
     return langs[scores.index(max(scores))]
 
+predict_lang("dog")
 
 # while True:
 #     dic = []
