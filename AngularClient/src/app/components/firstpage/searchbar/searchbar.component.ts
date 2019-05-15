@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 export class SearchbarComponent implements OnInit {
 
   public input_word;
-  public input_lang = 'EN';
+  public input_lang = 'En';
 
   constructor(private router: Router) { }
 

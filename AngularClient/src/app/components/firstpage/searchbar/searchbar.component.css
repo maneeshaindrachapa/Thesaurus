@@ -14,7 +14,7 @@
   box-shadow: none;
 }
 
-#custom-search-input button{
+#custom-search-input button, #custom-search-input select{
   margin: 2px 0 0 0;
   background: none;
   box-shadow: none;
@@ -22,6 +22,12 @@
   color: #666666;
   padding: 0 8px 0 10px;
 }
+
+#custom-search-input select{
+  padding: 0px;
+}
+
+#custom-search-input select option:checked { color: #ffc107; }
 
 #custom-search-input button:hover{
   border: 0;
@@ -32,4 +38,8 @@
 .features{
   font-size: 14px;
   color: gray;
+}
+
+.detected-lang:hover{
+  cursor: default!important;
 }

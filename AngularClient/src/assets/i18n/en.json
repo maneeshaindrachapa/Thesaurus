@@ -9,5 +9,7 @@
   "SINHALA_WORD" : "Sinhala Word",
   "SYNONYMS_WITH_TRANSLATION" : "Synonyms with Translation",
   "DEFINITION_OF_WORD" : "Definition of Word",
-  "EXAMPLE_SENTENCE_FOR_WORD" : "Example Sentence for Word"
+  "EXAMPLE_SENTENCE_FOR_WORD" : "Example Sentence for Word",
+  "EN": "En",
+  "SI" : "Si"
 }
