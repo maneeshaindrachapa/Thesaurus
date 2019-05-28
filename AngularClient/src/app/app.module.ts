@@ -19,6 +19,8 @@ import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import {LanguagePredictService} from './services/language-predict.service';
 import {ServerConfig} from './services/serverConfig';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {SpeechModule} from 'ngx-speech';
 
 
 @NgModule({
@@ -45,9 +47,10 @@ import {ServerConfig} from './services/serverConfig';
       }
     }),
     LoadingBarHttpClientModule,
+    SpeechModule
 
   ],
-  providers: [ThesaurusService, PosTagService, LanguagePredictService, ServerConfig],
+  providers: [ThesaurusService, PosTagService, LanguagePredictService, ServerConfig, { provide: 'SPEECH_LANG', useValue: 'en-US' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

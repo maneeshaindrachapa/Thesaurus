@@ -43,3 +43,30 @@
 .detected-lang:hover{
   cursor: default!important;
 }
+
+#custom-search-input .voice-type-btn{
+  padding-right: 10px;
+
+}
+
+#custom-search-input .voice-type-enabled{
+  color: #ffc107;
+  z-index: 10;
+}
+
+#custom-search-input .voice-type-animation{
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+}
+
+
+/*Animations*/
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}

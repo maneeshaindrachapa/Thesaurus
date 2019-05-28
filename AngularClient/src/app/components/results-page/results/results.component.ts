@@ -33,6 +33,7 @@ export class ResultsComponent implements OnInit {
   getData() {
     this.thesaurusService.getThesaurusData(this.input_word, this.input_lang).subscribe((data) => {
       this.response_data = data;
+      console.log(data);
     });
   }
 
