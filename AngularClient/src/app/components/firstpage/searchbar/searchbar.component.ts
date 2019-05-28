@@ -31,6 +31,7 @@ export class SearchbarComponent implements OnInit {
     if (this.voice_search_enabled) {
       this.speech.stop();
     } else {
+      this.speech.recognition.lang = this.input_lang === 'si' ? 'si-LK' : 'en-US';
       this.speech.start();
       this.speech.message.subscribe((data) => {
         this.input_word = data.message;
@@ -40,8 +41,20 @@ export class SearchbarComponent implements OnInit {
   }
 
   langIdentifier() {
+    this.voice_search_inturrupt();
     this.langPredictService.predict(this.input_word).subscribe((data) => {
       this.input_lang = data['lang'];
     });
+  }
+
+  onLangChange(lang) {
+    this.voice_search_inturrupt();
+  }
+
+  voice_search_inturrupt() {
+    if (this.voice_search_enabled) {
+      this.voice_search_enabled = false;
+      this.speech.stop();
+    }
   }
 }
