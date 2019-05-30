@@ -6,12 +6,17 @@
   <div class="col-md-3 nav-search">
     <div id="custom-search-input">
       <div class="input-group col-md-12">
-        <input type="text" class="form-control input-lg" placeholder="{{'INPUT_PLACE_HOLDER' | translate }}" [(ngModel)]="input_word" (keyup.enter)="search()" (keyup)="langIdentifier()" />
+        <input type="text" class="form-control input-lg" placeholder="{{ (voice_search_enabled? 'LISTENING': 'INPUT_PLACE_HOLDER')  | translate }}" [(ngModel)]="input_word" (keyup.enter)="search()" (keyup)="langIdentifier()" />
         <span class="input-group-btn">
-                        <select class="btn btn-info btn-lg detected-lang" [(ngModel)]="input_lang" >
+                        <select class="btn btn-info btn-lg detected-lang" [(ngModel)]="input_lang" (ngModelChange)="onLangChange(input_lang)">
                           <option [selected]="input_lang=='en'" value="en">{{'EN' | translate }}</option>
                           <option [selected]="input_lang=='si'" value="si">{{'SI' | translate }}</option>
                         </select>
+                    </span>
+        <span class="input-group-btn " [ngClass]="{'voice-type-animation':voice_search_enabled}" >
+                        <button class="btn btn-info btn-lg voice-type-btn" [ngClass]="{'voice-type-enabled':voice_search_enabled}" type="button" (click)="voiceType()" >
+                          <i class="fas fa-microphone"></i>
+                        </button>
                     </span>
         <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="button" (click)="search()">

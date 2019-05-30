@@ -14,7 +14,6 @@ export class SearchbarComponent implements OnInit {
 
   public input_word;
   public input_lang = 'en';
-  public lang_detected = false;
   public voice_search_enabled = false;
 
   constructor(private router: Router, private langPredictService: LanguagePredictService, public speech: SpeechService) { }
@@ -23,8 +22,9 @@ export class SearchbarComponent implements OnInit {
   }
 
   search() {
-    console.log('Search called!');
-    this.router.navigate(['/results'], { queryParams: { word: this.input_word, lang: this.input_lang } });
+    if (this.input_word.trim()) {
+      this.router.navigate(['/results'], {queryParams: {word: this.input_word, lang: this.input_lang}});
+    }
   }
 
   voiceType() {
@@ -35,6 +35,8 @@ export class SearchbarComponent implements OnInit {
       this.speech.start();
       this.speech.message.subscribe((data) => {
         this.input_word = data.message;
+        this.voice_search_inturrupt();
+        this.search();
       });
     }
     this.voice_search_enabled = !this.voice_search_enabled;

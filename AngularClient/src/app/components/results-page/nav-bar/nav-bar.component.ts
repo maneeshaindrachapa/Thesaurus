@@ -2,6 +2,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ThesaurusService} from '../../../services/thesaurus.service';
 import {LanguagePredictService} from '../../../services/language-predict.service';
+import {SpeechService} from 'ngx-speech';
 
 @Component({
   selector: 'app-nav-bar',
@@ -13,7 +14,9 @@ export class NavBarComponent implements OnInit {
 
   public input_word;
   public input_lang = 'en';
-  constructor(private router: Router, private route: ActivatedRoute, private thesaurusService: ThesaurusService, private langPredictService: LanguagePredictService) {
+  public voice_search_enabled = false;
+
+  constructor(private router: Router, private route: ActivatedRoute, private thesaurusService: ThesaurusService, private langPredictService: LanguagePredictService, public speech: SpeechService) {
 
     thesaurusService.search_event.subscribe((data) => {
       this.router.navigate(['/results'], { queryParams: { word: data[0], lang: data[1] } });
@@ -40,6 +43,30 @@ export class NavBarComponent implements OnInit {
     });
   }
 
+  voiceType() {
+    if (this.voice_search_enabled) {
+      this.speech.stop();
+    } else {
+      this.speech.recognition.lang = this.input_lang === 'si' ? 'si-LK' : 'en-US';
+      this.speech.start();
+      this.speech.message.subscribe((data) => {
+        this.input_word = data.message;
+        this.voice_search_inturrupt();
+        this.search();
+      });
+    }
+    this.voice_search_enabled = !this.voice_search_enabled;
+  }
 
+  onLangChange(lang) {
+    this.voice_search_inturrupt();
+  }
+
+  voice_search_inturrupt() {
+    if (this.voice_search_enabled) {
+      this.voice_search_enabled = false;
+      this.speech.stop();
+    }
+  }
 
 }
