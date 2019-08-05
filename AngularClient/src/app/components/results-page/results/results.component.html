@@ -25,13 +25,6 @@
     <div class="col-md-6 pr-0">
       <div class="row gray-panel right-panel mt-0">
         <div class="col-md-12">
-          <h5 class="card-title" align="center">Part-of-speech Tag</h5>
-          <hr/>
-          <p class="text-center" [innerHTML]="posTagService.getPosTagData(response_data?.synonyms[0][1])"></p>
-        </div>
-      </div>
-      <div class="row gray-panel right-panel">
-        <div class="col-md-12">
           <h5 class="card-title" align="center">{{'DEFINITION_OF_WORD' | translate }}</h5>
           <hr/>
           <p class="text-center">{{ response_data?.definition }}</p>
@@ -42,6 +35,13 @@
           <h5 class="card-title" align="center">{{'EXAMPLE_SENTENCE_FOR_WORD' | translate }}</h5>
           <hr/>
           <p class="text-center">{{ response_data?.examples }}</p>
+        </div>
+      </div>
+      <div class="row gray-panel right-panel ">
+        <div class="col-md-12">
+          <h5 class="card-title" align="center">Part-of-speech Tag</h5>
+          <hr/>
+          <p class="text-center" [innerHTML]="posTagService.getPosTagData(response_data?.synonyms[0][1])"></p>
         </div>
       </div>
     </div>
