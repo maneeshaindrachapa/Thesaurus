@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import modules.main.english as main_en
 import modules.lang_identifier.lang_identifier as lang_identifier
+import modules.translator.translator_v2 as translator
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -19,10 +20,12 @@ def thesaurus():
         synonyms = main_en.getSynonyms(input_word)
         definition = main_en.getDefinition(input_word)
         examples = main_en.getExamples(input_word)
+        translated = translator.translate([x[0] for x in synonyms], 'en', 'si')
         response_body = {
             "synonyms": synonyms,
             "definition": definition,
-            "examples": examples
+            "examples": examples,
+            "translated": translated
         }
         return jsonify(response_body)
     else:
@@ -30,10 +33,12 @@ def thesaurus():
         synonyms = main_en.getSynonyms(input_word)
         definition = main_en.getDefinition(input_word)
         examples = main_en.getExamples(input_word)
+        translated = translator.translate([x[0] for x in synonyms], 'si', 'en')
         response_body = {
             "synonyms": synonyms,
             "definition": definition,
-            "examples": examples
+            "examples": examples,
+            "translated": translated
         }
         return jsonify(response_body)
 

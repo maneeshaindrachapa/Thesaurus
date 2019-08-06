@@ -1,8 +1,8 @@
 import nltk
-import modules.translator.translator as translator
 from nltk.tokenize import word_tokenize
 from nltk.corpus import wordnet as wn
 from nltk.tag import pos_tag, map_tag
+import re
 
 # nltk.download('wordnet')
 # nltk.download('universal_tagset')
@@ -23,12 +23,15 @@ def getSynonyms(word):
     temp = wn.synsets(word)
     if(temp):
         synonyms = []
+        words = []
         for syn in temp:
             for l in syn.lemmas():
-                synTemp = getPosTag(l.name())
-                # synTemp.append((translator.translate_word(l.name(), 'en', 'si')).text)
-                synTemp.append(temp[0].wup_similarity(syn))
-                synonyms.append(synTemp)
+                if(l.name() not in words):
+                    words.append(l.name())
+                    synTemp = getPosTag(l.name())
+                    synTemp[0] = re.sub('_', ' ', synTemp[0])
+                    synTemp.append(temp[0].wup_similarity(syn))
+                    synonyms.append(synTemp)
         return synonyms
     else:
         return "not found"
