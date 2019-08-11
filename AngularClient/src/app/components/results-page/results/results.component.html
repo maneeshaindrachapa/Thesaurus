@@ -15,9 +15,9 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let word  of response_data?.synonyms" >
-          <td (click)="search(word[0].replace('_',' '),'EN')">{{ word[0].replace("_"," ") }} <span class="pos-tag"><i>( {{ word[1] }} )</i></span></td>
-          <td>{{ word[0] }}</td>
+        <tr *ngFor="let word  of response_data?.synonyms;let i = index" >
+          <td (click)="search(word[0].replace('_',' '),'en')">{{ word[0].replace("_"," ") }} <span class="pos-tag"><i>( {{ word[1] }} )</i></span></td>
+          <td>{{ response_data?.translated[i] }}</td>
         </tr>
         </tbody>
       </table>
