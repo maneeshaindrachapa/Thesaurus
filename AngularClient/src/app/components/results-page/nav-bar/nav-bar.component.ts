@@ -27,6 +27,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.input_word = params.word;
+      this.input_lang = params.lang;
     });
   }
 

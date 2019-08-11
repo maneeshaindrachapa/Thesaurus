@@ -57,6 +57,10 @@
   opacity: 0.6;
 }
 
+.audio-playing{
+  color: #ffc107;
+}
+
 .card-title{
   font-family: 'Kaushan Script', cursive;
   margin: 15px;
@@ -82,3 +86,5 @@
     margin-right: 20px;
   }
 }
+
+

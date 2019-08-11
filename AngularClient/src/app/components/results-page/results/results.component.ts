@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ThesaurusService} from '../../../services/thesaurus.service';
 import {PosTagService} from '../../../services/pos-tag.service';
+import {ServerConfig} from '../../../services/serverConfig';
 
 
 @Component({
@@ -14,8 +15,8 @@ export class ResultsComponent implements OnInit {
   public input_word;
   public input_lang;
   public response_data;
-
-  constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, private posTagService: PosTagService) {
+  public isAudioPlaying = false;
+  constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, private posTagService: PosTagService, private serverConfig: ServerConfig ) {
     this.route.queryParams.subscribe(params => {
       this.input_word = params.word;
       this.input_lang = params.lang;
@@ -39,5 +40,15 @@ export class ResultsComponent implements OnInit {
 
   search(input_word, lang) {
     this.thesaurusService.search_event.emit([input_word, lang]);
+  }
+
+  playAudio(input_word) {
+    this.isAudioPlaying = true;
+    const audioObj = new Audio();
+    audioObj.src = this.serverConfig.base_url + '/readword?word=' + input_word;
+    audioObj.load();
+    audioObj.play().then(() => {
+      this.isAudioPlaying = false;
+    });
   }
 }

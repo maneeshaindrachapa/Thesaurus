@@ -1,5 +1,5 @@
   <div class="input-word-wrapper">
-    <h1 class="input-word" align="center">{{ input_word }}<i class="fas fa-volume-up text-to-speech" placement="bottom" ngbTooltip="Text-to-speech"></i>
+    <h1 class="input-word" align="center">{{ input_word }}<i (click)="playAudio(input_word)" class="fas fa-volume-up text-to-speech" [ngClass]="{'audio-playing': isAudioPlaying}"  placement="bottom" ngbTooltip="Text-to-speech"></i>
     </h1>
   </div>
 
