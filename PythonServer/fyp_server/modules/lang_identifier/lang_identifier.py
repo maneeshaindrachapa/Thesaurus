@@ -1,12 +1,12 @@
 import sys
 import os
-stderr = sys.stderr
-sys.stderr = open(os.devnull, 'w')
 from keras.models import Sequential
 from keras.layers import Dense
 from modules.lang_identifier.config import max_letters, language_tags
 import numpy as np
 from unidecode import unidecode
+stderr = sys.stderr
+sys.stderr = open(os.devnull, 'w')
 sys.stderr = stderr
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 

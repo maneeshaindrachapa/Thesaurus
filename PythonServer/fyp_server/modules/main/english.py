@@ -4,10 +4,6 @@ from nltk.corpus import wordnet as wn
 from nltk.tag import pos_tag, map_tag
 import re
 
-# nltk.download('wordnet')
-# nltk.download('universal_tagset')
-# nltk.download('averaged_perceptron_tagger')
-
 #Get postagger using the nltk tagger
 def getPosTag(word):
 
