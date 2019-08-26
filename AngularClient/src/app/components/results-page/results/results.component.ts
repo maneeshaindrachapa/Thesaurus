@@ -16,7 +16,7 @@ export class ResultsComponent implements OnInit {
   public input_lang;
   public response_data;
   public isAudioPlaying = false;
-  constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, private posTagService: PosTagService, private serverConfig: ServerConfig ) {
+  constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, public posTagService: PosTagService, private serverConfig: ServerConfig ) {
     this.route.queryParams.subscribe(params => {
       this.input_word = params.word;
       this.input_lang = params.lang;

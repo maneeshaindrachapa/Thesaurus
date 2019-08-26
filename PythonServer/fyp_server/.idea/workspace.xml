@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf32d5c0-f7e0-4fbd-ad94-e3e5d47cdd7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../AngularClient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/lang_identifier/lang_identifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/lang_identifier/lang_identifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/main/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/main/english.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre_install.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pre_install.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WorkInProgress/Language  Identifier/Model_Evaluate .ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../WorkInProgress/Language  Identifier/Model_Evaluate .ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../WorkInProgress/Language  Identifier/Predictor.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../WorkInProgress/Language  Identifier/Predictor.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,6 +28,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="696" />
   </component>
   <component name="ProjectId" id="1PKjw8FStEZnnzkPx2K72bcJgu4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -143,8 +143,38 @@
       <workItem from="1565119069942" duration="4948000" />
       <workItem from="1565544977119" duration="7720000" />
       <workItem from="1565629919168" duration="555000" />
+      <workItem from="1566549864532" duration="598000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="598000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -154,7 +184,28 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
