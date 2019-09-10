@@ -1,7 +1,9 @@
-# FYP
 
-## An Intelligent Sinhala-English Dictionary / Thesaurus / Word Look-Up Tool
-[thesaurus.projects.uom.lk](http://thesaurus.projects.uom.lk)
+<h6 align="center"><img align="center" src="AngularClient/src/assets/img/main_logo.png"><h6>
+<h1 align="center">Final Year Project - 2015 Batch</h1>
+<h2 align="center">An Intelligent Sinhala-English Dictionary / Thesaurus / Word Look-Up Tool</h2>
+
+<h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 
 ### Supervisor : Prof. Gihan Dias
 
