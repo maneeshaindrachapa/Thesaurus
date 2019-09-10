@@ -1,48 +1,27 @@
 from flask import Flask, request, jsonify, send_from_directory
-import modules.main.english as main_en
+import modules.main.english.english as main_en
 import modules.lang_identifier.lang_identifier as lang_identifier
-import modules.translator.translator_v2 as translator
-import modules.tts.tts as tts
 from flask_cors import CORS
 
 app = Flask(__name__, static_url_path='')
 CORS(app)
 
+
 @app.route('/')
 def hello_world():
     return '<h1 align="center">Welcome to  Thesaurus REST API !</h1>'
 
-@app.route('/thesaurus', methods=['GET',"POST"])
+
+@app.route('/thesaurus', methods=['GET', "POST"])
 def thesaurus():
     requestData = request.get_json(force=True)
     input_word = requestData['word']
     input_lang = requestData['lang']
-    if(input_lang=="en"):
-        synonyms = main_en.getSynonyms(input_word)
-        definition = main_en.getDefinition(input_word)
-        examples = main_en.getExamples(input_word)
-        translated = translator.translate([x[0] for x in synonyms], 'en', 'si')
-        tts.audio_gen(input_word, 'en')
-        response_body = {
-            "synonyms": synonyms,
-            "definition": definition,
-            "examples": examples,
-            "translated": translated
-        }
+    if input_lang == "en":
+        response_body = main_en.getData(input_word)
         return jsonify(response_body)
     else:
-        #Change below to sinhala
-        synonyms = main_en.getSynonyms(input_word)
-        definition = main_en.getDefinition(input_word)
-        examples = main_en.getExamples(input_word)
-        translated = translator.translate([x[0] for x in synonyms], 'si', 'en')
-        tts.audio_gen(input_word, 'si')
-        response_body = {
-            "synonyms": synonyms,
-            "definition": definition,
-            "examples": examples,
-            "translated": translated
-        }
+        response_body = main_en.getData(input_word)
         return jsonify(response_body)
 
 
@@ -56,10 +35,13 @@ def lang_predict():
     }
     return jsonify(response_body)
 
+
 @app.route('/readword')
 def data():
     word = request.args.get('word')
-    return send_from_directory('modules/tts/audio_db', word+'.mp3')
+    response = send_from_directory('modules/tts/audio_db', word + '.mp3')
+    return response
+
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
