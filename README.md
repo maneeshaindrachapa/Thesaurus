@@ -44,9 +44,9 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
 For the implementation, we planned to use word-to-vector based approach as the word-embedding to extract the synonym words. After we successfully build the word-vector space for out text corpus then we get the synonyms based on the k-nearest neighbor approach with the euclidean distance between word points.
 ![Vector spaces](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/vecotor_space.jpg?raw=true)
 d1 & d2 distances canbe calculated with the euclidean distance based approach or cosine distance based approach. 
-
+![Equations](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/equations.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxND
-AxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0
-NjgsLTE2OTY3OTIwOV19
+eyJoaXN0b3J5IjpbLTEyODczNDE1OTEsLTEzMjA2NzgxOTYsLT
+c5MDc4OTg3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQz
+MTcwLDExMjc3NzQ0NjgsLTE2OTY3OTIwOV19
 -->
