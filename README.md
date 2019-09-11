@@ -33,7 +33,12 @@ A thesaurus can be used to find synonyms. In general, a thesaurus is a reference
 The goal of this research project is to develop an Intelligent Sinhala-English Dictionary, Thesaurus & Word-Lookup tool to translate and find the context of words in Sinhala and English languages. 
   
 
+## Research Methodology & Design
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OT
+Y3OTIwOV19
 -->
