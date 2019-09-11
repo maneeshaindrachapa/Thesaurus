@@ -48,10 +48,11 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
  - **Word example sentence extractor**: This module is basically used to give and supportive sentence for a given word. In our system implementation, we hope to extract the example sentence from a text corpus. We planned to extract sentences that include the user input word and which is able to give an idea about the word.
 
 ## System Upto Now
-
+![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTg4MzU5OCwtMTMyMDY3ODE5NiwtNz
-kwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMSw4MjQ0NDMx
-NzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbLTE4OTAxMDczMDgsLTU5NTg4MzU5OCwtMT
+MyMDY3ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4
+ODgzMSw4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX
+0=
 -->
