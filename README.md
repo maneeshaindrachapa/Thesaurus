@@ -4,7 +4,11 @@
 <h2 align="center">An Intelligent Sinhala-English Dictionary / Thesaurus / Word Look-Up Tool</h2>
 
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
-- This is an ongoing research
+
+```diff
+- This project is still in Progress
+```
+
 ### Supervisor : Prof. Gihan Dias
 
 ### Group Members
@@ -31,5 +35,5 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNTI4NjM0MSwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
 -->
