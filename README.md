@@ -45,8 +45,11 @@ For the implementation, we planned to use word-to-vector based approach as the w
 ![Vector spaces](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/vecotor_space.jpg?raw=true)
 d1 & d2 distances canbe calculated with the euclidean distance based approach or cosine distance based approach. 
 ![Equations](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/equations.jpg)
+ - **Word example sentence extractor**: This module is basically used to give and supportive sentence for a given word. In our system implementation, we hope to extract the example sentence from a text corpus. We planned to extract sentences that include the user input word and which is able to give an idea about the word.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODczNDE1OTEsLTEzMjA2NzgxOTYsLT
-c5MDc4OTg3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQz
-MTcwLDExMjc3NzQ0NjgsLTE2OTY3OTIwOV19
+eyJoaXN0b3J5IjpbMTAwOTUwNjU0NywtMTMyMDY3ODE5NiwtNz
+kwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMSw4MjQ0NDMx
+NzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
 -->
