@@ -41,11 +41,11 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
  - **Pos-tagger module**: Use already exists pos tagger module for both sinhala & English languages.
  - **Language translation module**: Use Google translater only for the translation
  - **Similar word cluster generator**: This is the main module of this research project. The main task of this module is to identify a similar word cluster for a given word. For the implementation of this module, we hope to use the word embedding technique which helps to get the similar word cluster.
-
 For the implementation, we planned to use word-to-vector based approach as the word-embedding to extract the synonym words. After we successfully build the word-vector space for out text corpus then we get the synonyms based on the k-nearest neighbor approach with the euclidean distance between word points.
+![Vector spaces](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/vecotor_space.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzA1NTU3OSwtNzkwNzg5ODcxLDE0MD
+eyJoaXN0b3J5IjpbLTg4NjA1MTg5MywtNzkwNzg5ODcxLDE0MD
 EzMzU1MjQsLTQxMjQ4ODgzMSw4MjQ0NDMxNzAsMTEyNzc3NDQ2
 OCwtMTY5Njc5MjA5XX0=
 -->
