@@ -38,9 +38,9 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
 
  - **Language identifier module**: Mainly used the Deep Learning based approch with the character level diffrent things in the both Sinhala & English languages.
  - **Spell Checker Module**: Use the spell checker module developing by parrallel research group.
- - **Pos-tagger module**: Use already exists pos 
+ - **Pos-tagger module**: Use already exists pos tags
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTM4NjE0MSwtNDEyNDg4ODMxLDgyND
+eyJoaXN0b3J5IjpbMTQwMTMzNTUyNCwtNDEyNDg4ODMxLDgyND
 Q0MzE3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
 -->
