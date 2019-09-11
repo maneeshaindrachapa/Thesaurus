@@ -35,10 +35,10 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
 
 ## System Design Diagram
 ![Abstract Design of the System](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/design.jpg)
-
+Language identifier module
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjQ4ODgzMSw4MjQ0NDMxNzAsMTEyNz
-c3NDQ2OCwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbLTQ1NTg0NjY1MCwtNDEyNDg4ODMxLDgyND
+Q0MzE3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
 -->
