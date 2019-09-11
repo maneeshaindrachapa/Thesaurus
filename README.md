@@ -33,12 +33,19 @@ A thesaurus can be used to find synonyms. In general, a thesaurus is a reference
 The goal of this research project is to develop an Intelligent Sinhala-English Dictionary, Thesaurus & Word-Lookup tool to translate and find the context of words in Sinhala and English languages. 
   
 
-## Research Methodology & Design
+## System Design Diagram
+![Abstract Design of the System](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/design.jpg)
 
+ - **Language identifier module**: Mainly used the Deep Learning based approch with the character level diffrent things in the both Sinhala & English languages.
+ - **Spell Checker Module**: Use the spell checker module developing by parrallel research group.
+ - **Pos-tagger module**: Use already exists pos tagger module for both sinhala & English languages.
+ - **Language translation module**: Use Google translater only for the translation
+ - **Similar word cluster generator**: This is the main module of this research project. The main task of this module is to identify a similar word cluster for a given word. For the implementation of this module, we hope to use the word embedding technique which helps to get the similar word cluster.
 
-
+For the implementation, we planned to use word-to-vector based approach as the word-embedding to extract the synonym words. After we successfully build the word-vector space for out text corpus then we get the synonyms based on the k-nearest neighbor approach with the euclidean distance between word points.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OT
-Y3OTIwOV19
+eyJoaXN0b3J5IjpbLTc5MDc4OTg3MSwxNDAxMzM1NTI0LC00MT
+I0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OTY3OTIw
+OV19
 -->
