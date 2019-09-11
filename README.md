@@ -34,11 +34,11 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
   
 
 ## Research Methodology & Design
-
+![Abstract Design of the System](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/design.jpg)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OT
-Y3OTIwOV19
+eyJoaXN0b3J5IjpbMTIwNTMxNjkzNyw4MjQ0NDMxNzAsMTEyNz
+c3NDQ2OCwtMTY5Njc5MjA5XX0=
 -->
