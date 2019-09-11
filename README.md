@@ -43,9 +43,10 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
  - **Similar word cluster generator**: This is the main module of this research project. The main task of this module is to identify a similar word cluster for a given word. For the implementation of this module, we hope to use the word embedding technique which helps to get the similar word cluster.
 For the implementation, we planned to use word-to-vector based approach as the word-embedding to extract the synonym words. After we successfully build the word-vector space for out text corpus then we get the synonyms based on the k-nearest neighbor approach with the euclidean distance between word points.
 ![Vector spaces](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/vecotor_space.jpg?raw=true)
+d1 & d2 distances canbe calculated with the euclidean distance based approach or cosine distance based approach. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NjA1MTg5MywtNzkwNzg5ODcxLDE0MD
-EzMzU1MjQsLTQxMjQ4ODgzMSw4MjQ0NDMxNzAsMTEyNzc3NDQ2
-OCwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxND
+AxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0
+NjgsLTE2OTY3OTIwOV19
 -->
