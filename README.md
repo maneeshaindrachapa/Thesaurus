@@ -23,6 +23,7 @@ Today, we can translate almost any language to another language by using google 
 As an example, if someone says, “I drink water” in English, there are several synonyms for the word “Water”. As an example, the technical term for water in Sinhala is “ජලය”, Sanskrit term is “වතුර” and buddhist term is “පැන්”. Each of these terms have to be used in appropriate situations. As an example, Sinhalese, use “වතුර බොනවා” not “ජලය බොනවා”. Here we have to find the most suitable Sinhala word in the given context. So when finding a suitable Sinhala word, we have to look for other words in the sentence as well.
 
 A thesaurus can be used to find synonyms. In general, a thesaurus is a reference work that group list of words according to their similarity of meaning. There are so many thesauri that are available online for the English language. But there is no such thing that exists for the Sinhala language. Therefore, the requirement of an intelligent tool to do this process for the Sinhala language in an automated way is essential for the Sri Lankan people.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTY3OTIwOV19
+eyJoaXN0b3J5IjpbLTIxMTQzNDQxODcsLTE2OTY3OTIwOV19
 -->
