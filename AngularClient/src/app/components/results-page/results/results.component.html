@@ -1,5 +1,6 @@
-  <div class="input-word-wrapper">
-    <h1 class="input-word"  align="center">{{ input_word }} <sub *ngIf="response_data" style="color: gray; font-size: 18px;">[{{ response_data?.response_data.posTag }}]</sub><i (click)="playAudio(input_word)" class="fas fa-volume-up text-to-speech" [ngClass]="{'audio-playing': isAudioPlaying}"  placement="bottom" ngbTooltip="Text-to-speech"></i>
+<div *ngIf="response_data?.response_code === 200 && !loading">
+<div class="input-word-wrapper">
+    <h1 class="input-word"  align="center">{{ response_data?.response_data.word }} <sub *ngIf="response_data" style="color: gray; font-size: 18px;">[{{ response_data?.response_data.posTag }}]</sub><i (click)="playAudio(input_word)" class="fas fa-volume-up text-to-speech" [ngClass]="{'audio-playing': isAudioPlaying}"  placement="bottom" ngbTooltip="Text-to-speech"></i>
     </h1>
   </div>
 
@@ -47,4 +48,12 @@
       </div>
     </div>
   </div>
+</div>
 
+<div class="input-word-wrapper not-found mt-lg-5" *ngIf="response_data?.response_code === 404 && !loading">
+  <h1 class="input-word display-1"  align="center">{{ input_word }}</h1>
+  <h5 class="text-center text-secondary" >{{"NO_DATA_FOR_THIS_WORD" | translate}}</h5>
+
+</div>
+
+<app-loader-animation class="mx-auto d-block mt-lg-5" *ngIf="loading" [word]="input_word" ></app-loader-animation>

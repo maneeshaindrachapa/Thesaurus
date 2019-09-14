@@ -88,4 +88,52 @@
   }
 }
 
+.not-found{
+  margin-bottom: 44vh;
+}
 
+app-loader-animation{
+  margin-bottom: 57vh!important;
+}
+
+.flag-icon{
+  border-radius: 50%;
+  font-size: 16px;
+  vertical-align: baseline;
+}
+
+.btn{
+  border-radius: 0;
+  background-color: white;
+  color: gray;
+  border: 0;
+  box-shadow: none;
+  vertical-align: top;
+}
+
+.btn:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.flag-wrapper{
+  display: inline-block;
+}
+
+.lang-active-green{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: greenyellow;
+  z-index: 9999;
+  border: solid white 2px;
+  margin: 0;
+  position: relative;
+  top: -11px;
+  left: 8px;
+  opacity: 0;
+}
+
+.lang-active{
+  opacity: 1;
+}

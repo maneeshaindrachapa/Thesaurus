@@ -21,11 +21,11 @@ def thesaurus():
     input_word = requestData['word']
     input_lang = requestData['language']
     if input_lang == "en":
-        response_body = english.getData(input_word)
-        return jsonify(formatter.responseFormat(response_body))
+        response_code, response_data = english.getData(input_word)
+        return jsonify(formatter.responseFormat(response_data, response_code))
     elif input_lang == "si":
-        response_body = sinhala.getData(input_word)
-        return jsonify(formatter.responseFormat(response_body))
+        response_data = sinhala.getData(input_word)
+        return jsonify(formatter.responseFormat(response_data))
     else:
         return jsonify(formatter.responseFormat("Not supported language", 405))
 
@@ -35,10 +35,10 @@ def lang_predict():
     request_data = request.get_json(force=True)
     input_word = request_data['word']
     lang = lang_identifier.predict_lang(input_word)
-    response_body = {
+    response_data = {
         "language": lang
     }
-    return jsonify(formatter.responseFormat(response_body))
+    return jsonify(formatter.responseFormat(response_data))
 
 
 @app.route('/readword')

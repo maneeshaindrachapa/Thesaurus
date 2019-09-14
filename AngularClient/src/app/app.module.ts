@@ -21,6 +21,8 @@ import {LanguagePredictService} from './services/language-predict.service';
 import {ServerConfig} from './services/serverConfig';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SpeechModule} from 'ngx-speech';
+import { LoaderAnimationComponent } from './components/results-page/loader-animation/loader-animation.component';
+import { LanguageSwitchComponent } from './components/utilities/language-switch/language-switch.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import {SpeechModule} from 'ngx-speech';
     ResultsPageComponent,
     NavBarComponent,
     ResultsComponent,
+    LoaderAnimationComponent,
+    LanguageSwitchComponent,
   ],
   imports: [
     BrowserModule,

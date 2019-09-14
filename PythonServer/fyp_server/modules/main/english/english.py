@@ -40,18 +40,20 @@ def getExampleSentences(response):
 def getData(input_word):
     # Api call
     response = requests.get(api_url + input_word, headers=header)
+    try:
+        # filter out data
+        pos_tag = getPosTag(response)
+        definition = getDefinition(response)
+        syn_set = getSynset(response)
+        example_sentences = getExampleSentences(response)
 
-    # filter out data
-    pos_tag = getPosTag(response)
-    definition = getDefinition(response)
-    syn_set = getSynset(response)
-    example_sentences = getExampleSentences(response)
+        # translate word
+        translated = translator.translate([input_word], 'en', 'si')[0]
 
-    # translate word
-    translated = translator.translate([input_word], 'en', 'si')[0]
+        # generate audio for tts
+        tts.audio_gen(input_word, 'en')
 
-    # generate audio for tts
-    tts.audio_gen(input_word, 'en')
-
-    # format data and return
-    return formatter.mainDataFormat(input_word, pos_tag, definition, syn_set, example_sentences, translated)
+        # format data and return
+        return 200, formatter.mainDataFormat(input_word, pos_tag, definition, syn_set, example_sentences, translated)
+    except TypeError:
+        return 404, "No thesaurus results"

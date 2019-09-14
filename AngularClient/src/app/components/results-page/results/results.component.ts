@@ -16,7 +16,7 @@ export class ResultsComponent implements OnInit {
   public input_lang;
   public response_data;
   public isAudioPlaying = false;
-
+  public loading = false;
   constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, public posTagService: PosTagService, private serverConfig: ServerConfig ) {
     this.route.queryParams.subscribe(params => {
       this.input_word = params.word;
@@ -29,13 +29,14 @@ export class ResultsComponent implements OnInit {
       this.getData();
     });
   }
-
   ngOnInit() {
   }
 
   getData() {
+    this.loading = true;
     this.thesaurusService.getThesaurusData(this.input_word, this.input_lang).subscribe((data) => {
-      this.response_data = data;
+        this.response_data = data;
+        this.loading = false;
     });
   }
 
