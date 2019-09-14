@@ -35,7 +35,7 @@
           <h5 class="card-title" align="center">{{'EXAMPLE_SENTENCE_FOR_WORD' | translate }}</h5>
           <hr/>
           <ol>
-          <li class="text-left" *ngFor="let sentence  of response_data?.response_data.exampleSentences;" [innerHTML]="heighlightWord(input_word,sentence )"></li>
+          <li class="text-left mb-2" *ngFor="let sentence  of response_data?.response_data.exampleSentences;" [innerHTML]="heighlightWord(input_word,sentence )"></li>
           </ol>
         </div>
       </div>
