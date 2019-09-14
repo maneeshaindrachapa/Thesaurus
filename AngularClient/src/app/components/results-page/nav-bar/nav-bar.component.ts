@@ -40,7 +40,7 @@ export class NavBarComponent implements OnInit {
 
   langIdentifier() {
     this.langPredictService.predict(this.input_word).subscribe((data) => {
-      this.input_lang = data['lang'];
+      this.input_lang = data['response_data']['language'];
     });
   }
 

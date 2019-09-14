@@ -16,6 +16,7 @@ export class ResultsComponent implements OnInit {
   public input_lang;
   public response_data;
   public isAudioPlaying = false;
+
   constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, public posTagService: PosTagService, private serverConfig: ServerConfig ) {
     this.route.queryParams.subscribe(params => {
       this.input_word = params.word;
@@ -50,5 +51,9 @@ export class ResultsComponent implements OnInit {
     audioObj.play().then(() => {
       this.isAudioPlaying = false;
     });
+  }
+
+  heighlightWord(word, sentence) {
+    return sentence.replace(word, '<b>' + word + '</b>');
   }
 }

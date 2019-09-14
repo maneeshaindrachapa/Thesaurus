@@ -54,4 +54,4 @@ def getData(input_word):
     tts.audio_gen(input_word, 'en')
 
     # format data and return
-    return formatter.formatData(input_word, pos_tag, definition, syn_set, example_sentences,translated)
+    return formatter.mainDataFormat(input_word, pos_tag, definition, syn_set, example_sentences, translated)

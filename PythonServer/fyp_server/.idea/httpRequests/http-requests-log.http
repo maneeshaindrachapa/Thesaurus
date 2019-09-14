@@ -1,0 +1,226 @@
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "කලුවා",
+  "lang": "si"
+}
+
+<> 2019-09-14T094725.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "කලුවා",
+  "lang": "si"
+}
+
+<> 2019-09-14T093317.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "කලුවා",
+  "lang": "si"
+}
+
+<> 2019-09-14T093311.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "කලුවා",
+  "lang": "si"
+}
+
+<> 2019-09-14T090408.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "බල්ලා",
+  "lang": "si"
+}
+
+<> 2019-09-14T090333.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "පූසා",
+  "lang": "si"
+}
+
+<> 2019-09-14T090253.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "බල්ලා",
+  "lang":"si"
+}
+
+<> 2019-09-14T090224.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "බල්ලා",
+  "lang":"si"
+}
+
+<> 2019-09-14T085818.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "dog",
+  "lang":"en"
+}
+
+<> 2019-09-14T085727.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "dog",
+  "lang":"en"
+}
+
+<> 2019-09-14T085411.500.html
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "බල්ලා",
+  "lang":"si"
+}
+
+<> 2019-09-14T085335.500.html
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "බල්ලා",
+  "lang":"si"
+}
+
+<> 2019-09-14T083723.500.html
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "dog",
+  "lang":"en"
+}
+
+<> 2019-09-14T083518.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+{
+  "word": "aa",
+  "lang":"abc"
+}
+
+<> 2019-09-14T083430.200.json
+
+###
+
+POST http://localhost:5000/thesaurus
+
+<> 2019-09-14T083301.400.html
+
+###
+
+GET http://localhost:5000/thesaurus
+
+<> 2019-09-14T082948.400.html
+
+###
+
+GET http://localhost:5000
+
+<> 2019-09-14T082942.200.html
+
+###
+
+POST http://localhost:5000
+
+<> 2019-09-14T082930.405.html
+
+###
+
+POST http://localhost:5000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-14T082907-1.405.html
+
+###
+
+POST http://localhost:5000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-14T082907.405.html
+
+###
+
+POST http://localhost:5000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-14T082906.405.html
+
+###
+
+POST http://localhost:5000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-14T082903.405.html
+
+###
+
+POST http://localhost:5000/thesaurus
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-14T082858.400.html
+
+###
+
+POST http://localhost:5000//thesaurus
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-14T082830.400.html
+
+###
+

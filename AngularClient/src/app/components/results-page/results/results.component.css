@@ -12,13 +12,14 @@
 }
 
 .right-panel{
-  height: 157px;
+  height: auto;
   margin: 10px 0 10px 10px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   text-transform: capitalize;
   overflow-y: scroll;
 }
+
 
 .full-height{
   min-height: 60vh;
