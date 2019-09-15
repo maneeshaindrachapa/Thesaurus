@@ -1,0 +1,56 @@
+<div class="container_">
+  <div class="input-word-wrapper">
+    <h1 class="input-word">{{ input_word }} <i (click)="playAudio(input_word)" class="fas fa-volume-up text-to-speech"
+        [ngClass]="{'audio-playing': isAudioPlaying}" placement="bottom" ngbTooltip="Text-to-speech"></i>
+    </h1>
+  </div>
+  <div class="row results m-0">
+    <div class="col-md-6 left-panel">
+      <div class="container full-height full-width">
+        <h4 class="card-title">{{'SYNONYMS_WITH_TRANSLATION' | translate }}</h4>
+        <hr />
+        <table class="table table-hover borderless text-center synonyms">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">{{'ENGLISH_WORD' | translate }}</th>
+              <th scope="col" class="text-center">{{'SINHALA_WORD' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let word  of response_data?.synonyms;let i = index">
+              <td (click)="search(word[0].replace('_',' '),'en')">{{ word[0].replace("_"," ") }} <span
+                  class="pos-tag"><i>(
+                    {{ word[1] }} )</i></span></td>
+              <td>{{ response_data?.translated[i] }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="container">
+        <div class="right-panel">
+          <div>
+            <h4 class="card-title">{{'DEFINITION_OF_WORD' | translate }}</h4>
+            <hr />
+            <p class="text-center">{{ response_data?.definition }}</p>
+          </div>
+        </div>
+        <div class="right-panel">
+          <div>
+            <h4 class="card-title">{{'EXAMPLE_SENTENCE_FOR_WORD' | translate }}</h4>
+            <hr />
+            <p class="text-center">{{ response_data?.examples }}</p>
+          </div>
+        </div>
+        <div class="right-panel ">
+          <div>
+            <h4 class="card-title">Part-of-speech Tag</h4>
+            <hr />
+            <p class="text-center" [innerHTML]="posTagService.getPosTagData(response_data?.synonyms[0][1])"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
