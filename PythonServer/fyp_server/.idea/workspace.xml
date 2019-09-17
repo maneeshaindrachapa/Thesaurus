@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf32d5c0-f7e0-4fbd-ad94-e3e5d47cdd7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../AngularClient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../AngularClient/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/lang_identifier/lang_identifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/lang_identifier/lang_identifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/main/english.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/main/english.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre_install.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pre_install.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WorkInProgress/Language  Identifier/Model_Evaluate .ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../WorkInProgress/Language  Identifier/Model_Evaluate .ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WorkInProgress/Dataset/Madura Crawled/dataset.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../WorkInProgress/Dataset/Madura Crawled/dataset.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WorkInProgress/Dataset/Sankshiptah Cleaned/synonyms.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../WorkInProgress/Dataset/Sankshiptah Cleaned/synonyms.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../WorkInProgress/Language  Identifier/Predictor.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../WorkInProgress/Language  Identifier/Predictor.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,6 +139,7 @@
       <workItem from="1565119069942" duration="4948000" />
       <workItem from="1565544977119" duration="7720000" />
       <workItem from="1565629919168" duration="555000" />
+      <workItem from="1567406951649" duration="319000" />
     </task>
     <servers />
   </component>
@@ -154,7 +151,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
