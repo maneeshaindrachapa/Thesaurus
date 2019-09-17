@@ -16,7 +16,8 @@ export class ResultsComponent implements OnInit {
   public input_lang;
   public response_data;
   public isAudioPlaying = false;
-  constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, private posTagService: PosTagService, private serverConfig: ServerConfig ) {
+  public loading = false;
+  constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, public posTagService: PosTagService, private serverConfig: ServerConfig ) {
     this.route.queryParams.subscribe(params => {
       this.input_word = params.word;
       this.input_lang = params.lang;
@@ -28,13 +29,14 @@ export class ResultsComponent implements OnInit {
       this.getData();
     });
   }
-
   ngOnInit() {
   }
 
   getData() {
+    this.loading = true;
     this.thesaurusService.getThesaurusData(this.input_word, this.input_lang).subscribe((data) => {
-      this.response_data = data;
+        this.response_data = data;
+        this.loading = false;
     });
   }
 
@@ -50,5 +52,9 @@ export class ResultsComponent implements OnInit {
     audioObj.play().then(() => {
       this.isAudioPlaying = false;
     });
+  }
+
+  heighlightWord(word, sentence) {
+    return sentence.replace(word, '<b>' + word + '</b>');
   }
 }

@@ -13,6 +13,6 @@ export class ThesaurusService {
   ) { }
 
   public getThesaurusData(input_word, lang) {
-    return this.http.post(this.serverConfig.base_url + '/thesaurus', {'word': input_word, 'lang': lang});
+    return this.http.post(this.serverConfig.base_url + '/thesaurus', {'word': input_word, 'language': lang});
   }
 }

@@ -12,5 +12,8 @@
   "DEFINITION_OF_WORD" : "වචනයේ අර්ථය",
   "EXAMPLE_SENTENCE_FOR_WORD" : "වචනයට උදාහරණ වාක්\u200Dයය",
   "EN": "ඉං",
-  "SI" : "සිං"
+  "SI" : "සිං",
+  "SEARCHING_DATA_FOR": "දත්ත සොයමින්",
+  "NO_DATA_FOR_THIS_WORD": "මෙම වචනය සඳහා දත්ත නොමැත"
+
 }

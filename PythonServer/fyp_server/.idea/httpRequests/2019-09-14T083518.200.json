@@ -1,0 +1,37 @@
+{
+  "audio": "http://127.0.0.1:5000/readword?word=dog",
+  "definition": "canine mammal",
+  "exampleSentences": [
+    "Eudora blushed deeply, and busily caressed the dog with her foot.",
+    "And oh, sir,” added Stephen, “may we crave a drop of water for our dog?",
+    "And throwing himself on the grass, he hid his face against the dog and sobbed.",
+    "In this he resembled a dog who barks when a stranger approaches.",
+    "When it is cold, the dog finds a spot in front of the stove.",
+    "The dog, lying by his side, seemed to look at me with sad, imploring eyes.",
+    "The following day he walked again, with Sally following like a dog at his heels.",
+    "The dog went in with him, and stood looking up into his face.",
+    "There was something about her eyes not unlike the dog's expression, submissive, but questioning.",
+    "Halfway to the trolley line, the dog turned off into a by-road."
+  ],
+  "pos": "noun",
+  "synonyms": [
+    "puppy",
+    "cur",
+    "stray",
+    "tyke",
+    "bitch",
+    "mutt",
+    "hound",
+    "mongrel",
+    "pup",
+    "doggy",
+    "pooch",
+    "bowwow",
+    "fido",
+    "flea bag",
+    "tail-wagger",
+    "man's best friend"
+  ],
+  "translated": "බල්ලා",
+  "word": "dog"
+}

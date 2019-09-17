@@ -58,6 +58,12 @@
     margin: 8px;
   }
 
+  .lang-switch{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 }
 
 .about:hover{
@@ -104,4 +110,8 @@
   100% {
     box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
   }
+}
+
+.lang-switch{
+  padding-top: 6px!important;
 }

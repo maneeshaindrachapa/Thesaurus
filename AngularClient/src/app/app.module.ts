@@ -21,6 +21,11 @@ import {LanguagePredictService} from './services/language-predict.service';
 import {ServerConfig} from './services/serverConfig';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SpeechModule} from 'ngx-speech';
+import { LoaderAnimationComponent } from './components/results-page/loader-animation/loader-animation.component';
+import { LanguageSwitchComponent } from './components/utilities/language-switch/language-switch.component';
+import { ResultPageUpdatedComponent } from './components/result-page-updated/result-page-updated.component';
+import { NavbarUpdatedComponent } from './components/result-page-updated/navbar-updated/navbar-updated.component';
+import { ResultsUpdatedComponent } from './components/result-page-updated/results-updated/results-updated.component';
 
 
 @NgModule({
@@ -32,6 +37,11 @@ import {SpeechModule} from 'ngx-speech';
     ResultsPageComponent,
     NavBarComponent,
     ResultsComponent,
+    LoaderAnimationComponent,
+    LanguageSwitchComponent,
+    ResultPageUpdatedComponent,
+    NavbarUpdatedComponent,
+    ResultsUpdatedComponent,
   ],
   imports: [
     BrowserModule,

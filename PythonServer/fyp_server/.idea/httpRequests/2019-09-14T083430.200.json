@@ -1,0 +1,13 @@
+{
+  "audio": "http://127.0.0.1:5000/readword?word=aa",
+  "definition": "Definition",
+  "exampleSentences": [
+    "example sentenses"
+  ],
+  "pos": "Pos tag",
+  "synonyms": [
+    "synset"
+  ],
+  "translated": "aa",
+  "word": "aa"
+}
