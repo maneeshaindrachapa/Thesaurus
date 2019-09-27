@@ -1,8 +1,7 @@
 <div *ngIf="response_data?.response_code === 200 && !loading">
   <div class="input-word-wrapper mt-2 mb-2">
     <h1 class="input-word display-4 text-center">{{ response_data?.response_data.word }} <sub *ngIf="response_data"
-                                                                                              style="color: gray; font-size: 18px;">[{{ response_data?.response_data.posTag }}
-      ]</sub><i (click)="playAudio(input_word)" class="fas fa-volume-up text-to-speech"
+                                                                                              style="color: gray; font-size: 18px;">[{{ response_data?.response_data.posTag }}]</sub><i (click)="playAudio(input_word)" class="fas fa-volume-up text-to-speech"
                 [ngClass]="{'audio-playing': isAudioPlaying}" placement="bottom"
                 ngbTooltip="{{ 'PRONUNCIATION' | translate }}"></i>
     </h1>
@@ -15,8 +14,9 @@
         <i>'{{ response_data?.response_data.word}}'</i></h5>
       <hr/>
       <ul class="mx-auto d-block syn-container" type="none">
-        <li *ngFor="let word  of response_data?.response_data.synonyms;"><span class="result-text"
-                                                                               [ngStyle]="{ 'background-color': 'rgba(255, 193, 7,'+ word.similarity+')' }">{{ word.term }}</span>
+        <li *ngFor="let word  of response_data?.response_data.synonyms;">
+          <span class="result-text" (click)="search(word.term,response_data?.response_data.language)"
+                                                                               [ngStyle]="{ 'background-color': 'rgba(255, 193, 7,'+ word.similarity+')' }">{{ word.term.replace("_"," ") }}</span>
         </li>
       </ul>
     </div>
@@ -40,8 +40,6 @@
       </ol>
     </div>
   </div>
-
-
 </div>
 
 <div class="input-word-wrapper not-found mt-lg-5" *ngIf="response_data?.response_code === 404 && !loading">

@@ -24,8 +24,8 @@ def thesaurus():
         response_code, response_data = english.getData(input_word)
         return jsonify(formatter.responseFormat(response_data, response_code))
     elif input_lang == "si":
-        response_data = sinhala.getData(input_word)
-        return jsonify(formatter.responseFormat(response_data))
+        response_code, response_data = sinhala.getData(input_word)
+        return jsonify(formatter.responseFormat(response_data,response_code))
     else:
         return jsonify(formatter.responseFormat("Not supported language", 405))
 

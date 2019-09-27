@@ -22,4 +22,4 @@ def get_sentences(word):
             if (length==6):
                 break
             output.append(s.strip())
-    return output
+    return list(dict.fromkeys(output))

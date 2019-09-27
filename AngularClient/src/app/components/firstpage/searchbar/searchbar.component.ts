@@ -59,4 +59,5 @@ export class SearchbarComponent implements OnInit {
       this.speech.stop();
     }
   }
+
 }

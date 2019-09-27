@@ -5,9 +5,14 @@ endPoints = {'Thesaurus': {"method": "POST",
                            "input": {'type': "JSON", 'format': {"word": "<word_here>", "language": "<lang_here>"}},
                            "output": {'type': "JSON",
                                       'format': {'response_code': "<code_here>",
-                                                 "response_data": {"word": "<word_here>", "posTag": "<tag_here>",
+                                                 "response_data": {"word": "<word_here>",
+                                                                   "language": "<lang_here>",
+                                                                   "posTag": "<tag_here>",
                                                                    "definition": "<definition_here>",
-                                                                   "synonyms": [{"term": 'syn_1', "similarity": '<val>'},{"term": 'syn_2', "similarity": '<val>'},{"term": 'syn_1', "similarity": '<val>'}],
+                                                                   "synonyms": [
+                                                                       {"term": 'syn_1', "similarity": '<val>'},
+                                                                       {"term": 'syn_2', "similarity": '<val>'},
+                                                                       {"term": 'syn_1', "similarity": '<val>'}],
                                                                    "exampleSentences": ['sentence_1', 'sentence_2',
                                                                                         'sentence_3'],
                                                                    "translated": "<translated_word>",
@@ -30,5 +35,5 @@ endPoints = {'Thesaurus': {"method": "POST",
 
 
 def generateDoc():
-    doc = {'Complete API End Points (Host: '+env_data.BASE_API_URL+")": endPoints}
+    doc = {'Complete API End Points (Host: ' + env_data.BASE_API_URL + ")": endPoints}
     return doc

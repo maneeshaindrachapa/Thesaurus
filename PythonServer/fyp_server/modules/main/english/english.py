@@ -56,6 +56,6 @@ def getData(input_word):
         tts.audio_gen(input_word, 'en')
 
         # format data and return
-        return 200, formatter.mainDataFormat(input_word, pos_tag, definition, syn_set, example_sentences, translated)
+        return 200, formatter.mainDataFormat(input_word,'en', pos_tag, definition, syn_set, example_sentences, translated)
     except TypeError:
         return 404, "No thesaurus results"

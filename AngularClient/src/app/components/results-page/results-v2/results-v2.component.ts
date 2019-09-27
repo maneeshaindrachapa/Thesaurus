@@ -57,6 +57,6 @@ export class ResultsV2Component implements OnInit {
   }
 
   heighlightWord(word, sentence) {
-    return sentence.replace(word, '<b>' + word + '</b>');
+    return sentence.toLowerCase().replace(word, '<b>' + word + '</b>');
   }
 }
