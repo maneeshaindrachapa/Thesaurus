@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ThesaurusService} from '../../../services/thesaurus.service';
-import {PosTagService} from '../../../services/pos-tag.service';
 import {ServerConfig} from '../../../services/serverConfig';
 
 
@@ -17,7 +16,7 @@ export class ResultsComponent implements OnInit {
   public response_data;
   public isAudioPlaying = false;
   public loading = false;
-  constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, public posTagService: PosTagService, private serverConfig: ServerConfig ) {
+  constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, private serverConfig: ServerConfig ) {
     this.route.queryParams.subscribe(params => {
       this.input_word = params.word;
       this.input_lang = params.lang;

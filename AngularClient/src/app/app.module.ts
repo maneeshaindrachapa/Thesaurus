@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchbarComponent } from './components/firstpage/searchbar/searchbar.component';
 import { FullfirstpageComponent } from './components/firstpage/fullfirstpage/fullfirstpage.component';
-import { FooterComponent } from './components/firstpage/footer/footer.component';
+import { FooterComponent } from './components/utilities/footer/footer.component';
 import { ResultsPageComponent } from './components/results-page/results-page.component';
 import { NavBarComponent } from './components/results-page/nav-bar/nav-bar.component';
 import { ResultsComponent } from './components/results-page/results/results.component';
@@ -14,7 +14,6 @@ import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {ThesaurusService} from './services/thesaurus.service';
-import {PosTagService} from './services/pos-tag.service';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import {LanguagePredictService} from './services/language-predict.service';
@@ -23,9 +22,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SpeechModule} from 'ngx-speech';
 import { LoaderAnimationComponent } from './components/results-page/loader-animation/loader-animation.component';
 import { LanguageSwitchComponent } from './components/utilities/language-switch/language-switch.component';
-import { ResultPageUpdatedComponent } from './components/result-page-updated/result-page-updated.component';
-import { NavbarUpdatedComponent } from './components/result-page-updated/navbar-updated/navbar-updated.component';
-import { ResultsUpdatedComponent } from './components/result-page-updated/results-updated/results-updated.component';
+import { ResultsV2Component } from './components/results-page/results-v2/results-v2.component';
 
 
 @NgModule({
@@ -39,9 +36,7 @@ import { ResultsUpdatedComponent } from './components/result-page-updated/result
     ResultsComponent,
     LoaderAnimationComponent,
     LanguageSwitchComponent,
-    ResultPageUpdatedComponent,
-    NavbarUpdatedComponent,
-    ResultsUpdatedComponent,
+    ResultsV2Component,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +55,7 @@ import { ResultsUpdatedComponent } from './components/result-page-updated/result
     SpeechModule
 
   ],
-  providers: [ThesaurusService, PosTagService, LanguagePredictService, ServerConfig, { provide: 'SPEECH_LANG', useValue: 'en-US' }],
+  providers: [ThesaurusService, LanguagePredictService, ServerConfig, { provide: 'SPEECH_LANG', useValue: 'en-US' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

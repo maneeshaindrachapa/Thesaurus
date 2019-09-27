@@ -1,6 +1,7 @@
 from modules.formatter import formatter
 import modules.tts.tts as tts
 import modules.translator.translator_v2 as translator
+import modules.main.sinhala.example_sentences.example_sentences as example_sentences
 
 # word pos tag identification
 def getPosTag(word):
@@ -14,12 +15,13 @@ def getDefinition(word):
 
 # get synset
 def getSynset(word):
-    return ["synset"]
+    return [{"term": "synonym", "similarity": 0.2},{"term": "synonym", "similarity": 0.5}]
 
 
 # get example sentences
 def getExampleSentences(word):
-    return ["example sentenses"]
+    sentences = example_sentences.get_sentences(word)
+    return sentences
 
 
 # main method for get data

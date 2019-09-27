@@ -6,13 +6,15 @@
   "TRANSLATION" : "Translation",
   "EXAMPLE_SENTENCES" : "Example sentences",
   "ABOUT" : "About",
-  "ENGLISH_WORD" : "English Word",
-  "SINHALA_WORD" : "Sinhala Word",
-  "SYNONYMS_WITH_TRANSLATION" : "Synonyms with Translation",
-  "DEFINITION_OF_WORD" : "Definition of Word",
-  "EXAMPLE_SENTENCE_FOR_WORD" : "Example Sentences for Word",
+  "HOME": "Home",
+  "SYNONYMS_FOR_WORD" : "Synonyms for word",
+  "DEFINITION_OF_WORD" : "Definition of word",
+  "EXAMPLE_SENTENCE_FOR_WORD" : "Example Sentences for word",
   "EN": "En",
   "SI" : "Si",
-  "SEARCHING_DATA_FOR": "Searching Data for",
-  "NO_DATA_FOR_THIS_WORD": "No data for this word"
+  "SEARCHING_DATA_FOR": "Searching data for",
+  "NO_DATA_FOR_THIS_WORD": "No data for this word",
+  "PRONUNCIATION": "Pronunciation",
+  "FOOTER_TEXT_1": "Team Thesaurus, Final Year Project (CSE 15), Department of Computer Science & Engineering, University of Moratuwa.",
+  "FOOTER_TEXT_2": "All Rights Reversed."
 }

@@ -2,6 +2,10 @@
   box-shadow: 0px 2px 2px lightgray;
 }
 
+.bg-light{
+  background-color: #ffc417 !important;
+}
+
 .navbar-brand{
   font-family: 'Kaushan Script', cursive;
   color: gray;
@@ -64,6 +68,10 @@
     right: 0;
   }
 
+}
+
+.about{
+  color:#FFF !important;
 }
 
 .about:hover{

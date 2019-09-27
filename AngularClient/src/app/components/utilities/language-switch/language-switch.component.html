@@ -1,4 +1,4 @@
-<div class="btn-group" role="group">
-  <button type="button" class="btn btn-sm" (click)="changeLang('si')"><div class="flag-wrapper"><i class="flag-icon flag-icon-lk flag-icon-squared"></i><div class="lang-active-green"  [ngClass]="{'lang-active': language==='si'}"></div></div> සිංහල</button>
-  <button type="button" class="btn btn-sm" (click)="changeLang('en')"><div class="flag-wrapper"><i class="flag-icon flag-icon-gb flag-icon-squared"></i><div class="lang-active-green" [ngClass]="{'lang-active': language==='en'}"></div></div> English</button>
+<div class="btn-group" role="group" >
+  <button type="button" [ngStyle]="{'color': textColor}" class="btn btn-sm" (click)="changeLang('si')"><div class="flag-wrapper"><i class="flag-icon flag-icon-lk flag-icon-squared"></i><div class="lang-active-green" [ngStyle]="{ 'border' : 'solid '+activeBorderColor+' 2px'}"  [ngClass]="{'lang-active': language==='si'}"></div></div> සිංහල</button>
+  <button type="button" [ngStyle]="{'color': textColor}" class="btn btn-sm" (click)="changeLang('en')"><div class="flag-wrapper"><i class="flag-icon flag-icon-gb flag-icon-squared"></i><div class="lang-active-green" [ngStyle]="{ 'border' : 'solid '+activeBorderColor+' 2px'}" [ngClass]="{'lang-active': language==='en'}"></div></div> English</button>
 </div>

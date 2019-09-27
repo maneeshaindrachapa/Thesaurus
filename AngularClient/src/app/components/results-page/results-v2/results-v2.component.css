@@ -1,0 +1,164 @@
+
+.results-container {
+  display: inline-block;
+}
+
+.gray-panel {
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+.left-panel {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.right-panel {
+  height: auto;
+  margin: 10px 0 10px 10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  text-transform: none;
+  overflow-y: scroll;
+}
+
+
+.full-height {
+  min-height: 58vh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.borderless td, .borderless th {
+  border: none;
+}
+
+.table tr:hover {
+  cursor: pointer;
+}
+
+.input-word-wrapper {
+  padding: 15px;
+}
+
+.input-word {
+  width: 100%;
+  margin: 0;
+  font-family: "Times New Roman";
+}
+
+.text-to-speech {
+  margin-left: 10px;
+  opacity: 0.4;
+  font-size: 20px;
+}
+
+.text-to-speech:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.audio-playing {
+  color: #ffc107;
+}
+
+.card-title {
+  margin: 15px;
+}
+
+.synonyms {
+  font-size: 18px;
+  text-transform: none;
+}
+
+.pos-tag {
+  color: gray;
+  font-size: 10px;
+}
+
+.synonyms tbody tr td:hover {
+  background-color: darkgray;
+}
+
+@media only screen and (max-width: 600px) {
+  .left-panel {
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+}
+
+.not-found {
+  margin-bottom: 44vh;
+}
+
+app-loader-animation {
+  margin-bottom: 53vh !important;
+}
+
+.flag-icon {
+  border-radius: 50%;
+  font-size: 16px;
+  vertical-align: baseline;
+}
+
+.btn {
+  border-radius: 0;
+  background-color: white;
+  color: gray;
+  border: 0;
+  box-shadow: none;
+  vertical-align: top;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.flag-wrapper {
+  display: inline-block;
+}
+
+.lang-active-green {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: greenyellow;
+  z-index: 9999;
+  border: solid white 2px;
+  margin: 0;
+  position: relative;
+  top: -11px;
+  left: 8px;
+  opacity: 0;
+}
+
+.lang-active {
+  opacity: 1;
+}
+
+.syn-container {
+  display: flex!important;
+  flex-direction: column!important;
+  flex-wrap: wrap!important;
+  height: 250px!important;
+}
+
+.syn-container li{
+  padding-bottom: 12px!important;
+}
+
+.syn-container li span{
+  padding: 6px;
+  vertical-align: middle;
+}
+
+.syn-container li span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.result-text{
+  font-size: 16px!important;
+}

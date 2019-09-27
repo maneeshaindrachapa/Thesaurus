@@ -23,8 +23,10 @@ def getDefinition(response):
 # filter out syn set from response
 def getSynset(response):
     syn_set = []
+
     for synonym in response.json()['data']['definitionData']['definitions'][0]['synonyms']:
-        syn_set.append(synonym["term"])
+        syn = {"term": synonym["term"], "similarity": (int(synonym["similarity"])/100.0)}
+        syn_set.append(syn)
     return syn_set
 
 

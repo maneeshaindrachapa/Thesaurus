@@ -6,14 +6,15 @@
   "TRANSLATION" : "පරිවර්ථනය",
   "EXAMPLE_SENTENCES" : "උදාහරණ වාක්\u200Dයය",
   "ABOUT" : "පිළිබඳව",
-  "ENGLISH_WORD" : "ඉංග්\u200Dරීසි වචනය",
-  "SINHALA_WORD" : "සිංහල වචනය",
-  "SYNONYMS_WITH_TRANSLATION" : "සමාන පද සමඟ පරිවර්ථනය",
+  "HOME": "මුල් පිටුව",
+  "SYNONYMS_FOR_WORD" : "වචනයට සමාන පද",
   "DEFINITION_OF_WORD" : "වචනයේ අර්ථය",
   "EXAMPLE_SENTENCE_FOR_WORD" : "වචනයට උදාහරණ වාක්\u200Dයය",
   "EN": "ඉං",
   "SI" : "සිං",
   "SEARCHING_DATA_FOR": "දත්ත සොයමින්",
-  "NO_DATA_FOR_THIS_WORD": "මෙම වචනය සඳහා දත්ත නොමැත"
-
+  "NO_DATA_FOR_THIS_WORD": "මෙම වචනය සඳහා දත්ත නොමැත",
+  "PRONUNCIATION": "උච්චාරණය",
+  "FOOTER_TEXT_1": "Team Thesaurus, අවසන් වසර ව්\u200Dයාපෘතිය (15 කණ්ඩායම), පරිගණක විද්\u200Dයා හා ඉංජිනේරු දෙපාර්තමේන්තුව, මොරටුව විශ්ව විද්\u200Dයාලය.",
+  "FOOTER_TEXT_2": "සියලුම හිමිකම් ඇවිරිණි."
 }

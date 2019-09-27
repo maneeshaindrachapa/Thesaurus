@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({
@@ -7,6 +7,13 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./language-switch.component.css']
 })
 export class LanguageSwitchComponent implements OnInit {
+
+  @Input()
+  private textColor;
+
+  @Input()
+  private activeBorderColor;
+
   public language = 'en';
 
   constructor(private translateService: TranslateService) {
