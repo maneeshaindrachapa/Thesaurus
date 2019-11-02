@@ -17,6 +17,7 @@ print('=========> Notation <=========')
 print('===> [o] - Success')
 print('===> [x] - Error')
 print('===> [i] - Ignored')
+print('===> [n] - Synset not found')
 print('==============================\n')
 
 #Get range for crawler
@@ -59,8 +60,12 @@ def html_to_frame(word):
 
 total_vector_count = 0
 new_vecs = ''
-if(end==-1):
+
+#check user input crawl end
+if(end==-1 or end>len(data)):
     end = len(data)
+
+print("\n=====> Crawling Starts <=====\n")
 for i in range(start,end):
     try:
         word_vector = data[i].split(" ", 1)
@@ -69,21 +74,22 @@ for i in range(start,end):
             continue
         si_words = html_to_frame(word_vector[0])
         si_words_count = len(si_words.columns)
-        print("["+str(i)+"][o] | Word: "+word_vector[0])
         if(si_words_count>1):
+            print("["+str(i)+"][o] | Word: "+word_vector[0])
             temp_vec = ''
             for i in list(dict.fromkeys(si_words.to_string(header=False,index=False).split())):
                 total_vector_count +=1 
                 temp_vec+= (i+" "+word_vector[1])      
             new_vecs+= temp_vec
         else:
+            print("["+str(i)+"][n] | Word: "+word_vector[0])
             continue
     except:
         print("["+str(i)+"][x] | Word: "+str(word_vector[0]))
         continue
 
 
-# In[16]:
+# In[ ]:
 
 
 #Write the vec file
