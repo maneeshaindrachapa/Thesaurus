@@ -1,0 +1,3 @@
+All : https://fasttext.cc/docs/en/crawl-vectors.html
+EN : https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.vec.gz
+SI : https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.si.300.vec.gz
