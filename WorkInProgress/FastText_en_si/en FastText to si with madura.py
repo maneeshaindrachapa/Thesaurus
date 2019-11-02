@@ -54,7 +54,7 @@ def html_to_frame(word):
         return dfs
 
 
-# In[4]:
+# In[ ]:
 
 
 total_vector_count = 0
@@ -67,9 +67,9 @@ for i in range(start,end):
         if(not word_vector[0].isalpha()):
             print("["+str(i)+"][i] | Word: "+word_vector[0])
             continue
-        print("["+str(i)+"][o] | Word: "+word_vector[0])
         si_words = html_to_frame(word_vector[0])
         si_words_count = len(si_words.columns)
+        print("["+str(i)+"][o] | Word: "+word_vector[0])
         if(si_words_count>1):
             temp_vec = ''
             for i in list(dict.fromkeys(si_words.to_string(header=False,index=False).split())):
