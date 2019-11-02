@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 import pandas as pd 
@@ -10,7 +10,7 @@ import openpyxl
 import numpy as np
 
 
-# In[ ]:
+# In[2]:
 
 
 print('=========> Notation <=========')
@@ -20,7 +20,7 @@ print('===> [i] - Ignored')
 print('==============================\n')
 
 #Get range for crawler
-print("Crwling word range add here (int vals)")
+print("Crwling word range add here (int vals) [end = -1 means till end of data]")
 start = int(input("Start of range:"))
 end = int(input("End of range:"))
 
@@ -54,11 +54,13 @@ def html_to_frame(word):
         return dfs
 
 
-# In[16]:
+# In[4]:
 
 
 total_vector_count = 0
 new_vecs = ''
+if(end==-1):
+    end = len(data)
 for i in range(start,end):
     try:
         word_vector = data[i].split(" ", 1)
@@ -81,12 +83,21 @@ for i in range(start,end):
         continue
 
 
-# In[17]:
+# In[16]:
 
 
+#Write the vec file
 to_write = str(total_vector_count)+" "+data[0].split()[1]+'\n'+new_vecs
 writer = open("Output/tr.cc.si.300_"+str(start)+"_"+str(end)+".vec", "w", encoding="utf-8")
 writer.write(to_write)
+writer.close()
+
+#Write new models to combine script
+f=open("Output/new_models.txt", "a+")
+f.write("tr.cc.si.300_"+str(start)+"_"+str(end)+".vec\n")
+f.close()
+
+#final
 print("====> Done <====")
 print("[o] Total new vectors:",total_vector_count)
 print("[o] Vecors saved to 'tr.cc.si.300_"+str(start)+"_"+str(end)+".vec' file successfully.")
