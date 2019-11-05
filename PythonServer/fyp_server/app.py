@@ -21,11 +21,11 @@ def thesaurus():
     input_word = requestData['word']
     input_lang = requestData['language']
     if input_lang == "en":
-        response_code, response_data = english.getData(input_word)
+        response_code, response_data = english.getData(input_word.replace('_', ' '))
         return jsonify(formatter.responseFormat(response_data, response_code))
     elif input_lang == "si":
         response_code, response_data = sinhala.getData(input_word)
-        return jsonify(formatter.responseFormat(response_data,response_code))
+        return jsonify(formatter.responseFormat(response_data, response_code))
     else:
         return jsonify(formatter.responseFormat("Not supported language", 405))
 
@@ -46,7 +46,6 @@ def data():
     word = request.args.get('word')
     response = send_from_directory('modules/tts/audio_db', word + '.mp3')
     return response
-
 
 
 if __name__ == '__main__':

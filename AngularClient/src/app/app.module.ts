@@ -23,6 +23,7 @@ import {SpeechModule} from 'ngx-speech';
 import { LoaderAnimationComponent } from './components/results-page/loader-animation/loader-animation.component';
 import { LanguageSwitchComponent } from './components/utilities/language-switch/language-switch.component';
 import { ResultsV2Component } from './components/results-page/results-v2/results-v2.component';
+import { RemoveUnderscorePipe } from './pipes/remove-underscore.pipe';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ResultsV2Component } from './components/results-page/results-v2/results
     LoaderAnimationComponent,
     LanguageSwitchComponent,
     ResultsV2Component,
+    RemoveUnderscorePipe,
   ],
   imports: [
     BrowserModule,

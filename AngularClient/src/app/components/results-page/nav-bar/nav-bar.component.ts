@@ -32,10 +32,10 @@ export class NavBarComponent implements OnInit {
   }
 
   search() {
-    console.log('Search called!');
-    this.router.navigate(['/results'], { queryParams: { word: this.input_word, lang: this.input_lang } });
-    this.thesaurusService.search_event.emit([this.input_word, this.input_lang]);
-
+    if (this.input_word.trim()) {
+      this.router.navigate(['/results'], {queryParams: {word: this.input_word, lang: this.input_lang}});
+      this.thesaurusService.search_event.emit([this.input_word, this.input_lang]);
+    }
   }
 
   langIdentifier() {

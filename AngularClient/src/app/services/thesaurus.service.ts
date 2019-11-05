@@ -13,6 +13,21 @@ export class ThesaurusService {
   ) { }
 
   public getThesaurusData(input_word, lang) {
-    return this.http.post(this.serverConfig.base_url + '/thesaurus', {'word': input_word, 'language': lang});
+      return this.http.post(this.serverConfig.base_url + '/thesaurus', {'word': this.whiteSpaceToUnderscore(input_word), 'language': lang});
   }
+
+  public whiteSpaceToUnderscore(word) {
+    for (let i = 0; i < word.split(' ').length; i++) {
+      word = word.replace(' ', '_');
+    }
+    return word;
+  }
+
+  public underscoreToWhiteSpace(word) {
+    for (let i = 0; i < word.split('_').length; i++) {
+      word = word.replace('_', ' ');
+    }
+    return word;
+  }
+
 }

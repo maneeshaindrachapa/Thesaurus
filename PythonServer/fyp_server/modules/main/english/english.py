@@ -15,7 +15,7 @@ def getPosTag(response):
     return response.json()['data']['definitionData']['definitions'][0]['pos']
 
 
-# filter out definition from response
+# filter out definitions from response
 def getDefinition(response):
     return response.json()['data']['definitionData']['definitions'][0]['definition']
 

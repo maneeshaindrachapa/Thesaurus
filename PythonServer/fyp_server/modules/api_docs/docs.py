@@ -8,7 +8,7 @@ endPoints = {'Thesaurus': {"method": "POST",
                                                  "response_data": {"word": "<word_here>",
                                                                    "language": "<lang_here>",
                                                                    "posTag": "<tag_here>",
-                                                                   "definition": "<definition_here>",
+                                                                   "definitions": "<definition_here>",
                                                                    "synonyms": [
                                                                        {"term": 'syn_1', "similarity": '<val>'},
                                                                        {"term": 'syn_2', "similarity": '<val>'},

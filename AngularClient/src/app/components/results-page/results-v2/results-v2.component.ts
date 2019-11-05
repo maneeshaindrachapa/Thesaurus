@@ -43,6 +43,7 @@ export class ResultsV2Component implements OnInit {
   }
 
   search(input_word, lang) {
+    input_word = this.thesaurusService.underscoreToWhiteSpace(input_word);
     this.thesaurusService.search_event.emit([input_word, lang]);
   }
 
@@ -57,6 +58,9 @@ export class ResultsV2Component implements OnInit {
   }
 
   heighlightWord(word, sentence) {
-    return sentence.toLowerCase().replace(word, '<b>' + word + '</b>');
+    for (let i = 0; i < word.split(word).length; i++) {
+      sentence = sentence.toLowerCase().replace(word, '<b>' + word + '</b>');
+    }
+    return sentence;
   }
 }

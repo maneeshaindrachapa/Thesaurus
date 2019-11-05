@@ -25,3 +25,7 @@ add old google trans lib
 tts.py
 =================
 pip install gtts
+
+definitions
+===========
+pip install xlrd

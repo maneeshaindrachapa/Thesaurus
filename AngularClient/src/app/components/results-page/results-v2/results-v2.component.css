@@ -162,3 +162,11 @@ app-loader-animation {
 .result-text{
   font-size: 16px!important;
 }
+
+.syn-result-text{
+  font-size: 18px!important;
+}
+
+.result-similarity:hover{
+  text-decoration: none!important;
+}

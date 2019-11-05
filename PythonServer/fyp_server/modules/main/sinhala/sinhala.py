@@ -3,16 +3,17 @@ import modules.tts.tts as tts
 import modules.translator.translator_v2 as translator
 import modules.main.sinhala.example_sentences.example_sentences as example_sentences
 import modules.main.sinhala.synonyms.synonyms as synonyms
-
+import modules.main.sinhala.definitions.definitions as definitions
 
 # word pos tag identification
 def getPosTag(word):
     return "Pos tag"
 
 
-# get word definition
+# get word definitions
 def getDefinition(word):
-    return "Definition"
+    print(definitions.definition(word))
+    return definitions.definition(word)
 
 
 # get synset
@@ -39,7 +40,7 @@ def getData(input_word):
         translated = translator.translate([input_word], 'si', 'en')[0]
 
         # generate audio with tts
-        tts.audio_gen(input_word, 'si')
+        tts.audio_gen(input_word.replace('_', ' '), 'si')
 
         # format data and return
         return 200, formatter.mainDataFormat(input_word, 'si', pos_tag, definition, syn_set, example_sentences, translated)

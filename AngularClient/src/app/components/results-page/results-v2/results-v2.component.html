@@ -1,6 +1,6 @@
 <div *ngIf="response_data?.response_code === 200 && !loading">
   <div class="input-word-wrapper mt-2 mb-2">
-    <h1 class="input-word display-4 text-center">{{ response_data?.response_data.word }} <sub *ngIf="response_data"
+    <h1 class="input-word display-4 text-center">{{ response_data?.response_data.word | removeUnderscore }} <sub *ngIf="response_data"
                                                                                               style="color: gray; font-size: 18px;">[{{ response_data?.response_data.posTag }}]</sub><i (click)="playAudio(input_word)" class="fas fa-volume-up text-to-speech"
                 [ngClass]="{'audio-playing': isAudioPlaying}" placement="bottom"
                 ngbTooltip="{{ 'PRONUNCIATION' | translate }}"></i>
@@ -11,12 +11,13 @@
     <!-- Synset is here -->
     <div class="col-md-8 mx-auto d-block">
       <h5 class="card-title" align="center">{{'SYNONYMS_FOR_WORD' | translate }}
-        <i>'{{ response_data?.response_data.word}}'</i></h5>
+        <i>'{{ response_data?.response_data.word | removeUnderscore}}'</i></h5>
       <hr/>
       <ul class="mx-auto d-block syn-container" type="none">
         <li *ngFor="let word  of response_data?.response_data.synonyms;">
-          <span class="result-text" (click)="search(word.term,response_data?.response_data.language)"
-                                                                               [ngStyle]="{ 'background-color': 'rgba(255, 193, 7,'+ word.similarity+')' }">{{ word.term.replace("_"," ") }}</span>
+          <span class="syn-result-text" (click)="search(word.term,response_data?.response_data.language)">
+            <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,'+ word.similarity+')' }"></i>
+            {{ word.term | removeUnderscore }}</span>
         </li>
       </ul>
     </div>
@@ -24,20 +25,22 @@
     <!-- Definition is here -->
     <div class="col-md-8 mx-auto d-block">
       <h5 class="card-title" align="center">{{'DEFINITION_OF_WORD' | translate }}
-        <i>'{{ response_data?.response_data.word }}'</i></h5>
+        <i>'{{ response_data?.response_data.word | removeUnderscore }}'</i></h5>
       <hr/>
-      <p class="text-center result-text">{{ response_data?.response_data.definition }}</p>
+      <p class="text-center result-text" *ngIf="response_data?.response_data.definitions">{{ response_data?.response_data.definitions }}</p>
+      <p class="text-center result-text" *ngIf="!response_data?.response_data.definitions">{{"NO_DEFINITION_DATA_FOR_THIS_WORD" | translate}}</p>
     </div>
 
     <!-- Example sentences is here -->
     <div class="col-md-8 mx-auto d-block mb-2">
       <h5 class="card-title" align="center">{{'EXAMPLE_SENTENCE_FOR_WORD' | translate }}
-        <i>'{{ response_data?.response_data.word }}'</i></h5>
+        <i>'{{ response_data?.response_data.word | removeUnderscore }}'</i></h5>
       <hr/>
-      <ol>
+      <ol *ngIf="response_data?.response_data.exampleSentences.length">
         <li class="text-left mb-2 result-text" *ngFor="let sentence  of response_data?.response_data.exampleSentences;"
             [innerHTML]="heighlightWord(input_word,sentence )"></li>
       </ol>
+      <p class="text-center result-text" *ngIf="!response_data?.response_data.exampleSentences.length">{{"NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD" | translate}}</p>
     </div>
   </div>
 </div>
