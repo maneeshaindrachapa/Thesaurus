@@ -4,6 +4,7 @@ import modules.translator.translator_v2 as translator
 import modules.main.sinhala.example_sentences.example_sentences as example_sentences
 import modules.main.sinhala.synonyms.synonyms as synonyms
 import modules.main.sinhala.definitions.definitions as definitions
+import modules.display_error.display_error as display_error
 
 # word pos tag identification
 def getPosTag(word):
@@ -45,6 +46,8 @@ def getData(input_word):
         # format data and return
         return 200, formatter.mainDataFormat(input_word, 'si', pos_tag, definition, syn_set, example_sentences, translated)
     except TypeError:
+        display_error.print_error(404, "No thesaurus results")
         return 404, "No thesaurus results"
     except KeyError:
+        display_error.print_error(404, "No thesaurus results")
         return 404, "No thesaurus results"

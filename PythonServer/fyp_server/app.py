@@ -4,6 +4,7 @@ import modules.main.sinhala.sinhala as sinhala
 import modules.formatter.formatter as formatter
 import modules.api_docs.docs as apidocs
 import modules.lang_identifier.lang_identifier as lang_identifier
+import modules.display_error.display_error as display_error
 from flask_cors import CORS
 
 app = Flask(__name__, static_url_path='')
@@ -27,6 +28,7 @@ def thesaurus():
         response_code, response_data = sinhala.getData(input_word)
         return jsonify(formatter.responseFormat(response_data, response_code))
     else:
+        display_error.print_error(405, "Not supported language")
         return jsonify(formatter.responseFormat("Not supported language", 405))
 
 

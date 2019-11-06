@@ -5,6 +5,7 @@ from keras.layers import Dense
 from modules.lang_identifier.config import max_letters, language_tags
 import numpy as np
 from unidecode import unidecode
+import modules.display_error.display_error as display_error
 stderr = sys.stderr
 sys.stderr = open(os.devnull, 'w')
 sys.stderr = stderr
@@ -56,6 +57,7 @@ def predict_lang(word):
             scores.append(prediction_vct[0][i])
         return 200, langs[scores.index(max(scores))]
     except IndexError:
+        display_error.print_error(500, 'Word length exceed')
         return 500, 'Word length exceed'
 
 predict_lang("dog")
