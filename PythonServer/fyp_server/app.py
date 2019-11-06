@@ -34,11 +34,11 @@ def thesaurus():
 def lang_predict():
     request_data = request.get_json(force=True)
     input_word = request_data['word']
-    lang = lang_identifier.predict_lang(input_word)
+    response_code, lang = lang_identifier.predict_lang(input_word)
     response_data = {
         "language": lang
     }
-    return jsonify(formatter.responseFormat(response_data))
+    return jsonify(formatter.responseFormat(response_data, response_code))
 
 
 @app.route('/readword')

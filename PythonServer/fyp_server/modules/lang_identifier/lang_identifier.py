@@ -37,23 +37,26 @@ network.load_weights('modules/lang_identifier/weights.hdf5')
 network.compile(loss='binary_crossentropy', optimizer='sgd', metrics=['accuracy'])
 
 def predict_lang(word):
-    dic = []
-    if len(word) <= max_letters:
-        word = word.lower()
-        word = unidecode(word)
-    dic.append(word)
-    vct_str = convert_word_to_vector(dic, max_letters)
-    vct = np.zeros((1, 26 * max_letters))
-    count = 0
-    for digit in vct_str[0]:
-        vct[0, count] = int(digit)
-        count += 1
-    prediction_vct = network.predict(vct)
-    langs = list(language_tags.keys())
-    scores = []
-    for i in range(len(language_tags)):
-        scores.append(prediction_vct[0][i])
-    return langs[scores.index(max(scores))]
+    try:
+        dic = []
+        if len(word) <= max_letters:
+            word = word.lower()
+            word = unidecode(word)
+        dic.append(word)
+        vct_str = convert_word_to_vector(dic, max_letters)
+        vct = np.zeros((1, 26 * max_letters))
+        count = 0
+        for digit in vct_str[0]:
+            vct[0, count] = int(digit)
+            count += 1
+        prediction_vct = network.predict(vct)
+        langs = list(language_tags.keys())
+        scores = []
+        for i in range(len(language_tags)):
+            scores.append(prediction_vct[0][i])
+        return 200, langs[scores.index(max(scores))]
+    except IndexError:
+        return 500, 'Word length exceed'
 
 predict_lang("dog")
 
