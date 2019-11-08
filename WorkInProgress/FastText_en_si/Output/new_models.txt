@@ -1,4 +1,2 @@
-tr.cc.si.300_100_200.vec
-tr.cc.si.300_100_200.vec
-tr.cc.si.300_100_200.vec
-tr.cc.si.300_500000_501000.vec
+tr.cc.si.300.vec
+tr.cc.si.300_150000_200000.vec
