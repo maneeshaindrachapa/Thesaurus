@@ -1,0 +1,7 @@
+{
+  "name": "Thesaurus",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
