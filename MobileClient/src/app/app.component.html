@@ -1,3 +1,24 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay" side="end">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Thesaurus</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let item of menuItems">
+            <ion-item [routerDirection]="'root'" [routerLink]="[item?.url]">
+              <ion-icon slot="start" [name]="item.icon"></ion-icon>
+              <ion-label>
+                {{item.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

@@ -37,6 +37,9 @@
               },
               {
                 "input": "src/global.scss"
+              },
+              {
+                "input":  "node_modules/flag-icon-css/css/flag-icon.min.css"
               }
             ],
             "scripts": []

@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import {MainSearchBarComponent} from './main-search-bar/main-search-bar.component';
+import {TranslateModule} from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -16,8 +18,9 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    TranslateModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, MainSearchBarComponent]
 })
 export class HomePageModule {}
