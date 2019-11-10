@@ -8,12 +8,24 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let item of menuItems">
-            <ion-item [routerDirection]="'root'" [routerLink]="[item?.url]">
-              <ion-icon slot="start" [name]="item.icon"></ion-icon>
+          <ion-menu-toggle auto-hide="false" >
+            <ion-item [routerDirection]="'root'" [routerLink]="'about'">
+              <ion-icon slot="start" name='information-circle'></ion-icon>
               <ion-label>
-                {{item.title}}
+                About
               </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" >
+            <ion-item>
+              <ion-icon slot="start" name='globe'></ion-icon>
+              <ion-label>Language</ion-label>
+              <ion-select style="color: white;" [(ngModel)]="appLang" (ngModelChange)="changeLang()">
+                <ion-select-option value="en">English</ion-select-option>
+                <ion-select-option value="si">සිංහල</ion-select-option>
+              </ion-select>
+              <i class="flag-icon flag-icon-lk flag-icon-squared" slot="end" *ngIf="appLang=='si'"></i>
+              <i class="flag-icon flag-icon-gb flag-icon-squared" slot="end" *ngIf="appLang=='en'"></i>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>

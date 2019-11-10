@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import {MainSearchBarComponent} from './main-search-bar/main-search-bar.component';
 import {TranslateModule} from '@ngx-translate/core';
+import {FooterComponent} from '../../components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -19,8 +20,8 @@ import {TranslateModule} from '@ngx-translate/core';
         component: HomePage
       }
     ]),
-    TranslateModule
+    TranslateModule,
   ],
-  declarations: [HomePage, MainSearchBarComponent]
+  declarations: [HomePage, MainSearchBarComponent, FooterComponent]
 })
 export class HomePageModule {}

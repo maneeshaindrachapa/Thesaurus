@@ -12,6 +12,9 @@ import { AppRoutingModule } from './app-routing.module';
 import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {FormsModule} from '@angular/forms';
+import {FooterComponent} from './components/footer/footer.component';
+import {ServerConfig} from './services/serverConfig';
 
 
 @NgModule({
@@ -22,6 +25,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -33,7 +37,10 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
+    ServerConfig
+  ],
+  exports: [
   ],
   bootstrap: [AppComponent]
 })

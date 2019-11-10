@@ -40,6 +40,9 @@
               },
               {
                 "input":  "node_modules/flag-icon-css/css/flag-icon.min.css"
+              },
+              {
+                "input":  "node_modules/bootstrap/dist/css/bootstrap.min.css"
               }
             ],
             "scripts": []

@@ -1,10 +1,10 @@
 {
-  "INPUT_PLACE_HOLDER" : "Enter your word...",
+  "INPUT_PLACE_HOLDER" : "Enter word",
   "LISTENING" : "Listening...",
   "SYNONYMS" : "Synonyms",
   "DEFINITION" : "Definition",
   "TRANSLATION" : "Translation",
-  "EXAMPLE_SENTENCES" : "Example sentences",
+  "EXAMPLES" : "Examples",
   "ABOUT" : "About",
   "HOME": "Home",
   "SYNONYMS_FOR_WORD" : "Synonyms for word",
@@ -12,11 +12,13 @@
   "EXAMPLE_SENTENCE_FOR_WORD" : "Example Sentences for word",
   "EN": "En",
   "SI" : "Si",
+  "ENGLISH": "English",
+  "SINHALA" : "Sinhala",
   "SEARCHING_DATA_FOR": "Searching data for",
   "NO_DATA_FOR_THIS_WORD": "No data for this word",
   "NO_DEFINITION_DATA_FOR_THIS_WORD": "No definition data for this word",
   "NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD": "No example sentence data for this word",
   "PRONUNCIATION": "Pronunciation",
-  "FOOTER_TEXT_1": "Team Thesaurus, Final Year Project (CSE 15), Department of Computer Science & Engineering, University of Moratuwa.",
+  "FOOTER_TEXT_1": "Team Thesaurus<br/>Final Year Project (CSE 15)<br>Department of Computer Science & Engineering<br>University of Moratuwa",
   "FOOTER_TEXT_2": "All Rights Reversed."
 }

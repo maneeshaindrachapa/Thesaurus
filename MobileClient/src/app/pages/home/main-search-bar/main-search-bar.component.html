@@ -1,1 +1,128 @@
-{{'EXAMPLE_SENTENCE_FOR_WORD' | translate }}
+<!--Search bar-->
+<div class="container pb-1">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-12 pt-3">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" [(ngModel)]="input_word"  (keyup)="langIdentifier()" placeholder="{{ 'INPUT_PLACE_HOLDER' | translate }}"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg p-1" type="button" (click)="test()">
+                          <i class="fas fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+</div>
+    </div>
+</div>
+
+<!--Language Selector-->
+<div class="row pb-1">
+<div class="mx-auto d-block">
+<ion-chip name="pin" color="{{ input_lang=='en'? 'primary' :''}}" (click)="changeLang('en')">
+    <ion-icon name="checkmark-circle" *ngIf="input_lang=='en'"></ion-icon>
+    <ion-label>{{'ENGLISH' | translate }}</ion-label>
+</ion-chip>
+<ion-chip color="{{ input_lang=='si'? 'primary' :''}}" (click)="changeLang('si')">
+    <ion-icon name="checkmark-circle" *ngIf="input_lang=='si'"></ion-icon>
+    <ion-label>{{'SINHALA' | translate }}</ion-label>
+</ion-chip>
+</div>
+</div>
+
+<div class="scroll-area suggesions">
+    <ion-list class="p-0">
+        <ion-item class="ion-activatable">
+            <ion-label>Pokémon Yellow</ion-label>
+            <ion-ripple-effect ></ion-ripple-effect>
+        </ion-item>
+        <ion-item class="ion-activatable">
+            <ion-label>Pokémon Yellow</ion-label>
+            <ion-ripple-effect ></ion-ripple-effect>
+        </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item>
+        <ion-item class="ion-activatable">
+            <ion-label>Pokémon Yellow</ion-label>
+            <ion-ripple-effect ></ion-ripple-effect>
+        </ion-item>
+        <ion-item class="ion-activatable">
+            <ion-label>Pokémon Yellow</ion-label>
+            <ion-ripple-effect ></ion-ripple-effect>
+        </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item>
+        <ion-item class="ion-activatable">
+            <ion-label>Pokémon Yellow</ion-label>
+            <ion-ripple-effect ></ion-ripple-effect>
+        </ion-item>
+        <ion-item class="ion-activatable">
+            <ion-label>Pokémon Yellow</ion-label>
+            <ion-ripple-effect ></ion-ripple-effect>
+        </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item>
+        <ion-item class="ion-activatable">
+            <ion-label>Pokémon Yellow</ion-label>
+            <ion-ripple-effect ></ion-ripple-effect>
+        </ion-item>
+        <ion-item class="ion-activatable">
+            <ion-label>Pokémon Yellow</ion-label>
+            <ion-ripple-effect ></ion-ripple-effect>
+        </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item> <ion-item class="ion-activatable">
+        <ion-label>Pokémon Yellow</ion-label>
+        <ion-ripple-effect ></ion-ripple-effect>
+    </ion-item>
+    </ion-list>
+</div>

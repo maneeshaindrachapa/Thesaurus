@@ -1,14 +1,32 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-buttons slot="end">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
     <ion-title>
       Thesaurus
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
+  <img src="../../../assets/img/main_logo.png" class="white-logo mx-auto d-block mb-2 pl-5 pr-5 pt-1 mb-0">
+  <div class="d-flex justify-content-center flex-row features pl-4 pr-4 fearute-texts pb-3">
+    <div class="p-1 flex-fill text-center">
+      {{'SYNONYMS' | translate }}
+    </div>
+    <div class="p-1 flex-fill text-center">
+      {{'DEFINITION' | translate }}
+    </div>
+    <div class="p-1 flex-fill text-center">
+      {{'TRANSLATION' | translate }}
+    </div>
+    <div class="p-1 flex-fill text-center">
+      {{'EXAMPLES' | translate }}
+    </div>
+    <div class="p-1 flex-fill text-center">
+      POS
+    </div>
+  </div>
 </ion-header>
 
-<ion-content class="ion-padding">
-   <app-main-search-bar></app-main-search-bar>
+<ion-content >
+  <app-main-search-bar></app-main-search-bar>
 </ion-content>
