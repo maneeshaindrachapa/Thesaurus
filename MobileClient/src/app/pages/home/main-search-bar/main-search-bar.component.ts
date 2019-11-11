@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LanguageIdentifierService} from '../../../services/language-identifier.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-main-search-bar',
@@ -13,7 +14,7 @@ export class MainSearchBarComponent implements OnInit {
   // tslint:disable-next-line:variable-name
   private input_lang = 'en';
 
-  constructor(private languageItentifier: LanguageIdentifierService) { }
+  constructor(private languageItentifier: LanguageIdentifierService, private router: Router) { }
 
   ngOnInit() {}
 
@@ -22,7 +23,7 @@ export class MainSearchBarComponent implements OnInit {
   }
 
   search() {
-  console.log('Search called');
+    this.router.navigate(['/results']);
   }
 
   langIdentifier() {

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="Search"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Thesaurus
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <h2 class="text-center pb-3 pt-1">Dog
+    <sub class="pos-tag">[Noun]</sub>
+    <i class="fas fa-volume-up text-to-speech" [ngClass]="{'audio-playing': true}" placement="bottom"></i>
+  </h2>
+</ion-header>
+<ion-content>
+  <ion-segment (ionChange)="contentChange($event)" class="mb-1" mode="ios" >
+    <ion-segment-button value="synonyms" [ngClass]="{ 'segment-button-checked': segment=='synonyms' }">
+      <ion-label>{{ "SYNONYMS" | translate }}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="definition" [ngClass]="{ 'segment-button-checked': segment=='definition' }">
+      <ion-label>{{ "DEFINITION" | translate }}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="examples" [ngClass]="{ 'segment-button-checked': segment=='examples' }">
+      <ion-label>{{ "EXAMPLES" | translate }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <app-synonyms *ngIf="segment=='synonyms'"></app-synonyms>
+  <app-definition *ngIf="segment=='definition'"></app-definition>
+  <app-examples *ngIf="segment=='examples'"></app-examples>
+</ion-content>
