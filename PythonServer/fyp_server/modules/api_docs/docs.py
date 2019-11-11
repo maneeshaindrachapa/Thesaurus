@@ -30,6 +30,9 @@ endPoints = {'Thesaurus': {"method": "POST",
                                                                            }
                                                                            }
                                                 }
+                                     },
+'Read word': {"method": "get",
+                                     "url": env_data.BASE_API_URL + '/readword?word=<your_word>&lang=<language>',
                                      }
              }
 
