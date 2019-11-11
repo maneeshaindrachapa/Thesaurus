@@ -5,8 +5,6 @@ import modules.formatter.formatter as formatter
 import modules.api_docs.docs as apidocs
 import modules.lang_identifier.lang_identifier as lang_identifier
 import modules.display_error.display_error as display_error
-import modules.tts.tts as tts
-import os.path
 from flask_cors import CORS
 
 app = Flask(__name__, static_url_path='')
@@ -48,11 +46,6 @@ def lang_predict():
 @app.route('/readword')
 def data():
     word = request.args.get('word')
-    lang = request.args.get('lang')
-
-    if not os.path.isfile('modules/tts/audio_db' + word + '.mp3'):
-        tts.audio_gen(word, lang)
-
     response = send_from_directory('modules/tts/audio_db', word + '.mp3')
     return response
 
