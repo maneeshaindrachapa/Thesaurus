@@ -74,10 +74,10 @@ export class ResultsV2Component implements OnInit {
     $('#icon-' + i).removeClass('fa-globe');
     $('#icon-' + i).addClass('fa-sync-alt');
     $('#icon-' + i).addClass('translating');
+    word = this.thesaurusService.underscoreToWhiteSpace(word);
     this.thesaurusService.getTranslation(word, this.input_lang).subscribe((data: any) => {
       if (data.response_code === 200) {
         this.translated = data.response_data[0];
-        console.log(data.response_data[0]);
       }
     });
     $('#icon-' + i).addClass('fa-globe');

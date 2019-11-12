@@ -38,7 +38,7 @@ def getData(input_word):
         example_sentences = getExampleSentences(input_word)
 
         # translate word
-        code, translated = translator.translate([input_word], 'si', 'en')
+        code, translated = translator.translate([input_word.replace('_', ' ')], 'si', 'en')
 
         # generate audio with tts
         tts.audio_gen(input_word.replace('_', ' '), 'si')
