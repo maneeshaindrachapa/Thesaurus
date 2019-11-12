@@ -43,6 +43,9 @@
               },
               {
                 "input":  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              },
+              {
+                "input":  "src/assets/fontawesome/css/all.css"
               }
             ],
             "scripts": []

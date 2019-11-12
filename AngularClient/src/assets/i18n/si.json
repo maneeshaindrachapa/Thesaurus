@@ -20,5 +20,11 @@
   "NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD": "මෙම වචනය සඳහා උදාහරණ වාක්\u200Dයය දත්ත නොමැත",
   "PRONUNCIATION": "උච්චාරණය",
   "FOOTER_TEXT_1": "Team Thesaurus, අවසන් වසර ව්\u200Dයාපෘතිය (15 කණ්ඩායම), පරිගණක විද්\u200Dයා හා ඉංජිනේරු දෙපාර්තමේන්තුව, මොරටුව විශ්ව විද්\u200Dයාලය.",
-  "FOOTER_TEXT_2": "සියලුම හිමිකම් ඇවිරිණි."
+  "FOOTER_TEXT_2": "සියලුම හිමිකම් ඇවිරිණි.",
+  "TYPE_IN_SINHALA": "සිංහලෙන් ලියන්න",
+  "TYPING_LANGUAGE" : "ලියන භාෂාව",
+  "SEARCH": "සොයන්න",
+  "SINHALA_TYPER":"සිංහල ලියනය",
+  "TYPE_IN_SINGLISH": "සිං(ග්)ලිශ් වලින් ලියන්න..."
+
 }

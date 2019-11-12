@@ -24,6 +24,8 @@ import { LoaderAnimationComponent } from './components/results-page/loader-anima
 import { LanguageSwitchComponent } from './components/utilities/language-switch/language-switch.component';
 import { ResultsV2Component } from './components/results-page/results-v2/results-v2.component';
 import { RemoveUnderscorePipe } from './pipes/remove-underscore.pipe';
+import {SiTyperService} from './services/si-typer.service';
+import {SiTyperComponent} from './components/firstpage/si-typer/si-typer.component';
 
 
 @NgModule({
@@ -39,6 +41,7 @@ import { RemoveUnderscorePipe } from './pipes/remove-underscore.pipe';
     LanguageSwitchComponent,
     ResultsV2Component,
     RemoveUnderscorePipe,
+    SiTyperComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,7 @@ import { RemoveUnderscorePipe } from './pipes/remove-underscore.pipe';
     SpeechModule
 
   ],
-  providers: [ThesaurusService, LanguagePredictService, ServerConfig, { provide: 'SPEECH_LANG', useValue: 'en-US' }],
+  providers: [ThesaurusService, LanguagePredictService, ServerConfig, { provide: 'SPEECH_LANG', useValue: 'en-US' }, SiTyperService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

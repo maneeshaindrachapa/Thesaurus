@@ -1,0 +1,111 @@
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="Search"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Thesaurus
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <h2 class="text-center pb-3 pt-1" *ngIf="!loading">{{ response_data?.response_data.word | removeUnderscore }}
+    <sub class="pos-tag">[{{ response_data?.response_data.posTag }}]</sub>
+    <i class="fas fa-volume-up text-to-speech" (click)="playAudio(input_word)" [ngClass]="{'audio-playing': isAudioPlaying}" placement="bottom"></i>
+  </h2>
+</ion-header>
+<ion-content *ngIf="!loading">
+  <ion-segment (ionChange)="contentChange($event)" class="mb-1" mode="ios" >
+    <ion-segment-button value="synonyms" [ngClass]="{ 'segment-button-checked': segment=='synonyms' }">
+      <ion-label>{{ "SYNONYMS" | translate }}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="definition" [ngClass]="{ 'segment-button-checked': segment=='definition' }">
+      <ion-label>{{ "DEFINITION" | translate }}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="examples" [ngClass]="{ 'segment-button-checked': segment=='examples' }">
+      <ion-label>{{ "EXAMPLES" | translate }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <app-synonyms *ngIf="segment=='synonyms'" [synonyms]="response_data?.response_data.synonyms" [lang]="response_data?.response_data.language"></app-synonyms>
+  <app-definition *ngIf="segment=='definition'" [word]="response_data?.response_data.word" [definitionData]="response_data?.response_data.definitions"></app-definition>
+  <app-examples *ngIf="segment=='examples'" [word]="response_data?.response_data.word" [examplesData]="response_data?.response_data.exampleSentences"></app-examples>
+
+</ion-content>
+
+<ion-content *ngIf="loading" class="ion-padding">
+
+  <!-- Skeleton screen -->
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-avatar slot="end">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+          </h3>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-avatar slot="end">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+          </h3>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-avatar slot="end">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+          </h3>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-avatar slot="end">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+          </h3>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-avatar slot="end">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+          </h3>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-spinner name="dots" color="primary" class="mx-auto d-block" ></ion-spinner>
+</ion-content>
