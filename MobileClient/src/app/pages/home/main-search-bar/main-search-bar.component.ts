@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {LanguageIdentifierService} from '../../../services/language-identifier.service';
+import {ThesaurusService} from '../../../services/thesaurus.service';
 
 @Component({
   selector: 'app-main-search-bar',
@@ -16,7 +17,8 @@ export class MainSearchBarComponent implements OnInit {
   // tslint:disable-next-line:variable-name
   private input_lang = 'en';
 
-  constructor(private languageItentifier: LanguageIdentifierService, private router: Router) { }
+  private suggetions;
+  constructor(private languageItentifier: LanguageIdentifierService, private router: Router, private thesaurusService: ThesaurusService) { }
 
   ngOnInit() {}
 
@@ -30,10 +32,24 @@ export class MainSearchBarComponent implements OnInit {
     }
   }
 
+  suggetSearch(word){
+    this.input_word = word;
+    this.search();
+  }
+
   langIdentifier() {
+    this.getSuggetions();
     this.languageItentifier.predict(this.input_word).subscribe((data) => {
       if (data['response_code'] === 200) {
         this.input_lang = data['response_data']['language'];
+      }
+    });
+  }
+
+  getSuggetions() {
+    this.thesaurusService.getSuggetions(this.input_word).subscribe((data: any) => {
+      if(data.response_code == 200) {
+        this.suggetions = data.response_data;
       }
     });
   }

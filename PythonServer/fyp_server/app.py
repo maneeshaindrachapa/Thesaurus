@@ -1,15 +1,17 @@
+import os.path
+
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
+
+import modules.api_docs.docs as apidocs
+import modules.display_error.display_error as display_error
+import modules.formatter.formatter as formatter
+import modules.lang_identifier.lang_identifier as lang_identifier
 import modules.main.english.english as english
 import modules.main.sinhala.sinhala as sinhala
-import modules.formatter.formatter as formatter
-import modules.api_docs.docs as apidocs
-import modules.lang_identifier.lang_identifier as lang_identifier
-import modules.display_error.display_error as display_error
-import modules.tts.tts as tts
 import modules.translator.translator as translator
-
-import os.path
-from flask_cors import CORS
+import modules.tts.tts as tts
+import modules.suggetions.suggetions as suggetions
 
 app = Flask(__name__, static_url_path='')
 CORS(app)
@@ -70,6 +72,16 @@ def translate():
     response_code, response_data = translator.translate([word], src_lang, dest_lang)
 
     return jsonify(formatter.responseFormat(response_data, response_code))
+
+## host/translate?word=<word>&lang=<lang>
+@app.route('/suggetion')
+def suggetion():
+    word = request.args.get('word')
+    count = int(request.args.get('wordCount'))
+
+    response_data = suggetions.suggest(word,count)
+
+    return jsonify(formatter.responseFormat(response_data, 200))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

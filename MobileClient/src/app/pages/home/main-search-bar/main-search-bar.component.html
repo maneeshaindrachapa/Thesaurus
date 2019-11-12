@@ -30,99 +30,17 @@
 </div>
 </div>
 
-<div class="scroll-area suggesions">
-    <ion-list class="p-0">
-        <ion-item class="ion-activatable">
-            <ion-label>Pokémon Yellow</ion-label>
+<div class="scroll-area suggesions" *ngIf="suggetions">
+    <ion-list class="p-0" >
+        <ion-item class="ion-activatable suggesions-word" *ngFor="let word of suggetions" (click)="suggetSearch(word)">
+            <ion-label>{{ word }}</ion-label>
             <ion-ripple-effect ></ion-ripple-effect>
         </ion-item>
-        <ion-item class="ion-activatable">
-            <ion-label>Pokémon Yellow</ion-label>
-            <ion-ripple-effect ></ion-ripple-effect>
-        </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item>
-        <ion-item class="ion-activatable">
-            <ion-label>Pokémon Yellow</ion-label>
-            <ion-ripple-effect ></ion-ripple-effect>
-        </ion-item>
-        <ion-item class="ion-activatable">
-            <ion-label>Pokémon Yellow</ion-label>
-            <ion-ripple-effect ></ion-ripple-effect>
-        </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item>
-        <ion-item class="ion-activatable">
-            <ion-label>Pokémon Yellow</ion-label>
-            <ion-ripple-effect ></ion-ripple-effect>
-        </ion-item>
-        <ion-item class="ion-activatable">
-            <ion-label>Pokémon Yellow</ion-label>
-            <ion-ripple-effect ></ion-ripple-effect>
-        </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item>
-        <ion-item class="ion-activatable">
-            <ion-label>Pokémon Yellow</ion-label>
-            <ion-ripple-effect ></ion-ripple-effect>
-        </ion-item>
-        <ion-item class="ion-activatable">
-            <ion-label>Pokémon Yellow</ion-label>
-            <ion-ripple-effect ></ion-ripple-effect>
-        </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item> <ion-item class="ion-activatable">
-        <ion-label>Pokémon Yellow</ion-label>
-        <ion-ripple-effect ></ion-ripple-effect>
-    </ion-item>
     </ion-list>
+</div>
+
+
+<div class="scroll-area suggesions text-center" *ngIf="!suggetions">
+    <i class="fas fa-align-center mt-4 fa-6x"></i>
+    <h5>{{ "NO_CLOSE_WORDS" | translate }}</h5>
 </div>

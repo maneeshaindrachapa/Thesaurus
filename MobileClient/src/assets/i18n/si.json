@@ -20,5 +20,9 @@
   "NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD": "මෙම වචනය සඳහා උදාහරණ වාක්\u200Dයය දත්ත නොමැත",
   "PRONUNCIATION": "උච්චාරණය",
   "FOOTER_TEXT_1": "Team Thesaurus<br/>අවසන් වසර ව්\u200Dයාපෘතිය(15 කණ්ඩායම)<br/>පරිගණක විද්\u200Dයා හා ඉංජිනේරු දෙපාර්තමේන්තුව<br/>මොරටුව විශ්ව විද්\u200Dයාලය",
-  "FOOTER_TEXT_2": "සියලුම හිමිකම් ඇවිරිණි."
+  "FOOTER_TEXT_2": "සියලුම හිමිකම් ඇවිරිණි.",
+  "LANGUAGE": "භාෂාව",
+  "TRANSLATED_WORD": "පරිවර්ථිත වචනය",
+  "NO_CLOSE_WORDS": "ආසන්න වචන නොමැත"
+
 }

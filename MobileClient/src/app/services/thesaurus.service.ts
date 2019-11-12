@@ -14,6 +14,14 @@ export class ThesaurusService {
     return this.http.post(this.serverConfig.base_url + '/thesaurus', {'word': this.whiteSpaceToUnderscore(input_word), 'language': lang});
   }
 
+  public getTranslation(word, lang){
+    return this.http.get(this.serverConfig.base_url + '/translate?word=' + word + '&lang=' + lang);
+  }
+
+  public getSuggetions(word){
+    return this.http.get(this.serverConfig.base_url + '/suggetion?word=' + word + '&wordCount=10');
+  }
+
   public whiteSpaceToUnderscore(word) {
     // tslint:disable-next-line:prefer-for-of
     for (let i = 0; i < word.split(' ').length; i++) {

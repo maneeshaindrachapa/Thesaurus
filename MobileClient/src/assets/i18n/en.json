@@ -20,5 +20,8 @@
   "NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD": "No example sentence data for this word",
   "PRONUNCIATION": "Pronunciation",
   "FOOTER_TEXT_1": "Team Thesaurus<br/>Final Year Project (CSE 15)<br>Department of Computer Science & Engineering<br>University of Moratuwa",
-  "FOOTER_TEXT_2": "All Rights Reversed."
+  "FOOTER_TEXT_2": "All Rights Reversed.",
+  "LANGUAGE": "Language",
+  "TRANSLATED_WORD": "Translated Word",
+  "NO_CLOSE_WORDS": "No close words"
 }

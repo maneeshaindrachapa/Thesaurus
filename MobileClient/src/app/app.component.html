@@ -12,14 +12,14 @@
             <ion-item [routerDirection]="'root'" [routerLink]="'about'">
               <ion-icon slot="start" name='information-circle'></ion-icon>
               <ion-label>
-                About
+                {{"ABOUT" | translate}}
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
           <ion-menu-toggle auto-hide="false" >
             <ion-item>
               <ion-icon slot="start" name='globe'></ion-icon>
-              <ion-label>Language</ion-label>
+              <ion-label>{{"LANGUAGE" | translate}}</ion-label>
               <ion-select style="color: white;" [(ngModel)]="appLang" (ngModelChange)="changeLang()">
                 <ion-select-option value="en">English</ion-select-option>
                 <ion-select-option value="si">සිංහල</ion-select-option>

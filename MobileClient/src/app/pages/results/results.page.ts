@@ -48,6 +48,7 @@ export class ResultsPage implements OnInit {
 
   // tslint:disable-next-line:variable-name
   playAudio(input_word) {
+    console.log(this.input_lang);
     this.isAudioPlaying = true;
     const audioObj = new Audio();
     audioObj.src = this.serverConfig.base_url + '/readword?word=' + input_word + '&lang=' + this.input_lang;

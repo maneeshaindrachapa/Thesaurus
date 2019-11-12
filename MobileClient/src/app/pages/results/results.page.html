@@ -10,12 +10,12 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
-  <h2 class="text-center pb-3 pt-1" *ngIf="!loading">{{ response_data?.response_data.word | removeUnderscore }}
+  <h2 class="text-center pb-3 pt-1" *ngIf="!loading && response_data?.response_code === 200">{{ response_data?.response_data.word | removeUnderscore }}
     <sub class="pos-tag">[{{ response_data?.response_data.posTag }}]</sub>
     <i class="fas fa-volume-up text-to-speech" (click)="playAudio(input_word)" [ngClass]="{'audio-playing': isAudioPlaying}" placement="bottom"></i>
   </h2>
 </ion-header>
-<ion-content *ngIf="!loading">
+<ion-content *ngIf="!loading && response_data?.response_code === 200">
   <ion-segment (ionChange)="contentChange($event)" class="mb-1" mode="ios" >
     <ion-segment-button value="synonyms" [ngClass]="{ 'segment-button-checked': segment=='synonyms' }">
       <ion-label>{{ "SYNONYMS" | translate }}</ion-label>
@@ -108,4 +108,12 @@
   </div>
 
   <ion-spinner name="dots" color="primary" class="mx-auto d-block" ></ion-spinner>
+</ion-content>
+
+<ion-content *ngIf="response_data?.response_code != 200 && !loading">
+  <div class="not-found-wrapper text-center">
+    <i class="fas fa-not-equal fa-4x text-secondary"></i>
+  <h1 class="input-word display-3" align="center">{{ input_word }}</h1>
+  <h6 class="text-center text-secondary no-data-txt">{{"NO_DATA_FOR_THIS_WORD" | translate}}</h6>
+  </div>
 </ion-content>
