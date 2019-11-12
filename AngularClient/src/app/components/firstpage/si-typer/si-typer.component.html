@@ -1,0 +1,22 @@
+<div class="modal fade " id="siTyperModel" tabindex="-1" role="dialog" aria-labelledby="siTyperModel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close text-right mr-2 mt-1" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img src="../../../../assets/img/logo.png" class="mx-auto d-block logo">
+      <div class="modal-header pt-0">
+        <h5 class="modal-title mx-auto d-block" id="siTyperModelTitle" align="center">{{"SINHALA_TYPER" | translate}}</h5>
+
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <textarea class="form-control" [(ngModel)]="typedWord" (keyup)="typiing()" rows="2" placeholder='{{ "TYPE_IN_SINGLISH" | translate }}' autofocus></textarea>
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action" *ngFor="let word of suggested" (click)="selectWord(word)">{{ word }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

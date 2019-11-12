@@ -20,5 +20,10 @@
   "NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD": "No example sentence data for this word",
   "PRONUNCIATION": "Pronunciation",
   "FOOTER_TEXT_1": "Team Thesaurus, Final Year Project (CSE 15), Department of Computer Science & Engineering, University of Moratuwa.",
-  "FOOTER_TEXT_2": "All Rights Reversed."
+  "FOOTER_TEXT_2": "All Rights Reversed.",
+  "TYPE_IN_SINHALA" : "Type in Sinhala",
+  "TYPING_LANGUAGE" : "Typing Language",
+  "SEARCH": "Search",
+  "SINHALA_TYPER":"Sinhala Typer",
+  "TYPE_IN_SINGLISH": "Type in Singlish..."
 }

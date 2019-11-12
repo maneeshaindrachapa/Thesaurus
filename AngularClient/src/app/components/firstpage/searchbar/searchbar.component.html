@@ -10,24 +10,26 @@
       <div id="custom-search-input">
         <div class="input-group col-md-12">
           <input type="text" class="form-control input-lg" [(ngModel)]="input_word" (keyup.enter)="search()" (keyup)="langIdentifier()" placeholder="{{ (voice_search_enabled? 'LISTENING': 'INPUT_PLACE_HOLDER')  | translate }}" />
-          <span class="input-group-btn">
+
+          <span class="input-group-btn " ngbTooltip="{{ 'TYPE_IN_SINHALA' | translate }}" (click)="typer()">
+                                  <button class="btn btn-info btn-lg"  type="button" >
+                                    <i class="fas fa-keyboard"></i>
+                                  </button>
+                              </span>
+          <span class="input-group-btn" ngbTooltip="{{ 'TYPING_LANGUAGE' | translate }}">
                         <select class="btn btn-info btn-lg detected-lang" [(ngModel)]="input_lang" (ngModelChange)="onLangChange(input_lang)">
                           <option [selected]="input_lang=='en'" value="en">{{'EN' | translate }}</option>
                           <option [selected]="input_lang=='si'" value="si">{{'SI' | translate }}</option>
                         </select>
                     </span>
-                    <span class="input-group-btn " >
-                                  <button class="btn btn-info btn-lg"  type="button" >
-                                    <i class="fas fa-keyboard"></i>
-                                  </button>
-                              </span>
+
 
 <!--          <span class="input-group-btn " [ngClass]="{'voice-type-animation':voice_search_enabled}" >-->
 <!--                        <button class="btn btn-info btn-lg voice-type-btn" [ngClass]="{'voice-type-enabled':voice_search_enabled}" type="button" (click)="voiceType()" >-->
 <!--                          <i class="fas fa-microphone"></i>-->
 <!--                        </button>-->
 <!--                    </span>-->
-          <span class="input-group-btn">
+          <span class="input-group-btn" ngbTooltip="{{ 'SEARCH' | translate }}">
                         <button class="btn btn-info btn-lg" type="button" (click)="search()">
                           <i class="fas fa-search"></i>
                         </button>
@@ -56,3 +58,4 @@
 
   </div>
 </div>
+<app-si-typer></app-si-typer>

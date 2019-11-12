@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Router} from '@angular/router';
 import {LanguagePredictService} from '../../../services/language-predict.service';
 import {SpeechService} from 'ngx-speech';
+import {SiTyperService} from '../../../services/si-typer.service';
 
 @Component({
   selector: 'app-searchbar',
@@ -16,7 +17,13 @@ export class SearchbarComponent implements OnInit {
   public input_lang = 'en';
   public voice_search_enabled = false;
 
-  constructor(private router: Router, private langPredictService: LanguagePredictService, public speech: SpeechService) { }
+  // tslint:disable-next-line:max-line-length
+  constructor(private router: Router, private langPredictService: LanguagePredictService, public speech: SpeechService, private siTyperService: SiTyperService) {
+    siTyperService.wordSelected.subscribe((data) => {
+      this.input_word = data;
+      this.input_lang = 'si';
+    });
+  }
 
   ngOnInit() {
   }
@@ -60,6 +67,10 @@ export class SearchbarComponent implements OnInit {
       this.voice_search_enabled = false;
       this.speech.stop();
     }
+  }
+
+  typer() {
+      this.siTyperService.toggleTyper.emit();
   }
 
 }
