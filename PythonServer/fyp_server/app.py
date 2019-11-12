@@ -6,6 +6,8 @@ import modules.api_docs.docs as apidocs
 import modules.lang_identifier.lang_identifier as lang_identifier
 import modules.display_error.display_error as display_error
 import modules.tts.tts as tts
+import modules.translator.translator as translator
+
 import os.path
 from flask_cors import CORS
 
@@ -44,9 +46,9 @@ def lang_predict():
     }
     return jsonify(formatter.responseFormat(response_data, response_code))
 
-
+## host/readword?word=<word>&lang=<lang>
 @app.route('/readword')
-def data():
+def readword():
     word = request.args.get('word')
     lang = request.args.get('lang')
 
@@ -56,6 +58,18 @@ def data():
     response = send_from_directory('modules/tts/audio_db', word + '.mp3')
     return response
 
+## host/translate?word=<word>&lang=<lang>
+@app.route('/translate')
+def translate():
+    word = request.args.get('word')
+    src_lang = request.args.get('lang')
+
+    lang_dict = {'si': 'en', 'en': 'si'}
+    dest_lang = lang_dict[src_lang]
+
+    response_code, response_data = translator.translate([word], src_lang, dest_lang)
+
+    return jsonify(formatter.responseFormat(response_data, response_code))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

@@ -8,6 +8,8 @@ import {ServerConfig} from '../../services/serverConfig';
   templateUrl: './results.page.html',
   styleUrls: ['./results.page.scss'],
 })
+
+// @ts-ignore
 export class ResultsPage implements OnInit {
 
   private segment = 'synonyms';
@@ -48,7 +50,7 @@ export class ResultsPage implements OnInit {
   playAudio(input_word) {
     this.isAudioPlaying = true;
     const audioObj = new Audio();
-    audioObj.src = this.serverConfig.base_url + '/readword?word=' + input_word;
+    audioObj.src = this.serverConfig.base_url + '/readword?word=' + input_word + '&lang=' + this.input_lang;
     audioObj.load();
     audioObj.play().then(() => {
       this.isAudioPlaying = false;

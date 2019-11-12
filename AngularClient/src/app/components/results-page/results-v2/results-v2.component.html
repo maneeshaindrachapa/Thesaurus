@@ -4,6 +4,10 @@
                                                                                               style="color: gray; font-size: 18px;">[{{ response_data?.response_data.posTag }}]</sub><i (click)="playAudio(input_word)" class="fas fa-volume-up text-to-speech"
                 [ngClass]="{'audio-playing': isAudioPlaying}" placement="bottom"
                 ngbTooltip="{{ 'PRONUNCIATION' | translate }}"></i>
+      <div class="badge badge-pill badge-secondary translate-btn main-translate" placement="right"
+           ngbPopover='{{ response_data?.response_data.translated }}' popoverTitle='{{ "TRANSLATED_WORD" | translate }}'
+           ngbTooltip="{{ 'TRANSLATION' | translate }}" ><i class="fas fa-globe" ></i> {{ getOppositeLang(input_lang) | translate }}
+      </div>
     </h1>
   </div>
 
@@ -14,10 +18,14 @@
         <i>'{{ response_data?.response_data.word | removeUnderscore}}'</i></h5>
       <hr/>
       <ul class="mx-auto d-block syn-container" type="none">
-        <li *ngFor="let word  of response_data?.response_data.synonyms;">
+        <li *ngFor="let word  of response_data?.response_data.synonyms; let i = index;">
           <span class="syn-result-text" (click)="search(word.term,response_data?.response_data.language)">
             <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,'+ word.similarity+')' }"></i>
             {{ word.term | removeUnderscore }}</span>
+          <div class="badge badge-pill badge-secondary translate-btn" placement="right"
+               ngbPopover='{{ translated }}' popoverTitle='{{ "TRANSLATED_WORD" | translate }}' id="{{ 'badge-' + i }}" (mouseover)="translate(word.term, i)"
+               ngbTooltip="{{ 'TRANSLATION' | translate }}" (click)="translate(word.term, i)"><i class="fas fa-globe" id="{{ 'icon-' + i }}"></i> {{ getOppositeLang(input_lang) | translate }}
+          </div>
         </li>
       </ul>
     </div>

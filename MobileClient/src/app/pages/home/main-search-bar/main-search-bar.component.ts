@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {LanguageIdentifierService} from '../../../services/language-identifier.service';
 import {Router} from '@angular/router';
+import {LanguageIdentifierService} from '../../../services/language-identifier.service';
 
 @Component({
   selector: 'app-main-search-bar',
   templateUrl: './main-search-bar.component.html',
   styleUrls: ['./main-search-bar.component.scss'],
 })
+
+// @ts-ignore
 export class MainSearchBarComponent implements OnInit {
 
   // tslint:disable-next-line:variable-name
@@ -35,11 +37,4 @@ export class MainSearchBarComponent implements OnInit {
       }
     });
   }
-
-  test(){
-    this.languageItentifier.test().subscribe((data)=>{
-      console.log(data);
-    });
-  }
-
 }

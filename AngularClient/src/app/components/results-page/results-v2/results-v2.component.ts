@@ -1,3 +1,5 @@
+declare var $: any;
+
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ThesaurusService} from '../../../services/thesaurus.service';
@@ -16,6 +18,9 @@ export class ResultsV2Component implements OnInit {
   public response_data;
   public isAudioPlaying = false;
   public loading = false;
+
+  private translated;
+
   constructor(private route: ActivatedRoute, private thesaurusService: ThesaurusService, private serverConfig: ServerConfig ) {
     this.route.queryParams.subscribe(params => {
       this.input_word = params.word;
@@ -50,7 +55,7 @@ export class ResultsV2Component implements OnInit {
   playAudio(input_word) {
     this.isAudioPlaying = true;
     const audioObj = new Audio();
-    audioObj.src = this.serverConfig.base_url + '/readword?word=' + input_word;
+    audioObj.src = this.serverConfig.base_url + '/readword?word=' + input_word + '&lang=' + this.input_lang;
     audioObj.load();
     audioObj.play().then(() => {
       this.isAudioPlaying = false;
@@ -63,4 +68,30 @@ export class ResultsV2Component implements OnInit {
     }
     return sentence;
   }
+
+  translate(word, i) {
+    // this.translated = 'Loading...' ;
+    $('#icon-' + i).removeClass('fa-globe');
+    $('#icon-' + i).addClass('fa-sync-alt');
+    $('#icon-' + i).addClass('translating');
+    this.thesaurusService.getTranslation(word, this.input_lang).subscribe((data: any) => {
+      if (data.response_code === 200) {
+        this.translated = data.response_data[0];
+        console.log(data.response_data[0]);
+      }
+    });
+    $('#icon-' + i).addClass('fa-globe');
+    $('#icon-' + i).removeClass('fa-sync-alt');
+    $('#icon-' + i).removeClass('translating');
+  }
+
+  getOppositeLang(lang) {
+    if (lang === 'en') {
+      return 'SI';
+    } else {
+      return 'EN';
+    }
+  }
+
+
 }

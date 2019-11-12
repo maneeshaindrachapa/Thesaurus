@@ -170,3 +170,33 @@ app-loader-animation {
 .result-similarity:hover{
   text-decoration: none!important;
 }
+
+.translating{
+  -webkit-animation:spin 3s linear infinite;
+  -moz-animation:spin 3s linear infinite;
+  animation:spin 3s linear infinite;
+}
+
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.translate-btn{
+  opacity: 0.3;
+  cursor: pointer;
+  position: relative;
+  bottom: -2px;
+}
+
+.translate-btn:hover{
+  opacity: 0.5;
+}
+
+.main-translate{
+  font-size: 15px!important;
+  position: relative;
+  left: -82px;
+  top: -20px;
+}

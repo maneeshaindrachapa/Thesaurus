@@ -5,6 +5,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
+// @ts-ignore
 export class LanguageIdentifierService {
 
   constructor(private http: HttpClient, private serverConfig: ServerConfig) {

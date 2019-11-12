@@ -1,7 +1,7 @@
 import requests
 from modules.formatter import formatter
 import modules.tts.tts as tts
-import modules.translator.translator_v2 as translator
+import modules.translator.translator as translator
 import modules.display_error.display_error as display_error
 
 api_url = 'https://tuna.thesaurus.com/pageData/'
@@ -51,13 +51,13 @@ def getData(input_word):
         example_sentences = getExampleSentences(response)
 
         # translate word
-        translated = translator.translate([input_word], 'en', 'si')[0]
+        code, translated = translator.translate([input_word], 'en', 'si')
 
         # generate audio for tts
         tts.audio_gen(input_word, 'en')
 
         # format data and return
-        return 200, formatter.mainDataFormat(input_word,'en', pos_tag, definition, syn_set, example_sentences, translated)
+        return 200, formatter.mainDataFormat(input_word,'en', pos_tag, definition, syn_set, example_sentences, translated[0])
     except TypeError:
         display_error.print_error(404, "No thesaurus results")
         return 404, "No thesaurus results"
