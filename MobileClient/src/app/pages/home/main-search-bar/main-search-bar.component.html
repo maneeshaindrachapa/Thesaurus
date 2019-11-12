@@ -4,7 +4,7 @@
         <div class="col-md-12 pt-3">
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" [(ngModel)]="input_word"  (keyup)="langIdentifier()" placeholder="{{ 'INPUT_PLACE_HOLDER' | translate }}"/>
+                    <input type="text" class="form-control input-lg" [(ngModel)]="input_word" (keyup.enter)="search()"  (keyup)="langIdentifier()" placeholder="{{ 'INPUT_PLACE_HOLDER' | translate }}"/>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-lg p-1" type="button" (click)="search()">
                           <i class="fas fa-search"></i>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-definition',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./definition.component.scss'],
 })
 export class DefinitionComponent implements OnInit {
+
+  @Input()  private word;
+  @Input()  private definitionData;
 
   constructor() { }
 

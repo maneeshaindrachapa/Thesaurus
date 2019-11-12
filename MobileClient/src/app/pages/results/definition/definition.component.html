@@ -1,3 +1,13 @@
-<p>
-  definition works!
-</p>
+<div class="ion-padding">
+  <h6 class="card-title mt-2 font-weight-bold" align="center">{{'DEFINITION' | translate }}
+    <i>'{{ word | removeUnderscore }}'</i>
+  </h6>
+
+  <p class="text-center" *ngIf="definitionData">
+    {{ definitionData }}
+  </p>
+  <p class="text-center" *ngIf="!definitionData">
+    {{"NO_DEFINITION_DATA_FOR_THIS_WORD" | translate}}
+  </p>
+
+</div>

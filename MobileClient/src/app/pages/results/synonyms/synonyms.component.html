@@ -1,60 +1,7 @@
 <ion-list class="ion-padding" [ngStyle]="{ 'max-height' : (height - 200)+'px'}">
-  <ion-item>
-    <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-    <ion-label>Pokémon Yellow</ion-label>
-    <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
+  <ion-item *ngFor="let word of synonyms; let i = index">
+    <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,'+ word.similarity+')' }" slot="start"></i>
+    <ion-label>{{ word.term | removeUnderscore }}</ion-label>
+    <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end" (click)="playAudio(thesaurusService.underscoreToWhiteSpace(word.term),'#play-item-'+i )"  id="{{ '#play-item-'+i }}"></i>
   </ion-item>
-  <ion-item>
-    <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-    <ion-label>Pokémon Yellow</ion-label>
-    <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-  </ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item><ion-item>
-  <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,1)' }" slot="start"></i>
-  <ion-label>Pokémon Yellow</ion-label>
-  <i class="fas fa-volume-up text-to-speech" placement="bottom" slot="end"></i>
-</ion-item>
 </ion-list>

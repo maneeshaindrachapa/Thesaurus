@@ -1,3 +1,12 @@
-<p>
-  examples works!
-</p>
+<div class="ion-padding">
+  <h6 class="card-title font-weight-bold" align="center">{{'EXAMPLES' | translate }}
+    <i>'{{ word | removeUnderscore }}'</i>
+  </h6>
+
+  <ol *ngIf="examplesData?.length">
+    <li class="text-left mb-2 result-text" *ngFor="let sentence  of examplesData;"
+        [innerHTML]="heighlightWord(word ,sentence )"></li>
+  </ol>
+  <p class="text-center result-text" *ngIf="!examplesData?.length">{{"NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD" | translate}}</p>
+
+</div>

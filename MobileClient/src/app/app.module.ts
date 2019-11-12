@@ -13,8 +13,9 @@ import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {FormsModule} from '@angular/forms';
-import {FooterComponent} from './components/footer/footer.component';
 import {ServerConfig} from './services/serverConfig';
+import {OpenNativeSettings} from '@ionic-native/open-native-settings/ngx';
+import { Network } from '@ionic-native/network/ngx';
 
 
 @NgModule({
@@ -38,9 +39,12 @@ import {ServerConfig} from './services/serverConfig';
     StatusBar,
     SplashScreen,
     {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
-    ServerConfig
+    ServerConfig,
+    OpenNativeSettings,
+      Network
   ],
   exports: [
+
   ],
   bootstrap: [AppComponent]
 })

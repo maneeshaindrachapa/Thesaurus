@@ -23,7 +23,9 @@ export class MainSearchBarComponent implements OnInit {
   }
 
   search() {
-    this.router.navigate(['/results']);
+    if (this.input_word.trim()) {
+      this.router.navigate(['/results'], {queryParams: {word: this.input_word, lang: this.input_lang}});
+    }
   }
 
   langIdentifier() {
