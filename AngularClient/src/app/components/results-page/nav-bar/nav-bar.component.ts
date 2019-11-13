@@ -3,6 +3,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {ThesaurusService} from '../../../services/thesaurus.service';
 import {LanguagePredictService} from '../../../services/language-predict.service';
 import {SpeechService} from 'ngx-speech';
+import {SiTyperService} from '../../../services/si-typer.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -16,7 +17,13 @@ export class NavBarComponent implements OnInit {
   public input_lang = 'en';
   public voice_search_enabled = false;
 
-  constructor(private router: Router, private route: ActivatedRoute, private thesaurusService: ThesaurusService, private langPredictService: LanguagePredictService, public speech: SpeechService) {
+  // tslint:disable-next-line:max-line-length
+  constructor(private router: Router, private route: ActivatedRoute, private thesaurusService: ThesaurusService, private langPredictService: LanguagePredictService, public speech: SpeechService, private siTyperService: SiTyperService) {
+
+    siTyperService.wordSelected.subscribe((data) => {
+      this.input_word = data;
+      this.input_lang = 'si';
+    });
 
     thesaurusService.search_event.subscribe((data) => {
       this.router.navigate(['/results'], { queryParams: { word: data[0], lang: data[1] } });
@@ -70,6 +77,10 @@ export class NavBarComponent implements OnInit {
       this.voice_search_enabled = false;
       this.speech.stop();
     }
+  }
+
+  typer() {
+    this.siTyperService.toggleTyper.emit();
   }
 
 }

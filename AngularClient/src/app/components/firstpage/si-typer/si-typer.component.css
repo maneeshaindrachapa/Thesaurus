@@ -6,3 +6,7 @@
   border-color: #ffc107;
   box-shadow: none;
 }
+
+.type-suggestion{
+  cursor: pointer;
+}

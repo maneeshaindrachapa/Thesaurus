@@ -9,6 +9,13 @@
         <input type="text" class="form-control input-lg"
                placeholder="{{ (voice_search_enabled? 'LISTENING': 'INPUT_PLACE_HOLDER')  | translate }}"
                [(ngModel)]='input_word' (keyup.enter)="search()" (keyup)="langIdentifier()"/>
+
+        <span class="input-group-btn " ngbTooltip="{{ 'TYPE_IN_SINHALA' | translate }}" placement="bottom" (click)="typer()">
+                                  <button class="btn btn-info btn-lg"  type="button" >
+                                    <i class="fas fa-keyboard"></i>
+                                  </button>
+                              </span>
+
         <span class="input-group-btn">
                         <select class="btn btn-info btn-lg detected-lang" [(ngModel)]="input_lang"
                                 (ngModelChange)="onLangChange(input_lang)">
@@ -40,3 +47,4 @@
 
 </nav>
 <ngx-loading-bar [color]="'#ffffff'" [fixed]="'false'"></ngx-loading-bar>
+<app-si-typer></app-si-typer>
