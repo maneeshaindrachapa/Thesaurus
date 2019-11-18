@@ -26,5 +26,7 @@
   "SEARCH": "Search",
   "SINHALA_TYPER":"Sinhala Typer",
   "TYPE_IN_SINGLISH": "Type in Singlish...",
-  "TRANSLATED_WORD": "Translated Word"
+  "TRANSLATED_WORD": "Translated Word",
+  "SPELL_CHECK_CORRECT": "Spellings: Correct",
+  "SPELL_CHECK_INCORRECT": "Spellings: Incorrect"
 }

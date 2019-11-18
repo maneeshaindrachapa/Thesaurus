@@ -26,6 +26,7 @@
   "SEARCH": "සොයන්න",
   "SINHALA_TYPER":"සිංහල ලියනය",
   "TYPE_IN_SINGLISH": "සිං(ග්)ලිශ් වලින් ලියන්න...",
-  "TRANSLATED_WORD": "පරිවර්ථිත වචනය"
-
+  "TRANSLATED_WORD": "පරිවර්ථිත වචනය",
+  "SPELL_CHECK_CORRECT": "අක්ෂර වින්\u200Dයාසය: හරි",
+  "SPELL_CHECK_INCORRECT": "අක්ෂර වින්\u200Dයාසය: වැරදි"
 }

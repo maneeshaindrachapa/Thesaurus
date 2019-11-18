@@ -12,6 +12,7 @@ import modules.main.sinhala.sinhala as sinhala
 import modules.translator.translator as translator
 import modules.tts.tts as tts
 import modules.suggetions.suggetions as suggetions
+import modules.spell_checker.spell_checker as spell_checker
 
 app = Flask(__name__, static_url_path='')
 CORS(app)
@@ -48,6 +49,7 @@ def lang_predict():
     }
     return jsonify(formatter.responseFormat(response_data, response_code))
 
+
 ## host/readword?word=<word>&lang=<lang>
 @app.route('/readword')
 def readword():
@@ -59,6 +61,7 @@ def readword():
 
     response = send_from_directory('modules/tts/audio_db', word + '.mp3')
     return response
+
 
 ## host/translate?word=<word>&lang=<lang>
 @app.route('/translate')
@@ -73,15 +76,31 @@ def translate():
 
     return jsonify(formatter.responseFormat(response_data, response_code))
 
-## host/translate?word=<word>&lang=<lang>
+
+## host/suggetion?word=<word>&wordCount=<count>
 @app.route('/suggetion')
 def suggetion():
     word = request.args.get('word')
     count = int(request.args.get('wordCount'))
 
-    response_data = suggetions.suggest(word,count)
+    response_data = suggetions.suggest(word, count)
 
     return jsonify(formatter.responseFormat(response_data, 200))
+
+
+## host/spellcheck?word=<word>&lang=<lang>
+@app.route('/spellcheck')
+def spellCheck():
+    word = request.args.get('word')
+    lang = request.args.get('lang')
+
+    if lang == 'si':
+        response_code, response_data = spell_checker.checkWord(word)
+
+        return jsonify(formatter.responseFormat(response_data, response_code))
+    else:
+        return jsonify(formatter.responseFormat("Not supported language for spell checker", 404))
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
