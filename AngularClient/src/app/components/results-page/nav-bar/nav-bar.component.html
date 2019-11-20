@@ -8,7 +8,13 @@
       <div class="input-group col-md-12">
         <input type="text" class="form-control input-lg"
                placeholder="{{ (voice_search_enabled? 'LISTENING': 'INPUT_PLACE_HOLDER')  | translate }}"
-               [(ngModel)]='input_word' (keyup.enter)="search()" (keyup)="langIdentifier()"/>
+               [(ngModel)]='input_word' (keyup.enter)="search()" (keyup)="onTyping()"/>
+
+        <span class="input-group-btn " placement="bottom" ngbTooltip="{{ (isSpellingCorrect? 'SPELL_CHECK_CORRECT' : 'SPELL_CHECK_INCORRECT') | translate }}" *ngIf="input_lang==='si'">
+                                                <button class="btn btn-info btn-sm" type="button" >
+              <i class="far" [ngClass]="{'fa-check-circle theme-text-color': isSpellingCorrect, 'fa-times-circle text-danger': !isSpellingCorrect}"></i>
+                                                </button>
+          </span>
 
         <span class="input-group-btn " ngbTooltip="{{ 'TYPE_IN_SINHALA' | translate }}" placement="bottom" (click)="typer()">
                                   <button class="btn btn-info btn-lg"  type="button" >
@@ -16,9 +22,9 @@
                                   </button>
                               </span>
 
-        <span class="input-group-btn">
+        <span class="input-group-btn" placement="bottom" ngbTooltip="{{ 'TYPING_LANGUAGE' | translate }}">
                         <select class="btn btn-info btn-lg detected-lang" [(ngModel)]="input_lang"
-                                (ngModelChange)="onLangChange(input_lang)">
+                                (ngModelChange)="onLangChange()">
                           <option [selected]="input_lang=='en'" value="en">{{'EN' | translate }}</option>
                           <option [selected]="input_lang=='si'" value="si">{{'SI' | translate }}</option>
                         </select>
@@ -28,7 +34,7 @@
         <!--                          <i class="fas fa-microphone"></i>-->
         <!--                        </button>-->
         <!--                    </span>-->
-        <span class="input-group-btn">
+        <span class="input-group-btn" placement="bottom" ngbTooltip="{{ 'SEARCH' | translate }}">
                         <button class="btn btn-info btn-lg" type="button" (click)="search()">
                           <i class="fas fa-search"></i>
                         </button>
