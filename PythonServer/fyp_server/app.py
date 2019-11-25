@@ -19,7 +19,7 @@ CORS(app)
 
 
 @app.route('/')
-def hello_world():
+def docs():
     return jsonify(apidocs.generateDoc())
 
 

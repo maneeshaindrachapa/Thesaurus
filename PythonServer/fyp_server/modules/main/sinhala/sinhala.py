@@ -5,21 +5,22 @@ import modules.main.sinhala.example_sentences.example_sentences as example_sente
 import modules.main.sinhala.synonyms.synonyms as synonyms
 import modules.main.sinhala.definitions.definitions as definitions
 import modules.display_error.display_error as display_error
+import modules.main.sinhala.pos_tag.pos_tagger as pos_tagger
 
 # word pos tag identification
 def getPosTag(word):
-    return "Pos tag"
+    tagged = pos_tagger.get_sinhala_pos(word)[0]
+    return tagged['tag']
 
 
 # get word definitions
 def getDefinition(word):
-    print(definitions.definition(word))
     return definitions.definition(word)
 
 
 # get synset
 def getSynset(word):
-    return synonyms.getSynset(word, 15)
+    return synonyms.getSynset(word, 18, 0.85)
 
 
 # get example sentences
