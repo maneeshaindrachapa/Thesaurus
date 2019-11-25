@@ -6,7 +6,7 @@ from flask_cors import CORS
 import modules.api_docs.docs as apidocs
 import modules.display_error.display_error as display_error
 import modules.formatter.formatter as formatter
-import modules.lang_identifier.lang_identifier as lang_identifier
+import modules.lang_identifier.lang_identifier_v1 as lang_identifier
 import modules.main.english.english as english
 import modules.main.sinhala.sinhala as sinhala
 import modules.translator.translator as translator

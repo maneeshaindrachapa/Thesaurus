@@ -7,13 +7,18 @@ import modules.main.sinhala.definitions.definitions as definitions
 import modules.display_error.display_error as display_error
 import modules.main.sinhala.pos_tag.pos_tagger as pos_tagger
 
+
 # word pos tag identification
 def getPosTag(word):
-    tagged = pos_tagger.get_sinhala_pos(word)[0]
-    return tagged['tag']
+    try:
+        tagged = pos_tagger.get_sinhala_pos(word)[0]
+        return tagged['tag']
+    except:
+        return 'NONE'
+
+    # get word definitions
 
 
-# get word definitions
 def getDefinition(word):
     return definitions.definition(word)
 
@@ -45,7 +50,8 @@ def getData(input_word):
         tts.audio_gen(input_word.replace('_', ' '), 'si')
 
         # format data and return
-        return 200, formatter.mainDataFormat(input_word, 'si', pos_tag, definition, syn_set, example_sentences, translated[0])
+        return 200, formatter.mainDataFormat(input_word, 'si', pos_tag, definition, syn_set, example_sentences,
+                                             translated[0])
     except TypeError:
         display_error.print_error(404, "No thesaurus results")
         return 404, "No thesaurus results"

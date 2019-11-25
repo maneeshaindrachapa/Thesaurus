@@ -29,3 +29,7 @@ pip install gtts
 definitions
 ===========
 pip install xlrd
+
+pos tagger
+==========
+
