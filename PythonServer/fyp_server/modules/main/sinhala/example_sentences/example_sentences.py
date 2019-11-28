@@ -14,12 +14,13 @@ for i in file:
         sentences.append(j+".")
 
 def get_sentences(word):
+    word = " " + word
     length = 0
     output = []
     for s in sentences:
-        if word in s:
+        if ((word in s) and (len(s.split(" "))<30)):
             length += 1
-            if (length==6):
+            if (length==10):
                 break
             output.append(s.strip())
     return list(dict.fromkeys(output))
