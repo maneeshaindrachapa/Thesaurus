@@ -40,6 +40,7 @@ export class ResultsV2Component implements OnInit {
     this.loading = true;
     this.thesaurusService.getThesaurusData(this.input_word, this.input_lang).subscribe((data) => {
       this.response_data = data;
+      console.log(data);
       if (this.response_data.response_code === 200) {
         this.response_data.response_data.synonyms.sort((a, b) => -1 * (parseFloat(a.similarity) - parseFloat(b.similarity)));
       }

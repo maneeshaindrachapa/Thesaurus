@@ -59,7 +59,7 @@
   opacity: 0.6;
 }
 
-.audio-playing {
+.audio-playing, .error_text {
   color: #ffc107;
 }
 

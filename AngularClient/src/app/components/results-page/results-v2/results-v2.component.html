@@ -17,8 +17,8 @@
       <h5 class="card-title" align="center">{{'SYNONYMS_FOR_WORD' | translate }}
         <i>'{{ response_data?.response_data.word | removeUnderscore}}'</i></h5>
       <hr/>
-      <ul class="mx-auto d-block syn-container" type="none">
-        <li *ngFor="let word  of response_data?.response_data.synonyms; let i = index;">
+      <ul class="mx-auto d-block syn-container" type="none" *ngIf="response_data?.response_data.synonyms.length">
+        <li  *ngFor="let word  of response_data?.response_data.synonyms; let i = index;">
           <span class="syn-result-text" (click)="search(word.term,response_data?.response_data.language)">
             <i class="fas fa-dot-circle result-similarity" [ngStyle]="{ 'color': 'rgba(255, 193, 7,'+ word.similarity+')' }"></i>
             {{ word.term | removeUnderscore }}</span>
@@ -28,6 +28,7 @@
           </div>
         </li>
       </ul>
+      <p class="text-center result-text" *ngIf="!response_data?.response_data.synonyms.length"><i class="far fa-frown fa-2x mb-1 mr-1"></i><i class="far fa-tired fa-2x mb-1"></i><i class="far fa-meh fa-2x mb-1 ml-1"></i><br>{{"NO_SYNONYM_DATA_FOR_THIS_WORD" | translate}}</p>
     </div>
 
     <!-- Definition is here -->
@@ -36,7 +37,7 @@
         <i>'{{ response_data?.response_data.word | removeUnderscore }}'</i></h5>
       <hr/>
       <p class="text-center result-text" *ngIf="response_data?.response_data.definitions">{{ response_data?.response_data.definitions }}</p>
-      <p class="text-center result-text" *ngIf="!response_data?.response_data.definitions">{{"NO_DEFINITION_DATA_FOR_THIS_WORD" | translate}}</p>
+      <p class="text-center result-text" *ngIf="!response_data?.response_data.definitions"><i class="far fa-frown fa-2x mb-1 mr-1"></i><i class="far fa-tired fa-2x mb-1"></i><i class="far fa-meh fa-2x mb-1 ml-1"></i><br>{{"NO_DEFINITION_DATA_FOR_THIS_WORD" | translate}}</p>
     </div>
 
     <!-- Example sentences is here -->
@@ -48,7 +49,7 @@
         <li class="text-left mb-2 result-text" *ngFor="let sentence  of response_data?.response_data.exampleSentences;"
             [innerHTML]="heighlightWord(input_word,sentence )"></li>
       </ol>
-      <p class="text-center result-text" *ngIf="!response_data?.response_data.exampleSentences.length">{{"NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD" | translate}}</p>
+      <p class="text-center result-text" *ngIf="!response_data?.response_data.exampleSentences.length"><i class="far fa-frown fa-2x mb-1 mr-1"></i><i class="far fa-tired fa-2x mb-1"></i><i class="far fa-meh fa-2x mb-1 ml-1"></i><br>{{"NO_EXAMPLE_SENTENCE_DATA_FOR_THIS_WORD" | translate}}</p>
     </div>
   </div>
 </div>
