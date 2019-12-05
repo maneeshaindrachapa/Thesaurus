@@ -32,4 +32,29 @@ pip install xlrd
 
 pos tagger
 ==========
+install below modules
 
+absl-py
+astor
+bleach
+gast
+grpcio
+h5py
+html5lib
+Markdown
+nltk
+numpy
+protobuf
+PyYAML
+scipy
+six
+tensorboard
+tensorflow==1.7.0
+termcolor
+Werkzeug
+Flask
+Flask-SQLAlchemy
+flask-marshmallow
+marshmallow-sqlalchemy
+marshmallow
+SQLAlchemy
