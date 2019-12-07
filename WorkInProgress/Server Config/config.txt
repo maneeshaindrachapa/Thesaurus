@@ -1,4 +1,4 @@
 File handling
 =============
 Remove file from write protected : sudo rm -rf /var/www/html
-copy : sudo cp -r <src> <destinaion>
+copy : copy : sudo cp -r /home/thesau/FYP/AngularClient/dist/Thesaurus /var/www/html
