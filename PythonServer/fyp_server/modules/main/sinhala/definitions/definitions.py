@@ -15,7 +15,7 @@ vocab = list(dictionary.keys())
 # extract definitions
 def definition(word):
     for vocab_word in vocab:
-        if word in vocab_word:
+        if word == vocab_word:
             return dictionary.get(vocab_word)
     return ''
 
