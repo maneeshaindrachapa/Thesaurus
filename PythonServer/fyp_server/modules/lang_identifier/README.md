@@ -31,7 +31,7 @@ In this scenario, when creating the one-hot vector approach because we can creat
 In our implementation we put maximum word length as 30 and created multi hot vectors with length of 780(30*max_word_length). That vector represents the character properties for a particular word.
 
 <figure>  
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hot%20vector.png?raw=true"  alt="Trulli"  style="width:100%">  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hot%20vector.png?raw=true"  alt="Multi-hot vector example"  style="width:100%">  
 <figcaption align=center>Multi-hot vector example</figcaption>  
 </figure>
 
@@ -40,7 +40,7 @@ Model Training
 After we have done all the pre-processing required to train the model, we have divided our data set into training and test data sets(x_train,x_test) as 85% of the dataset is training data and 15% of the data is test data. In this language classifier for Sinhala & English languages, we used a supervised learning approach with Keras 5-layer neural network model. Here we used Sequential neural network approach in Keras model with initially defining 200 neurons for the input layer with 26*max_word_length input dimension. Then process the input data with different 3 internal layers and finally converted the output layer with 2 neurons (for two languages Sinhala & English). Every hidden layer in the neural network used ‘sigmoid’ function as the activation function. Also, we used MSE (Mean Squared Error) as the error calculating approach and 100 epochs with batch size of 1000 for our model training. After we trained our model, we have saved model weights into a file called “weights.hdf5” for use the model again without training again. Also, the as the intermediate state of the complete process we have saved multi-hot vectors in csv file as the backfile for data preparation and pre-processing.
 
 <figure>  
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/Language%20Identifier.png?raw=true"  alt="Trulli"  style="width:100%">  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/Language%20Identifier.png?raw=true"  alt="Language identifier model complete architecture"  style="width:100%">  
 <figcaption align=center>Language identifier model complete architecture </figcaption>  
 </figure>
 
@@ -68,7 +68,7 @@ Then we tested the Unicode based language identification approach with same test
 <figcaption align=center>Working system interfaces for the language identifier </figcaption>  
 </figure>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTA5MzI2NSwtMTMyNjAwODkzOSwxND
+eyJoaXN0b3J5IjpbLTU4Nzg0NDgxNSwtMTMyNjAwODkzOSwxND
 g4NDY4NDcyLC0xODA4OTU0NjE2LDMwMDAwMDM1MCwtMjA4ODc0
 NjYxMiw3MzA5OTgxMTZdfQ==
 -->
