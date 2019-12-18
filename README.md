@@ -58,17 +58,12 @@ This is the main module that responsible for return meaningful output from the s
 
 ![Internal architecture of Data accessing and processing layer](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/System%20Diagram.png?raw=true)
 
- - **Language identifier module**: Mainly used the Deep Learning based approch with the character level diffrent things in the both Sinhala & English languages.
- - **Spell Checker Module**: Use the spell checker module developing by parrallel research group.
- - **Pos-tagger module**: Use already exists pos tagger module for both sinhala & English languages.
- - **Language translation module**: Use Google translater only for the translation
- - **Similar word cluster generator**: This is the main module of this research project. The main task of this module is to identify a similar word cluster for a given word. For the implementation of this module, we hope to use the word embedding technique which helps to get the similar word cluster.
-For the implementation, we planned to use word-to-vector based approach as the word-embedding to extract the synonym words. After we successfully build the word-vector space for out text corpus then we get the synonyms based on the k-nearest neighbor approach with the euclidean distance between word points.
-![Vector spaces](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/vecotor_space.jpg?raw=true)
-d1 & d2 distances canbe calculated with the euclidean distance based approach or cosine distance based approach. 
-![Equations](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/equations.jpg)
- - **Word example sentence extractor**: This module is basically used to give and supportive sentence for a given word. In our system implementation, we hope to extract the example sentence from a text corpus. We planned to extract sentences that include the user input word and which is able to give an idea about the word.
-
+ - Language identifier module
+ - Spell Checker Module
+ - Pos-tagger module
+ - Language translation module
+ - Similar word cluster generator
+ - *Word example sentence extractor
 **3. End-points Layer**
 
 
@@ -76,8 +71,8 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3Mzg4MjIzOCwtMjEyNTcwNjIwMSwxMz
-g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
-ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
-w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbLTk5MzkwMzk5LC0yMTI1NzA2MjAxLDEzOD
+g1NDAyNjcsLTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4
+MTk2LC03OTA3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLD
+gyNDQ0MzE3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
 -->
