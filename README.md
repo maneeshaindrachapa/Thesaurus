@@ -1,5 +1,5 @@
 
-<h6 align="center"><img align="center" src="AngularClient/src/assets/img/main_logo.png"><h6>
+<h6 align="center"><img align="center" src="https://github.com/maneeshaindrachapa/FYP/blob/master/AngularClient/src/assets/img/main_logo.png?raw=true"><h6>
 <h1 align="center">Final Year Project - 2015 Batch</h1>
 <h2 align="center">An Intelligent Sinhala-English Dictionary / Thesaurus / Word Look-Up Tool</h2>
 
@@ -78,9 +78,9 @@ This is the layer in the server-side application which handle all the requests c
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1NjM0OTM5LC0zMjgwNDY3OTUsLTIxMj
-U3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMTYzLC01OTU4ODM1
-OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxNDAxMzM1NTI0LC
-00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OTY3
-OTIwOV19
+eyJoaXN0b3J5IjpbNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgwND
+Y3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMTYz
+LC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxND
+AxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0
+NjgsLTE2OTY3OTIwOV19
 -->
