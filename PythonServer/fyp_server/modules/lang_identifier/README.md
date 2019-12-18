@@ -64,12 +64,12 @@ Then we tested the Unicode based language identification approach with same test
 
 <figure>  
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/language_identify_si.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
-<figcaption align=center>Working system interfaces for the language identifier"  style="width:100%">  
+<figcaption align=center>Working system interfaces for the language identifier </figcaption>  
 </figure>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjMwNzM1ODksLTIxNDM4MDE2MDMsLT
-EzMjYwMDg5MzksMTQ4ODQ2ODQ3MiwtMTgwODk1NDYxNiwzMDAw
-MDAzNTAsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTg3NTE1MzY3MiwtMjE0MzgwMTYwMywtMT
+MyNjAwODkzOSwxNDg4NDY4NDcyLC0xODA4OTU0NjE2LDMwMDAw
+MDM1MCwtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
 -->
