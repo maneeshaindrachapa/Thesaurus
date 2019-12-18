@@ -73,7 +73,14 @@ This is the layer in the server-side application which handle all the requests c
 
 ![Endpints of the system](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/end-points.jpg?raw=true)
 
-## System Upto Now
+
+## Installation of System
+
+Client side
+
+
+## System Up to Now
+
 
 > Web Application
 
@@ -90,10 +97,10 @@ This is the layer in the server-side application which handle all the requests c
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0MTE2OTI1LDYzMjMzMjM0LDQzMTYzMD
-E3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgw
-NDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMT
-YzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwx
-NDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3Nz
-Q0NjgsLTE2OTY3OTIwOV19
+eyJoaXN0b3J5IjpbNjE4NTM5NTg1LDcxNDExNjkyNSw2MzIzMz
+IzNCw0MzE2MzAxNzcsNzkzODY0OTg3LDc1MDY3MDYwLDc4NTYz
+NDkzOSwtMzI4MDQ2Nzk1LC0yMTI1NzA2MjAxLDEzODg1NDAyNj
+csLTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4MTk2LC03
+OTA3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLDgyNDQ0Mz
+E3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
 -->
