@@ -73,14 +73,13 @@ This is the layer in the server-side application which handle all the requests c
 
 ![Endpints of the system](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/end-points.jpg?raw=true)
 
-
 ## System Upto Now
-![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
+![System upto now]()
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgwND
-Y3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMTYz
-LC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxND
-AxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0
-NjgsLTE2OTY3OTIwOV19
+eyJoaXN0b3J5IjpbODUzMTI4NjAzLDc1MDY3MDYwLDc4NTYzND
+kzOSwtMzI4MDQ2Nzk1LC0yMTI1NzA2MjAxLDEzODg1NDAyNjcs
+LTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4MTk2LC03OT
+A3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLDgyNDQ0MzE3
+MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
 -->
