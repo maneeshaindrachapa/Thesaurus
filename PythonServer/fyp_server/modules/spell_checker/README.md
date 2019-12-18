@@ -10,10 +10,12 @@ This module is developed by our parallel NLP research group. We integrated this 
 Although there exists an error, the user can search for incorrect word in the system. But the system will not display results if it’s not in the model. In the spellings incorrect scenario, we provided search functionality because there can be correct spellings that spell checker system may not identifiable. If the word spellings are correct, then the system will give a hint to the user as below.
 
 <figure>  
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/spell_incorrect.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/spell_correct.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
 <figcaption align=center>Correct spellings indicator</figcaption>  
 </figure>
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNTUyOTY0MSwtMjgzNjkyMzU2LDk0ND
-Y2MTg2LDU1ODczMTU4OV19
+eyJoaXN0b3J5IjpbMzUzODY0MjAyLC0yODM2OTIzNTYsOTQ0Nj
+YxODYsNTU4NzMxNTg5XX0=
 -->
