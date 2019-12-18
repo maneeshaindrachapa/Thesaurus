@@ -17,12 +17,12 @@ The system is taking the user input and then find the sentences which include th
 If a user enters a word to the system, the system will search for the sentence that includes input word and then show it in the interface as shown below.
 
 <figure>  
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/spell_correct.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/examples.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
 <figcaption align=center>Example Sentences for a word</figcaption>  
 </figure>
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzU0Mjg2M119
+eyJoaXN0b3J5IjpbLTM0Mjg5ODIxMV19
 -->
