@@ -95,7 +95,8 @@ Server side of the application built on python [flask](http://flask.palletsproje
 4. Add required data sets to the server.
  i. 
  
-6. Navigate to [fyp_server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server) directory inside [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory and start the flask server.
+6
+5. Navigate to [fyp_server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server) directory inside [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory and start the flask server.
 
     python3 app.py
 
@@ -119,11 +120,11 @@ Server side of the application built on python [flask](http://flask.palletsproje
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjYxMTA3NiwtMTUwMDUwNTE4MSwxMD
-Y2NTkxNTc3LDU4NDUwMjQ2MCwxNzI2NDgwODYxLDI0NDQwMjQw
-Myw3MTQxMTY5MjUsNjMyMzMyMzQsNDMxNjMwMTc3LDc5Mzg2ND
-k4Nyw3NTA2NzA2MCw3ODU2MzQ5MzksLTMyODA0Njc5NSwtMjEy
-NTcwNjIwMSwxMzg4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4Mz
-U5OCwtMTMyMDY3ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjRd
-fQ==
+eyJoaXN0b3J5IjpbNjk0MDYwOTk1LC0xOTI2MTEwNzYsLTE1MD
+A1MDUxODEsMTA2NjU5MTU3Nyw1ODQ1MDI0NjAsMTcyNjQ4MDg2
+MSwyNDQ0MDI0MDMsNzE0MTE2OTI1LDYzMjMzMjM0LDQzMTYzMD
+E3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgw
+NDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMT
+YzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MV19
+
 -->
