@@ -20,13 +20,23 @@
 
 ## Problem Statement
 
-Most of the knowledge written in English. Languages like Sinhala have less presence in internet sources. Therefore, the people who have different mother tongues can’t access most of the knowledge available unless they know English. So, machine translation is the potential solution for giving access to the world's knowledge available in English.
+
+<![endif]-->
+
+Most of the knowledge written in English. Languages like Sinhala can be rarely found from internet sources. Therefore, the people who have different mother tongues can’t access most of the knowledge available unless they know English. So, machine translation is the potential solution for giving access to the world's knowledge available in English.
 
 Today, we can translate almost any language to another language by using google translator. This is also available for the Sinhala language. But the main issue in the Sinhala language is that the words which results after the translation is not matching properly. People are struggling when to use appropriate Sinhala words. This is because there are so many synonyms for one word in Sinhala language and they are coming from various scripts including Pali, Sanskrit, Tamil and etc. No one knows which word suitable for various kinds of situations. Even expert Sinhala professors didn’t know much about this.
 
-As an example, if someone says, “I drink water” in English, there are several synonyms for the word “Water”. As an example, the technical term for water in Sinhala is “ජලය”, Sanskrit term is “වතුර” and buddhist term is “පැන්”. Each of these terms have to be used in appropriate situations. As an example, Sinhalese, use “වතුර බොනවා” not “ජලය බොනවා”. Here we have to find the most suitable Sinhala word in the given context. So when finding a suitable Sinhala word, we have to look for other words in the sentence as well.
+As an example, if someone says, “I drink water” in English, there are several synonyms for the word “Water”. They are coming from different scripts and these words are used in different situations in Sinhala as shown in below.
 
-A thesaurus can be used to find synonyms. In general, a thesaurus is a reference work that group list of words according to their similarity of meaning. There are so many thesauri that are available online for the English language. But there is no such thing that exists for the Sinhala language. Therefore, the requirement of an intelligent tool to do this process for the Sinhala language in an automated way is essential for the Sri Lankan people.
+- ජලය - Scientific Usage, Ex: - ජල විදුලි බලාගාරය, ජල බිල්පත
+- වතුර - Normal Usage, Ex: - වතුර බොනවා, වතුර මල
+- පැන් - Religious Usage (by Buddhists).
+- දිය - Literature Usage.
+
+Here we have to find the most suitable Sinhala word. So, when finding suitable Sinhala word, we have to look for other words in the sentence as well. We can translate the above sentence (I drink water) as මම වතුර බොමි, මම ජලය බොමි, මම පැන් බොමි, මම දිය බොමි. Likewise, there are a number of ways to say the same thing in Sinhala language. But in this case most suitable translation is මම වතුර බොමි. Therefore, the problem is to find the most appropriate word for the considered situation.
+
+A thesaurus can be used to find synonyms. In general, a thesaurus is a reference work that group list of words according to their similarity of meaning. There are so many thesauri that are available online for the English language. But there is no such thing that exists for the Sinhala language. Therefore, the requirement of an intelligent tool to do this process for the Sinhala language in an automated way is essential for the Sri Lankan people. It is very important and valuable for them.
 
 ## Project Objectives
 
@@ -51,8 +61,8 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMz
-IwNjc4MTk2LC03OTA3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4
-ODMxLDgyNDQ0MzE3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ
-==
+eyJoaXN0b3J5IjpbMTM4ODU0MDI2NywtNDU1NDIwMTYzLC01OT
+U4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxNDAxMzM1
+NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0NjgsLT
+E2OTY3OTIwOV19
 -->
