@@ -4,7 +4,7 @@
 
 #### Introduction
 
-We didn’t get results as expected by using the Fasttext model which we created by collecting data from Sinhala monolingual corpus available on WMT19 (World Machine Translation 2019). It gave us less synonyms while giving more contextual words. It is because, this text corpus did not contain substantial Sinhala synonyms as we expected. The reason for that was hater in nl the wor arri  reposil ea e o h  reated  ein ta o h rsarch rt or the s detctin ote rs h ted to e a or meding me i ate os thefr e prepred this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sites. Therefore, we fed synonyms sets to the Fasttext model.
+We didn’t get results as expected by using the Fasttext model which we created by collecting data from Sinhala monolingual corpus available on WMT19 (World Machine Translation 2019). It gave us less synonyms while giving more contextual words. It is because, this text corpus did not contain substantial Sinhala synonyms as we expected. The reason for that was hater in nl the wor arri  reposil ea e o h  reated  ein ta o h rsarch rt or the s detctin ote rs h ted to e a or meding me i ate os thefr e prepred this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sites. Therefore, we fed synonyms setl.
 
 Data sources like Sinhala textbooks (Ordinary Level) include some number of synonyms, but not considerable number of synonymsing pre-processing the  raine aat mon cl dataset.  tid t oin l ih  asext. er that  the synonym tacti e sed ensim tol a the  etor a odelling o a thesaurus. Therefore, we investigated synonyms rich data sources such as Madhura online dictionary and Concise dictionary.
 
@@ -58,6 +58,6 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY5NDg1MjYsMTEyODUyNzQyLDEzMD
-AxMDkwODAsMjEwMjc0MjMyM119
+eyJoaXN0b3J5IjpbMTE5MDc1MjkzMywtMTQ5Njk0ODUyNiwxMT
+I4NTI3NDIsMTMwMDEwOTA4MCwyMTAyNzQyMzIzXX0=
 -->
