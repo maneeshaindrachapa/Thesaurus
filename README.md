@@ -78,7 +78,8 @@ This is the layer in the server-side application which handle all the requests c
  #### 
 Client side ([Web Clie
 nt](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/AngularClient))
- This client side of the application developed with [Angular CLI](https://cli.angular.io/). when we need to deploy we had to build 
+ This client side of the application developed with [Angular CLI](https://cli.angular.io/). when we need to deploy we had to [build](https://angular.io/cli/build) the application and serve on web server. As the deployment steps,
+ 1. Build angular Applic
 
 ## System Up to Now
 
@@ -98,11 +99,11 @@ nt](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/AngularClient))
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjQ4MDg2MSwyNDQ0MDI0MDMsNzE0MT
-E2OTI1LDYzMjMzMjM0LDQzMTYzMDE3Nyw3OTM4NjQ5ODcsNzUw
-NjcwNjAsNzg1NjM0OTM5LC0zMjgwNDY3OTUsLTIxMjU3MDYyMD
-EsMTM4ODU0MDI2NywtNDU1NDIwMTYzLC01OTU4ODM1OTgsLTEz
-MjA2NzgxOTYsLTc5MDc4OTg3MSwxNDAxMzM1NTI0LC00MTI0OD
-g4MzEsODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OTY3OTIwOV19
-
+eyJoaXN0b3J5IjpbLTExMTA1MjM4ODksMTcyNjQ4MDg2MSwyND
+Q0MDI0MDMsNzE0MTE2OTI1LDYzMjMzMjM0LDQzMTYzMDE3Nyw3
+OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgwNDY3OT
+UsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMTYzLC01
+OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxNDAxMz
+M1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0Njhd
+fQ==
 -->
