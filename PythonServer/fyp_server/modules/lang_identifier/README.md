@@ -30,7 +30,7 @@ In this scenario, when creating the one-hot vector approach because we can creat
 In our implementation we put maximum word length as 30 and created multi hot vectors with length of 780(30*max_word_length). That vector represents the character properties for a particular word.
 
 <figure>  
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hotvector.png?raw=true"  alt="Multi-hot vector example"  style="width:100%">  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hot%20vector.png?raw=true"  alt="Multi-hot-vector example"  style="width:100%">  
 <figcaption align=center>Multi-hot vector example</figcaption>  
 </figure>
 
@@ -69,7 +69,7 @@ Then we tested the Unicode based language identification approach with same test
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTE1MzY3MiwtMjE0MzgwMTYwMywtMT
-MyNjAwODkzOSwxNDg4NDY4NDcyLC0xODA4OTU0NjE2LDMwMDAw
-MDM1MCwtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTExNDkxMTgyMDAsLTIxNDM4MDE2MDMsLT
+EzMjYwMDg5MzksMTQ4ODQ2ODQ3MiwtMTgwODk1NDYxNiwzMDAw
+MDAzNTAsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
