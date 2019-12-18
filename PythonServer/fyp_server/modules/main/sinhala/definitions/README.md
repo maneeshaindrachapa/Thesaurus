@@ -15,7 +15,7 @@ The system is taking the user input and find the corresponding definition for th
 If a user entered a word, definition of that word is shown in the web application as below.
 
 <figure>  
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/examples.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/def.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
 <figcaption align=center>Word definitions</figcaption>  
 </figure>
 
@@ -23,5 +23,5 @@ If a user entered a word, definition of that word is shown in the web applicatio
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzA4NDcwNF19
+eyJoaXN0b3J5IjpbLTEzNzg3Njg0NjRdfQ==
 -->
