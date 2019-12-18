@@ -81,7 +81,9 @@ This is the layer in the server-side application which handle all the requests c
  2. Set up apache on server ([on ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart))
  3. Deploy app on Apache server
 
-)
+)#### Server side ([Falsk Server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server))
+
+
 
 ## System Up to Now
 
@@ -101,11 +103,11 @@ This is the layer in the server-side application which handle all the requests c
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg0NTAyNDYwLDE1NzYxMDI2OTcsMTcyNj
-Q4MDg2MSwyNDQ0MDI0MDMsNzE0MTE2OTI1LDYzMjMzMjM0LDQz
-MTYzMDE3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC
-0zMjgwNDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1
-NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OT
-g3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwXX0=
+eyJoaXN0b3J5IjpbLTEzOTM5ODMxODgsNTg0NTAyNDYwLDE3Mj
+Y0ODA4NjEsMjQ0NDAyNDAzLDcxNDExNjkyNSw2MzIzMzIzNCw0
+MzE2MzAxNzcsNzkzODY0OTg3LDc1MDY3MDYwLDc4NTYzNDkzOS
+wtMzI4MDQ2Nzk1LC0yMTI1NzA2MjAxLDEzODg1NDAyNjcsLTQ1
+NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4MTk2LC03OTA3OD
+k4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLDgyNDQ0MzE3MF19
 
 -->
