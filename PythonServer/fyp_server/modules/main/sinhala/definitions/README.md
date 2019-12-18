@@ -17,15 +17,13 @@ If a user entered a word, definition of that word is shown in the web applicatio
 <figure>  
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/def.jpg?raw=true" style="width:100%">  
 <figcaption align=center>Word definitions</figcaption>  
+</figure >
+Word definitions</figcaption>  
 </figure>
-Example Sentences for a word</figcaption>  
-</figure>
-
-For English language, we extracted example sentences from the Thesaurus API because it is already existing and that is not relevant to our research area.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTgwMDg2MDIsMjkwNjc0OTMyLC0xMz
+eyJoaXN0b3J5IjpbLTE5OTU4MTkwMzUsMjkwNjc0OTMyLC0xMz
 c4NzY4NDY0XX0=
 -->
