@@ -14,7 +14,6 @@ Here we get input word and considered each character in the word and get the Uni
 
 ### Deep learning Based Approach
 #### Data Preparation & Pre-processing
-<![endif]-->
 
 The main problem with the neural network approach is it’s required large data as the training dataset. Therefore, as the first step we find large Sinhala and English data to train the neural network model. Then, we prepared a dataset by extracting a Sinhala and English dataset from the Wikipedia articles using the Python Wikipedia library and collected data from English & Sinhala monolingual corpus available on WMT19(World Machine Translation 2019). Also when we are collecting the data we had to prepare the same size of data set for both Sinhala and English languages to avoid the model bias on one language.
 
@@ -68,7 +67,7 @@ Then we tested the Unicode based language identification approach with same test
 <figcaption align=center>Working system interfaces for the language identifier </figcaption>  
 </figure>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Nzg0NDgxNSwtMTMyNjAwODkzOSwxND
+eyJoaXN0b3J5IjpbLTcwOTU1MDA1MiwtMTMyNjAwODkzOSwxND
 g4NDY4NDcyLC0xODA4OTU0NjE2LDMwMDAwMDM1MCwtMjA4ODc0
 NjYxMiw3MzA5OTgxMTZdfQ==
 -->
