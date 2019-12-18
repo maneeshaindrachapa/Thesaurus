@@ -81,7 +81,7 @@ This is the layer in the server-side application which handle all the requests c
 
 ![Web Interface 2](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/web_interface_2.png?raw=true)
 
-![stemupto now<h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
+<h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 
 > Mobile Application
 
@@ -90,7 +90,7 @@ This is the layer in the server-side application which handle all the requests c
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5Njk0MDM0LDYzMjMzMjM0LDQzMTYzMD
+eyJoaXN0b3J5IjpbNzE0MTE2OTI1LDYzMjMzMjM0LDQzMTYzMD
 E3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgw
 NDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMT
 YzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwx
