@@ -76,9 +76,9 @@ This is the layer in the server-side application which handle all the requests c
 
 ## Installation of System
  #### 
-Client side (Web Clie)
- 
-
+Client side ([Web Clie
+nt](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/AngularClient))
+ This client side of the application developed with [Angular CLI](https://cli.angular.io/) 
 
 ## System Up to Now
 
@@ -98,7 +98,7 @@ Client side (Web Clie)
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ0NDAyNDAzLDIxMzQwNTg1MzEsNzE0MT
+eyJoaXN0b3J5IjpbLTQwMTI5OTk4NywyNDQ0MDI0MDMsNzE0MT
 E2OTI1LDYzMjMzMjM0LDQzMTYzMDE3Nyw3OTM4NjQ5ODcsNzUw
 NjcwNjAsNzg1NjM0OTM5LC0zMjgwNDY3OTUsLTIxMjU3MDYyMD
 EsMTM4ODU0MDI2NywtNDU1NDIwMTYzLC01OTU4ODM1OTgsLTEz
