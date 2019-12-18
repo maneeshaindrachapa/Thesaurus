@@ -47,7 +47,11 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
 ![System Architecture](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/FYP_Archi.png?raw=true)
 
 There are 3 main layers in server side of the application,
-1. 
+1. Data Layer
+
+2. Data Accessing and Processing Layer
+4. End-points Layer
+
 
 
  - **Language identifier module**: Mainly used the Deep Learning based approch with the character level diffrent things in the both Sinhala & English languages.
@@ -65,8 +69,8 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzNDc2OTAyLC0yMTI1NzA2MjAxLDEzOD
-g1NDAyNjcsLTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4
-MTk2LC03OTA3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLD
-gyNDQ0MzE3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
+eyJoaXN0b3J5IjpbMTgwNTA0NjQ1MCwtMjEyNTcwNjIwMSwxMz
+g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
+ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
+w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
 -->
