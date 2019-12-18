@@ -47,10 +47,18 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
 ![System Architecture](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/FYP_Archi.png?raw=true)
 
 There are 3 main layers in server side of the application,
-1. Data Layer
 
-2. Data Accessing and Processing Layer
-4. End-points Layer
+**1. Data Layer**
+
+This layer is responsible for storing the datasets and models which needed to each module of the system. All of these datasets and models are stored in the server to provide access whenever requested by a module.
+
+**2. Data Accessing and Processing Layer**
+
+This is the main module that responsible for return meaningful output from the system. In this layer there are separate modules which specified to execute specific tasks related to the user requests. The design diagram for this layer with separate modules as follows.
+
+![Vector spaces](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/vecotor_space.jpg?raw=true)
+
+**4. End-points Layer**
 
 
 
@@ -69,7 +77,7 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTA0NjQ1MCwtMjEyNTcwNjIwMSwxMz
+eyJoaXN0b3J5IjpbLTg2MjU2MzM1NywtMjEyNTcwNjIwMSwxMz
 g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
 ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
 w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
