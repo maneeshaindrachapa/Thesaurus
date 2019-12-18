@@ -35,16 +35,12 @@ In our implementation we put maximum word length as 30 and created multi hot vec
 <figcaption align=center>Multi-hot vector example</figcaption>  
 </figure>
 
->Fig.1 - Trulli, Puglia, Italy.</figcaption>  
-</figure>
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/#### Model Training
-
-<![endif]-->
+Model Training
 
 After we have done all the pre-processing required to train the model, we have divided our data set into training and test data sets(x_train,x_test) as 85% of the dataset is training data and 15% of the data is test data. In this language classifier for Sinhala & English languages, we used a supervised learning approach with Keras 5-layer neural network model. Here we used Sequential neural network approach in Keras model with initially defining 200 neurons for the input layer with 26*max_word_length input dimension. Then process the input data with different 3 internal layers and finally converted the output layer with 2 neurons (for two languages Sinhala & English). Every hidden layer in the neural network used ‘sigmoid’ function as the activation function. Also, we used MSE (Mean Squared Error) as the error calculating approach and 100 epochs with batch size of 1000 for our model training. After we trained our model, we have saved model weights into a file called “weights.hdf5” for use the model again without training again. Also, the as the intermediate state of the complete process we have saved multi-hot%20 vector.png?raw=true" />s in csv file as the backfile for data preparation and pre-processing.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDg5NTQ2MTYsMzAwMDAwMzUwLC0yMD
-g4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTQ4ODQ2ODQ3MiwtMTgwODk1NDYxNiwzMD
+AwMDAzNTAsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
