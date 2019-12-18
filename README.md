@@ -96,7 +96,8 @@ Server side of the application built on python [flask](http://flask.palletsproje
  i. Inside language identifier module we have to add trained model. 
  ii. Add example sentence data set to the [main/sinhala/example_sentences](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/example_sentences) folder.
 iii. Add definitions data corpus to [man/sinhala/definitions](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/definitions) folder.
- iii. 
+ iii.
+ 
 6
 5. Navigate to [fyp_server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server) directory inside [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory and start the flask server.
 
@@ -122,11 +123,11 @@ iii. Add definitions data corpus to [man/sinhala/definitions](https://github.com
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDczNzYzNyw2OTQwNjA5OTUsLTE5Mj
-YxMTA3NiwtMTUwMDUwNTE4MSwxMDY2NTkxNTc3LDU4NDUwMjQ2
-MCwxNzI2NDgwODYxLDI0NDQwMjQwMyw3MTQxMTY5MjUsNjMyMz
-MyMzQsNDMxNjMwMTc3LDc5Mzg2NDk4Nyw3NTA2NzA2MCw3ODU2
-MzQ5MzksLTMyODA0Njc5NSwtMjEyNTcwNjIwMSwxMzg4NTQwMj
-Y3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3ODE5Nl19
+eyJoaXN0b3J5IjpbLTU2MTQ2MDA3NywxNTMwNzM3NjM3LDY5ND
+A2MDk5NSwtMTkyNjExMDc2LC0xNTAwNTA1MTgxLDEwNjY1OTE1
+NzcsNTg0NTAyNDYwLDE3MjY0ODA4NjEsMjQ0NDAyNDAzLDcxND
+ExNjkyNSw2MzIzMzIzNCw0MzE2MzAxNzcsNzkzODY0OTg3LDc1
+MDY3MDYwLDc4NTYzNDkzOSwtMzI4MDQ2Nzk1LC0yMTI1NzA2Mj
+AxLDEzODg1NDAyNjcsLTQ1NTQyMDE2MywtNTk1ODgzNTk4XX0=
 
 -->
