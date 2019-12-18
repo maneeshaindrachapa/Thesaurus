@@ -1,6 +1,6 @@
 <h2 align="center">Similar Word Cluster Generator Module</h2>
 
-### FastText Word Embedding Model
+### Optimized FastText Word Embedding Model
 
 #### Introduction
 
@@ -18,9 +18,11 @@ Mainly used a text corpus which we created by collecting data from Sinhala monol
 
 #### Model Training
 
-<![endif]-->
-
 In this phase we mainly used Fasttext tool as our main model building tool. With the Fasttext model we can build a vector mode with 100 - 300 dimensions. As we mentioned in previous topics Fasttext is very light weight tool for word embedding model training. In our model training followed Fasttext documentation as the reference for tune-up the parameters of the tool. In Fasttext model training there are few parameters we can tune-up to get the model as we expected. With our dataset we followed unsupervised training approach with Fasttext.
+
+When our model training, we used few parameter changes related to our model building on the dataset. We tried different types of model training by changing the parameter values of the model training. Then we evaluate the model given word results with word extraction using python library called Gensim. Gensim is one of nearest neighbour vector extraction tools that are available for most common word embedding approaches.  With this Gensim we initially provided threshold as the 10 and extracted nearest neighbour according to cosine similarity and evaluated the built models and finally come up with the suitable model with below parameters.
+
+After we successfully trained our model, we have identified that model gives synonyms words with contextually similar words and not related words. Therefore, we fed crawled synsets to the model to replace those unwanted words by having threshold with cosine similarity and for some words we had to feed the synsets by manually. To optimize the model.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzQ1MDYxMTYsMjEwMjc0MjMyM119
+eyJoaXN0b3J5IjpbLTExMDMwMDA5NDUsMjEwMjc0MjMyM119
 -->
