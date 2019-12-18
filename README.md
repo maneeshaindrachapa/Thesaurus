@@ -74,10 +74,17 @@ This is the layer in the server-side application which handle all the requests c
 ![Endpints of the system](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/end-points.jpg?raw=true)
 
 ## System Upto Now
-![System upto now]()
+
+> Web Application
+
+![Web Interface 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/web_interface_1.png?raw=true)
+
+![Web Interface 2](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/web_interface_2.png?raw=true)
+
+
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzMTI4NjAzLDc1MDY3MDYwLDc4NTYzND
+eyJoaXN0b3J5IjpbLTg2Nzg5NDgyLDc1MDY3MDYwLDc4NTYzND
 kzOSwtMzI4MDQ2Nzk1LC0yMTI1NzA2MjAxLDEzODg1NDAyNjcs
 LTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4MTk2LC03OT
 A3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLDgyNDQ0MzE3
