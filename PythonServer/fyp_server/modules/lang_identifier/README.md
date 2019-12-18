@@ -59,9 +59,14 @@ Here we used data set only includes 110,270,445 words for each Sinhala and Engli
 
 Then we tested the Unicode based language identification approach with same test dataset and we get the accuracy of the classification as 98%. Then with the comparison of the accuracy levels of both approaches discussed in above we selected the high accuracy approach to implement with the final system. The identification of the language in the final system is shown as below in the client side of the application.
 
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/language_identify_en.jpg?raw=true"  alt="Trulli"  style="width:100%">  
 
+<figure>  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/language_identify_si.jpg?raw=true"  alt="Trulli"  style="width:100%">  
+<figcaption align=center>Language identifier model complete architecture </figcaption>  
+</figure>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg1NjM2MDksLTEzMjYwMDg5MzksMT
-Q4ODQ2ODQ3MiwtMTgwODk1NDYxNiwzMDAwMDAzNTAsLTIwODg3
-NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE3MDA0OTExLC0xMzI2MDA4OTM5LDE0OD
+g0Njg0NzIsLTE4MDg5NTQ2MTYsMzAwMDAwMzUwLC0yMDg4NzQ2
+NjEyLDczMDk5ODExNl19
 -->
