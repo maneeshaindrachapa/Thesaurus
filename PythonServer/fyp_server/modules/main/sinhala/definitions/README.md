@@ -1,6 +1,6 @@
 <h2 align="center">Word Definition Extractor Module</h2>
 
-This module is to provide definitions for a user input word. We cannot implement a method to automatically extract definitions of a word from a text corpus. Therefore, we used a dictionary look-up approach to provide definitions of a word. For Sinhala language, we extract definitions by using the data which we collected from the Concise Dictionary. For Englishbasically used to give supportive sentences for a given word. This feature is useful if a user does not have an idea about a particular word.
+This module is to provide definitions for a user input word. We cannot implement a method to automatically extract definitions of a word from a text corpus. Therefore, we used a dictionary look-up approach to provide definitions of a word. For Sinhala language, we extract definitions by using the data which we collected from the Concise Dictionary. For English language, we extracted definitions from the Thesaurus API because it is already existing and that is not relevant to our research area.
 
 #### Data preparation and pre-processing
 
@@ -32,6 +32,6 @@ For English language, we extracted example sentences from the Thesaurus API beca
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzc0MDg4OCwyOTA2NzQ5MzIsLTEzNz
-g3Njg0NjRdfQ==
+eyJoaXN0b3J5IjpbLTE5NDE1MTY2OTUsMjkwNjc0OTMyLC0xMz
+c4NzY4NDY0XX0=
 -->
