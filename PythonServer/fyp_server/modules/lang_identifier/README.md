@@ -34,8 +34,9 @@ In our implementation we put maximum word length as 30 and created multi hot vec
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hot%20vector.png?raw=true" style="width:100%">  
 <figcaption align=center>Multi-hot vector example</figcaption>  
 </figure>
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hot%20vector.png?raw=true" />
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3Nzg2NzE0NywtMjA4ODc0NjYxMiw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMjg3NzQ5NDg0LC0yMDg4NzQ2NjEyLDczMD
+k5ODExNl19
 -->
