@@ -82,8 +82,11 @@ This is the layer in the server-side application which handle all the requests c
  3. Deploy app on Apache server
 
 #### Server side ([Falsk Server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server))
-Server side of the application built on python [flask](http://flask.palletsprojects.com/en/1.1.x/) server as a REST Api. As the deployment 
+Server side of the application built on python [flask](http://flask.palletsprojects.com/en/1.1.x/) server as a REST Api. As the deployment steps,
 
+ 1. Setup python3 and pip3 on the server.
+ 2. Navigate to [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory in the project.
+ 3. open the ter
 
 ## System Up to Now
 
@@ -103,11 +106,11 @@ Server side of the application built on python [flask](http://flask.palletsproje
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDMyMzI4MTksMTA2NjU5MTU3Nyw1OD
-Q1MDI0NjAsMTcyNjQ4MDg2MSwyNDQ0MDI0MDMsNzE0MTE2OTI1
-LDYzMjMzMjM0LDQzMTYzMDE3Nyw3OTM4NjQ5ODcsNzUwNjcwNj
-AsNzg1NjM0OTM5LC0zMjgwNDY3OTUsLTIxMjU3MDYyMDEsMTM4
-ODU0MDI2NywtNDU1NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2Nz
-gxOTYsLTc5MDc4OTg3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzFd
-fQ==
+eyJoaXN0b3J5IjpbMTAxMTQ2MTc2NiwxMDY2NTkxNTc3LDU4ND
+UwMjQ2MCwxNzI2NDgwODYxLDI0NDQwMjQwMyw3MTQxMTY5MjUs
+NjMyMzMyMzQsNDMxNjMwMTc3LDc5Mzg2NDk4Nyw3NTA2NzA2MC
+w3ODU2MzQ5MzksLTMyODA0Njc5NSwtMjEyNTcwNjIwMSwxMzg4
+NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3OD
+E5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMV19
+
 -->
