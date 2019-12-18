@@ -4,7 +4,7 @@
 
 #### Introduction
 
-We didn’t get results as expected by using the Fasttext model which we created by collecting data from Sinhala monolingual corpus available on WMT19 (World Machine Translation 2019). It gave us less synonyms while giving more contextual words. It is because, this text corpus did not contain substantial Sinhala synonyms as we expected. The reason for that was hater in nl the wor arri  reposil ea e o h  reated  ein ta o h rsarch rt or the s detctin ote rs h ted to e a or meding me i ate os thefr e prepred this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sites. Therefore, we fed synonyms setl.
+We didn’t get results as expected by using the Fasttext model which we created by collecting data from Sinhala monolingual corpus available on WMT19 (World Machine Translation 2019). It gave us less synonyms while giving more contextual words. It is because, this text corpus did not contain substantial Sinhala synonyms as we expected. The reason for that was this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sites. Therefore, we fed synonyms sets to the Fasttext model.
 
 Data sources like Sinhala textbooks (Ordinary Level) include some number of synonyms, but not considerable number of synonymsing pre-processing the  raine aat mon cl dataset.  tid t oin l ih  asext. er that  the synonym tacti e sed ensim tol a the  etor a odelling o a thesaurus. Therefore, we investigated synonyms rich data sources such as Madhura online dictionary and Concise dictionary.
 
@@ -16,7 +16,7 @@ There are lot of issues in the data. Therefore, we fixed those issues before fee
 
 #### Literature Review
 
-A web crawler [30] is a program or automated script which browses the World Wide Web in an automated methodological manner. This process is known as we are crawling. People can crawl lot of data from the internet by using crawlers without applying much effort. In modern world, crawling become very straight forward with the help of advanced programming concepts.
+A web crawler is a program or automated script which browses the World Wide Web in an automated methodological manner. This process is known as we are crawling. People can crawl lot of data from the internet by using crawlers without applying much effort. In modern world, crawling become very straight forward with the help of advanced programming concepts.
 
 When training a Fasttext model under a text corpus, there are a lot of parameters need to be adjusted in order to optimize the model. This procedure will help to find the most appropriate parameters set that provide the best results for a given Fasttext model.
 
@@ -50,7 +50,7 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTY2MDA4NjgsLTYzNDIyMTg3NywxMT
-kwNzUyOTMzLDExMjg1Mjc0MiwxMzAwMTA5MDgwLDIxMDI3NDIz
-MjNdfQ==
+eyJoaXN0b3J5IjpbLTEwOTMyNjYwMywtNjM0MjIxODc3LDExOT
+A3NTI5MzMsMTEyODUyNzQyLDEzMDAxMDkwODAsMjEwMjc0MjMy
+M119
 -->
