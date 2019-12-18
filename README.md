@@ -88,7 +88,8 @@ Server side of the application built on python [flask](http://flask.palletsproje
  2. Navigate to [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory in the project.
  3. open the terminal and install requirements on [requirements.txt](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/PythonServer/requirements.txt "requirements.txt").
 
-     pip3 install -r requirements.txt
+> pip3 install -r requirements.txt
+
      
 4. Add required data sets to the server.
  <br>i. Inside language identifier module we have to add trained model. <br>
@@ -98,7 +99,7 @@ iii. Add definitions data corpus to [man/sinhala/definitions](https://github.com
  
 5. Navigate to [fyp_server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server) directory inside [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory and start the flask server.
 
-    python3 app.py
+> python3 app.py
 
 ## System Up to Now
 
@@ -120,11 +121,10 @@ iii. Add definitions data corpus to [man/sinhala/definitions](https://github.com
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjY0MjkyMDAsMTcyODcxMjM1NywtNT
-YxNDYwMDc3LDY5NDA2MDk5NSwtMTkyNjExMDc2LC0xNTAwNTA1
-MTgxLDEwNjY1OTE1NzcsNTg0NTAyNDYwLDE3MjY0ODA4NjEsMj
-Q0NDAyNDAzLDcxNDExNjkyNSw2MzIzMzIzNCw0MzE2MzAxNzcs
-NzkzODY0OTg3LDc1MDY3MDYwLDc4NTYzNDkzOSwtMzI4MDQ2Nz
-k1LC0yMTI1NzA2MjAxLDEzODg1NDAyNjcsLTQ1NTQyMDE2M119
-
+eyJoaXN0b3J5IjpbNzgzMDIzOCwxNzI4NzEyMzU3LC01NjE0Nj
+AwNzcsNjk0MDYwOTk1LC0xOTI2MTEwNzYsLTE1MDA1MDUxODEs
+MTA2NjU5MTU3Nyw1ODQ1MDI0NjAsMTcyNjQ4MDg2MSwyNDQ0MD
+I0MDMsNzE0MTE2OTI1LDYzMjMzMjM0LDQzMTYzMDE3Nyw3OTM4
+NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgwNDY3OTUsLT
+IxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMTYzXX0=
 -->
