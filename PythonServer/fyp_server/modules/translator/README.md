@@ -4,17 +4,17 @@ We used this module to translate each of the synonym. When a user enters a word 
 
 <figure>  
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/def.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
-<figcaption align=center>Translation of a Sinhala to English</figcaption>  
+<figcaption align=center>Translation of a Sinhala to EnglishWord definitions</figcaption>  
 </figure>
 
 <figure>  
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/def.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
-<figcaption align=center>Translation of an English to Sinhala</figcaption>  
+<figcaption align=center>Translation of an English to SinhalaWord definitions</figcaption>  
 </figure>
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTUwMTY4OF19
+eyJoaXN0b3J5IjpbLTE2MjIxNTExODAsLTM4MTUwMTY4OF19
 -->
