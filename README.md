@@ -55,11 +55,11 @@ This is the main module that responsible for return meaningful output from the s
 
 ![Internal architecture of Data accessing and processing layer](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/System%20Diagram.png?raw=true)
 
- - Language identifier module
- - Spell Checker Module
- - Pos-tagger module
- - Similar word cluster generator
- - Word definition extractor module
+ - [Language identifier module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/lang_identifier)
+ - [Spell Checker Module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/spell_checker)
+ - [Pos-tagger module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/main/sinhala/pos_tag)
+ - [Similar word cluster generator](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/main/sinhala/synonyms)
+ - [Word definition extractor module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/main/sinhala/definitions)
  - Language translation module
  - Word example sentence extractor
  - Language Translation module
@@ -74,7 +74,7 @@ This is the main module that responsible for return meaningful output from the s
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MDc3NzEzOSwtMjEyNTcwNjIwMSwxMz
+eyJoaXN0b3J5IjpbMTQxNDk1MDk0MiwtMjEyNTcwNjIwMSwxMz
 g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
 ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
 w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
