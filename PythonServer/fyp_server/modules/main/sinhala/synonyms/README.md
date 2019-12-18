@@ -12,7 +12,15 @@ Word embeddings are word representation, most common usage building continuous w
 
 After we successfully build the vector space model next thing is defining the approach to get the synonyms-based cosine similarity. Gensim is a Natural Language Processing package that does ‘Topic Modelling for Humans’. It is a leading and a state-of-the-art package for processing texts, working with word vector models (such as Word2Vec, Fasttext etc) and for building topic models. Here Gensim is mainly used to load the vector space model and get the similarity words from vector space using cosine similarity. Then we can extract the word synonyms by inserting the word count threshold value to the Gensim module.
 
+#### Data Preparation & Pre-processing
 
+Mainly used a text corpus which we created by collecting data from Sinhala monolingual corpus available on WMT19 (World Machine Translation 2019) to train the Fasttext model. It contained approximately 110M words. This dataset had a lot of unwanted data for our model training including numbers, special characters, emojis and etc. Therefore, we had to pre-process and clean this dataset using pre-processing script. Then we trained a Fasttext model using this cleaned dataset. But it did not contain substantial Sinhala synonyms as we expected. The reason for that was this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sites.
+
+#### Model Training
+
+<![endif]-->
+
+In this phase we mainly used Fasttext tool as our main model building tool. With the Fasttext model we can build a vector mode with 100 - 300 dimensions. As we mentioned in previous topics Fasttext is very light weight tool for word embedding model training. In our model training followed Fasttext documentation as the reference for tune-up the parameters of the tool. In Fasttext model training there are few parameters we can tune-up to get the model as we expected. With our dataset we followed unsupervised training approach with Fasttext.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzc0Mzg5OTIsMjEwMjc0MjMyM119
+eyJoaXN0b3J5IjpbLTEyNzQ1MDYxMTYsMjEwMjc0MjMyM119
 -->
