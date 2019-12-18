@@ -81,7 +81,7 @@ This is the layer in the server-side application which handle all the requests c
  2. Set up apache on server ([on ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart))
  3. Deploy app on Apache server
 
-
+)
 
 ## System Up to Now
 
@@ -101,11 +101,11 @@ This is the layer in the server-side application which handle all the requests c
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NjEwMjY5NywxNzI2NDgwODYxLDI0ND
-QwMjQwMyw3MTQxMTY5MjUsNjMyMzMyMzQsNDMxNjMwMTc3LDc5
-Mzg2NDk4Nyw3NTA2NzA2MCw3ODU2MzQ5MzksLTMyODA0Njc5NS
-wtMjEyNTcwNjIwMSwxMzg4NTQwMjY3LC00NTU0MjAxNjMsLTU5
-NTg4MzU5OCwtMTMyMDY3ODE5NiwtNzkwNzg5ODcxLDE0MDEzMz
-U1MjQsLTQxMjQ4ODgzMSw4MjQ0NDMxNzAsMTEyNzc3NDQ2OF19
+eyJoaXN0b3J5IjpbNTg0NTAyNDYwLDE1NzYxMDI2OTcsMTcyNj
+Q4MDg2MSwyNDQ0MDI0MDMsNzE0MTE2OTI1LDYzMjMzMjM0LDQz
+MTYzMDE3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC
+0zMjgwNDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1
+NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OT
+g3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwXX0=
 
 -->
