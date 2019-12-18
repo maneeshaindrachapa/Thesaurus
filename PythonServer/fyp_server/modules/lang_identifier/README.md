@@ -44,9 +44,24 @@ After we have done all the pre-processing required to train the model, we have d
 <figcaption align=center>Language identifier model complete architecture </figcaption>  
 </figure>
 
+#### Results Evaluation
+
+After successfully implemented the Language identifier with both Unicode and Deep Learning based approaches we had to evaluate both the approaches. Then we had to select the best approach to implement into the final system.
+
+For the evaluation process we tested the approaches with already tagged English & Sinhala data sets (Appendix 01 & 02). For the Deep Learning based approach, we observed the following accuracy and error from the neural network model.
+
+Accuracy: 92.97% (for 50 epochs)
+
+Mean Squared Error (MSE): 0.0652
+
+
+Here we used data set only includes 110,270,445 words for each Sinhala and English languages as the training data set. If we use more data and train the model with optimal number of epochs, we can increase the accuracy of this neural network model.
+
+Then we tested the Unicode based language identification approach with same test dataset and we get the accuracy of the classification as 98%. Then with the comparison of the accuracy levels of both approaches discussed in above we selected the high accuracy approach to implement with the final system. The identification of the language in the final system is shown as below in the client side of the application.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjYwMDg5MzksMTQ4ODQ2ODQ3MiwtMT
-gwODk1NDYxNiwzMDAwMDAzNTAsLTIwODg3NDY2MTIsNzMwOTk4
-MTE2XX0=
+eyJoaXN0b3J5IjpbLTEzNjg1NjM2MDksLTEzMjYwMDg5MzksMT
+Q4ODQ2ODQ3MiwtMTgwODk1NDYxNiwzMDAwMDAzNTAsLTIwODg3
+NDY2MTIsNzMwOTk4MTE2XX0=
 -->
