@@ -16,7 +16,7 @@ There are lot of issues in the data. Therefore, we fixed those issues before fee
 
 #### Literature Review
 
-A web crawler is a program or automated script which browses the World Wide Web in an automated methodological manner. This process is known as we are crawling. People can crawl lot of data from the internet by using crawlers without applying much effort. In modern world, crawling become very straight forward with the help of advanced programming concepts.
+A web crawler [30] is a program or automated script which browses the World Wide Web in an automated methodological manner. This process is known as we are crawling. People can crawl lot of data from the internet by using crawlers without applying much effort. In modern world, crawling become very straight forward with the help of advanced programming concepts.
 
 When training a Fasttext model under a text corpus, there are a lot of parameters need to be adjusted in order to optimize the model. This procedure will help to find the most appropriate parameters set that provide the best results for a given Fasttext model.
 
@@ -50,7 +50,7 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTMyNjYwMywtNjM0MjIxODc3LDExOT
-A3NTI5MzMsMTEyODUyNzQyLDEzMDAxMDkwODAsMjEwMjc0MjMy
-M119
+eyJoaXN0b3J5IjpbNzQ5MzcyMjAsLTEwOTMyNjYwMywtNjM0Mj
+IxODc3LDExOTA3NTI5MzMsMTEyODUyNzQyLDEzMDAxMDkwODAs
+MjEwMjc0MjMyM119
 -->
