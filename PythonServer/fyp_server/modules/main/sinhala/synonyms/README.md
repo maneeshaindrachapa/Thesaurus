@@ -4,15 +4,7 @@
 
 #### Introduction
 
-We didn’t get results as expected by using the Fasttext model which we created by collecting data from Sinhala monolingual corpus available on WMT19 (World Machine Translation 2019). It gave us less synonyms while giving more contextual words. It is because, this text corpus did not contain substantial Sinhala synonyms as we expected. The reason for that was this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sites. Therefore, we fed synonyms sets to the Fasttext model.
 
-Data sources like Sinhala textbooks (Ordinary Level) include some number of synonyms, but not considerable number of synonymsing pre-processing the  raine aat mon cl dataset.  tid t oin l ih  asext. er that  the synonym tacti e sed ensim tol a the  etor a odelling o a thesaurus. Therefore, we investigated synonyms rich data sources such as Madhura online dictionary and Concise dictionary.
-
-As the synonym datasets for the system we crawled Sinhala synonym sets from Madhura dictionary by submitt Fasttext model en  actd the snony wo from etra model aed on the cone tae of the o etorith wr cunt theol ad iat eold agr e#### Literature Review
-
-Word embeddings an English dataset to the Madhura application URL and extract the similar meaning word from the response. These synonym sets were not enough to feed the model. So, we used the Concise dictionary to extract furthermore synonym sets.
-
-There are lot of issues in the data. Therefore, we fixed those issues before feeding synonym setl. The synonym sets which we crawled from the Madura online dictionary contained related synonyms as well as unrelated words. Therefore, we had to mre word representation, most common usage building continuous word vectors based on their contexts in a large corpus. Fasttext is one of lightweight approaches which used to build vector representation for large corpus data without any language dependency. Fasttext can used to build the vector model based on the character level with n-grams or word levels with word n-grams based on the purpose of the model building.  As researchers of the Facebook identified model building with character n-grams are important to identify the morphological variations of the word and the anually look someogy of those words and fix them. Also, Concise dictionary contained lot of garbage data and Unicode errors. Therefore, we had to write script to clean those data and fix Unicode errors. Generally, a dictionary is providing both synonyms and definitions for the words. Therefore, we had to filter synonyms from the Concise dictionary when extracting the data. All the synonyms and definitions for a particular word is separated by ‘;’ sign. Thus, we split each of these phrases by ‘;’ at first. Then if a corresponding phrase has less than 3 words, we assumed it as a synonym of that word. Otherwise we assumed it as a definition.
 
 #### Literature Review
 
@@ -44,7 +36,7 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTExMTg2MzAsNzQ5MzcyMjAsLTYzND
-IyMTg3NywxMTkwNzUyOTMzLDExMjg1Mjc0MiwxMzAwMTA5MDgw
-LDIxMDI3NDIzMjNdfQ==
+eyJoaXN0b3J5IjpbLTEyOTc2Njg3Miw3NDkzNzIyMCwtNjM0Mj
+IxODc3LDExOTA3NTI5MzMsMTEyODUyNzQyLDEzMDAxMDkwODAs
+MjEwMjc0MjMyM119
 -->
