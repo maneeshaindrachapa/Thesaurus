@@ -8,11 +8,11 @@ The main problem of providing definition of a word is finding a dataset which in
 
 #### Implementation
 
-The system is taking the user input and then find the corresponding definition for that word from sentences which include that word from the list. Then the system will put all those relevant sentences to another list. Then the results are sent to the frontend.
+The system is taking the user input and find the corresponding definition for that word from the list. Then the results are sent to the frontend.
 
 #### Results
 
-If a user entereds a word, definition of that word is to the system, the system will search for the sentence that includes input word and then shown it in the web application asinterface as shown below.
+If a user entered a word, definition of that word is shown in the web application as below.
 
 <figure>  
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/def.jpg?raw=true" style="width:100%">  
@@ -26,6 +26,6 @@ For English language, we extracted example sentences from the Thesaurus API beca
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MDA0ODc5OCwyOTA2NzQ5MzIsLTEzNz
-g3Njg0NjRdfQ==
+eyJoaXN0b3J5IjpbLTEwNTgwMDg2MDIsMjkwNjc0OTMyLC0xMz
+c4NzY4NDY0XX0=
 -->
