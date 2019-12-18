@@ -16,13 +16,9 @@ There are lot of issues in the data. Therefore, we fixed those issues before fee
 
 #### Literature Review
 
-<![endif]-->
+A web crawler [30] is a program or automated script which browses the World Wide Web in an automated methodological manner. This process is known as we are crawling. People can crawl lot of data from the internet by using crawlers without applying much effort. In modern world, crawling become very straight forward with the help of advanced programming concepts.
 
-A web crawler is a program or automated script which browses the World Wide Web in an automated methodological manner. This process is known as we are crawling. People can c had lot of un clean this dataset . But in our requirement of vector modelling is extract the meaningfully similarity or contextual similarity from text corpus. Therefore, the word n-gram (word window) is more important than the character level to get the contextual related properties of the words. Then using Fasttext we build the vector space model on corpus with word n-grams by tuning the parameter of the Fasttext. After successfully build the vector space model we can use the different types of approaches to get the similarity measure as Cosine Similarity, Euclidean distance. With the cosine similarity we can get the bounded similarity values with 0-1 range and with these values we can get the similarity threshold to filter out the unrelated words in the results of the synonym extraction than the Euclidean distance approach.
-
-After we successfully build the vector space model next thing is defining the approach to get the synonyms-based cosine similarity. Gensim is a Naturawl lot of data from the internet by using crawlers without applying much effort. In modern world, crawling become very straight forward with the help of advanced programming concepts.
-
-When training a Fasttext model under a text corpus, there are a lot of parameters need to be adjusted in order to optimize the model. ThiLanguage Processing package that does ‘Topic Modelling for Humans’. It is a leading and a state-of-the-art package for processing texts, working with word vector models (such as Word2Vec, Fasttext etc) and for building topic models. Here Gensim is mainly used to load the vector space model and get the similarity words pfrocedure will help to find the most appropriate parameters set that provide the best results for a given Fasttextm vector space using cosine similarity. Then we can extract the word synonyms by inserting the word count threshold value to the Gensim modulel.
+When training a Fasttext model under a text corpus, there are a lot of parameters need to be adjusted in order to optimize the model. This procedure will help to find the most appropriate parameters set that provide the best results for a given Fasttext model.
 
 #### Data Preparation & Pre-processing
 
@@ -54,7 +50,7 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjcxNjk5MDIsLTYzNDIyMTg3NywxMT
+eyJoaXN0b3J5IjpbLTE2OTY2MDA4NjgsLTYzNDIyMTg3NywxMT
 kwNzUyOTMzLDExMjg1Mjc0MiwxMzAwMTA5MDgwLDIxMDI3NDIz
 MjNdfQ==
 -->
