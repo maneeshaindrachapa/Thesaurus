@@ -13,8 +13,9 @@ Unicode is a character encoding standard that uses with all the language that re
 Here we get input word and considered each character in the word and get the Unicode value of that character. Then considering the Unicode ranges of Sinhala and English language classified the that character to the related language. Then with the character language identification calculate the character combined word relatedness to the Sinhala, English or other languages. Then based on this relatedness score identify the high score valued language as the input word language.
 
 ### Deep learning Based Approach
+#### Data Preparation & Pre-processing
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTYzODc1MTksLTIwODg3NDY2MTIsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEwNDkyMDkzNSwtMjA4ODc0NjYxMiw3Mz
+A5OTgxMTZdfQ==
 -->
