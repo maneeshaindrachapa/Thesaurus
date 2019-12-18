@@ -41,11 +41,11 @@ After we successfully built the model, we evaluated the model results with our p
 With the Fasttext model we successfully retrieved synsets with some level of accuracy and after we fed the synsets for the model for optimization, then model behave more accurate than the previous and show the most similar words for an input word to the system.
 
 <figure>  
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/spell_incorrect.jpg?raw=true" style="width:100%">  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/web_interface_2.png?raw=true" style="width:100%">  
 <figcaption align=center>Results for word ‘අම්මා’</figcaption>  
 </figure>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NTMzODU1NSwtMTI0NzMxNjk0NSwxNT
+eyJoaXN0b3J5IjpbLTE1NTU4NjE5MTAsLTQ2NTMzODU1NSwxNT
 Y5NjYwMzU1LDc0OTM3MjIwLC02MzQyMjE4NzcsMTE5MDc1Mjkz
 MywxMTI4NTI3NDIsMTMwMDEwOTA4MCwyMTAyNzQyMzIzXX0=
 -->
