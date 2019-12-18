@@ -20,9 +20,6 @@
 
 ## Problem Statement
 
-
-<![endif]-->
-
 Most of the knowledge written in English. Languages like Sinhala can be rarely found from internet sources. Therefore, the people who have different mother tongues can’t access most of the knowledge available unless they know English. So, machine translation is the potential solution for giving access to the world's knowledge available in English.
 
 Today, we can translate almost any language to another language by using google translator. This is also available for the Sinhala language. But the main issue in the Sinhala language is that the words which results after the translation is not matching properly. People are struggling when to use appropriate Sinhala words. This is because there are so many synonyms for one word in Sinhala language and they are coming from various scripts including Pali, Sanskrit, Tamil and etc. No one knows which word suitable for various kinds of situations. Even expert Sinhala professors didn’t know much about this.
@@ -61,9 +58,13 @@ This is the main module that responsible for return meaningful output from the s
  - Language identifier module
  - Spell Checker Module
  - Pos-tagger module
- - Language translation module
  - Similar word cluster generator
- - *Word example sentence extractor
+ - Word definition extractor module
+ - Language translation module
+ - Word example sentence extractor
+ - Language Translation module
+ - Text-to-speech module
+
 **3. End-points Layer**
 
 
@@ -71,7 +72,7 @@ This is the main module that responsible for return meaningful output from the s
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MzkwMzk5LC0yMTI1NzA2MjAxLDEzOD
+eyJoaXN0b3J5IjpbLTIyMzE3ODk5LC0yMTI1NzA2MjAxLDEzOD
 g1NDAyNjcsLTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4
 MTk2LC03OTA3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLD
 gyNDQ0MzE3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
