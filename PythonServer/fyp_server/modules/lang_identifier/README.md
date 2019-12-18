@@ -7,7 +7,14 @@ At first, we tried to identify the language of a word just by looking at the Uni
 Then we used the deep learning-based approach to detect the language because of the higher accuracy with the neural network-based approach. Here we used the character sequence properties of words to detect the languages. After we trained the model and we compared the both methodologies and with the final implementation we choose the most accurate technique with implementation.
 
 ### Unicode Based Approach
+
+Unicode is a character encoding standard that uses with all the language that represent in the computers. For each letter or symbol in a language has different Unicode values which can be used to identify those in the computers. In this approach we mainly used those Unicode values to clearly identify the Sinhala and English languages separately.
+
+Here we get input word and considered each character in the word and get the Unicode value of that character. Then considering the Unicode ranges of Sinhala and English language classified the that character to the related language. Then with the character language identification calculate the character combined word relatedness to the Sinhala, English or other languages. Then based on this relatedness score identify the high score valued language as the input word language.
+
+### Deep learning Based Approach
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODYxOTc0NywtMjA4ODc0NjYxMiw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEwOTYzODc1MTksLTIwODg3NDY2MTIsNz
+MwOTk4MTE2XX0=
 -->
