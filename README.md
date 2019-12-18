@@ -71,17 +71,16 @@ This is the main module that responsible for return meaningful output from the s
 
 This is the layer in the server-side application which handle all the requests comes to the server in initial stage. This is the layer which responsible to initiate the server-side responsible module for the user request. In the end point layer, there are few different endpoints with different input data as below.
 
-<table>
-<th></th>
-</table>
+![Endpints of the system](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/end-points.jpg?raw=true)
 
 
 ## System Upto Now
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODA0Njc5NSwtMjEyNTcwNjIwMSwxMz
-g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
-ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
-w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbNzg1NjM0OTM5LC0zMjgwNDY3OTUsLTIxMj
+U3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMTYzLC01OTU4ODM1
+OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxNDAxMzM1NTI0LC
+00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OTY3
+OTIwOV19
 -->
