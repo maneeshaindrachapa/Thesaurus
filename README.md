@@ -75,9 +75,8 @@ This is the layer in the server-side application which handle all the requests c
 
 
 ## Installation of System
-
-Client side
-
+ #### Client side (Web Clie)
+ 
 
 ## System Up to Now
 
@@ -97,10 +96,10 @@ Client side
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE4NTM5NTg1LDcxNDExNjkyNSw2MzIzMz
-IzNCw0MzE2MzAxNzcsNzkzODY0OTg3LDc1MDY3MDYwLDc4NTYz
-NDkzOSwtMzI4MDQ2Nzk1LC0yMTI1NzA2MjAxLDEzODg1NDAyNj
-csLTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4MTk2LC03
-OTA3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLDgyNDQ0Mz
-E3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
+eyJoaXN0b3J5IjpbMjEzNDA1ODUzMSw3MTQxMTY5MjUsNjMyMz
+MyMzQsNDMxNjMwMTc3LDc5Mzg2NDk4Nyw3NTA2NzA2MCw3ODU2
+MzQ5MzksLTMyODA0Njc5NSwtMjEyNTcwNjIwMSwxMzg4NTQwMj
+Y3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3ODE5Niwt
+NzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMSw4MjQ0ND
+MxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
 -->
