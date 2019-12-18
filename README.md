@@ -25,19 +25,14 @@
 
 Most of the knowledge written in English. Languages like Sinhala can be rarely found from internet sources. Therefore, the people who have different mother tongues can’t access most of the knowledge available unless they know English. So, machine translation is the potential solution for giving access to the world's knowledge available in English.
 
-Today, we can translate almost any language to another language by using google translator. This
-
-is also available for the Sinhala language. But the main issue in the Sinhala language is that the words which results after the translation is not matching properly. People are struggling when to use appropriate Sinhala words. This is because there are so many synonyms for one word in Sinhala language and they are coming from various scripts including Pali, Sanskrit, Tamil and etc. No one knows which word suitable for various kinds of situations. Even expert Sinhala professors didn’t know much about this.
+Today, we can translate almost any language to another language by using google translator. This is also available for the Sinhala language. But the main issue in the Sinhala language is that the words which results after the translation is not matching properly. People are struggling when to use appropriate Sinhala words. This is because there are so many synonyms for one word in Sinhala language and they are coming from various scripts including Pali, Sanskrit, Tamil and etc. No one knows which word suitable for various kinds of situations. Even expert Sinhala professors didn’t know much about this.
 
 As an example, if someone says, “I drink water” in English, there are several synonyms for the word “Water”. They are coming from different scripts and these words are used in different situations in Sinhala as shown in below.
 
-<![if !supportLists]>➢ <![endif]>ජලය - Scientific Usage, Ex: - ජල විදුලි බලාගාරය, ජල බිල්පත
-
-<![if !supportLists]>➢ <![endif]>  වතුර - Normal Usage, Ex: - වතුර බොනවා, වතුර මල
-
-<![if !supportLists]>➢ <![endif]>පැන් - Religious Usage (by Buddhists).
-
-<![if !supportLists]>➢ <![endif]>දිය - Literature Usage.
+- ජලය - Scientific Usage, Ex: - ජල විදුලි බලාගාරය, ජල බිල්පත
+- වතුර - Normal Usage, Ex: - වතුර බොනවා, වතුර මල
+- පැන් - Religious Usage (by Buddhists).
+- දිය - Literature Usage.
 
 Here we have to find the most suitable Sinhala word. So, when finding suitable Sinhala word, we have to look for other words in the sentence as well. We can translate the above sentence (I drink water) as මම වතුර බොමි, මම ජලය බොමි, මම පැන් බොමි, මම දිය බොමි. Likewise, there are a number of ways to say the same thing in Sinhala language. But in this case most suitable translation is මම වතුර බොමි. Therefore, the problem is to find the most appropriate word for the considered situation.
 
@@ -66,7 +61,7 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NzMyMzE5MSwtNDU1NDIwMTYzLC01OT
+eyJoaXN0b3J5IjpbMTM4ODU0MDI2NywtNDU1NDIwMTYzLC01OT
 U4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxNDAxMzM1
 NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0NjgsLT
 E2OTY3OTIwOV19
