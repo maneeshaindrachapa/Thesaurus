@@ -75,11 +75,10 @@ This is the layer in the server-side application which handle all the requests c
 
 
 ## Installation of System
- #### 
-Client side ([Web Clie
-nt](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/AngularClient))
+ #### Client side ([Web Client](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/AngularClient))
  This client side of the application developed with [Angular CLI](https://cli.angular.io/). when we need to deploy we had to [build](https://angular.io/cli/build) the application and serve on web server. As the deployment steps,
- 1. Build angular Applic
+ 1. Build angular Application ([ng build](https://angular.io/cli/build))
+ 2. Set up apache on server (on ubuntu)
 
 ## System Up to Now
 
@@ -99,11 +98,11 @@ nt](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/AngularClient))
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTA1MjM4ODksMTcyNjQ4MDg2MSwyND
-Q0MDI0MDMsNzE0MTE2OTI1LDYzMjMzMjM0LDQzMTYzMDE3Nyw3
-OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgwNDY3OT
-UsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMTYzLC01
-OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwxNDAxMz
-M1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3NzQ0Njhd
-fQ==
+eyJoaXN0b3J5IjpbMTg3NzcxOTI1NiwxNzI2NDgwODYxLDI0ND
+QwMjQwMyw3MTQxMTY5MjUsNjMyMzMyMzQsNDMxNjMwMTc3LDc5
+Mzg2NDk4Nyw3NTA2NzA2MCw3ODU2MzQ5MzksLTMyODA0Njc5NS
+wtMjEyNTcwNjIwMSwxMzg4NTQwMjY3LC00NTU0MjAxNjMsLTU5
+NTg4MzU5OCwtMTMyMDY3ODE5NiwtNzkwNzg5ODcxLDE0MDEzMz
+U1MjQsLTQxMjQ4ODgzMSw4MjQ0NDMxNzAsMTEyNzc3NDQ2OF19
+
 -->
