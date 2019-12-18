@@ -17,13 +17,11 @@ If a user entered a word, definition of that word is shown in the web applicatio
 <figure>  
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/def.jpg?raw=true" style="width:100%">  
 <figcaption align=center>Word definitions</figcaption>  
-</figure >
-Word definitions</figcaption>  
 </figure>
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTU4MTkwMzUsMjkwNjc0OTMyLC0xMz
-c4NzY4NDY0XX0=
+eyJoaXN0b3J5IjpbMTg1NjQ0MjA3OSwyOTA2NzQ5MzIsLTEzNz
+g3Njg0NjRdfQ==
 -->
