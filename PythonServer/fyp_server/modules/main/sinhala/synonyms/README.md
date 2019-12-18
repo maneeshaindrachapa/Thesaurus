@@ -24,9 +24,7 @@ The synonym sets which we crawled from Madhura dictionary doesn’t need any pre
 
 #### Model Training
 
-In this phase we mainly used Fasttext tool as our main model building tool to build the vector model. We used Fasttext model training parameters as given below to train this model.
-
-Here we only have changed the dataset by adding synonyms sets which we extracted from Madhura and Concise dictionaries to the dataset row by row. Therefore, one row will get one synonym set. The Fasttext will identify words in the same row as synonyms, because here we considered a context window size of 5. Therefore, surrounding words will obtain similar vectors. Then the cosine similarity between those vectors become closer to 1. So, we can find the related synonyms more accurately by feeding synonym sets into the dataset.
+In this phase we mainly used Fasttext tool as our main model building tool to build the vector model. We used Fasttext model training parameters as given below to train this mod Here we only have changed the dataset by adding synonyms sets which we extracted from Madhura and Concise dictionaries to the dataset row by row. Therefore, one row will get one synonym set. The Fasttext will identify words in the same row as synonyms, because here we considered a context window size of 5. Therefore, surrounding words will obtain similar vectors. Then the cosine similarity between those vectors become closer to 1. So, we can find the related synonyms more accurately by feeding synonym sets into the dataset.
 
 After we successfully trained our model, we have identified that model gives many related synonyms words (higher percentage), while providing some contextually similar words (lower percentage).
 
@@ -47,7 +45,8 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 <figcaption align=center>Results for word ‘අම්මා’</figcaption>  
 </figure>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyMzY4NjgzLC00NjUzMzg1NTUsMTU2OT
-Y2MDM1NSw3NDkzNzIyMCwtNjM0MjIxODc3LDExOTA3NTI5MzMs
-MTEyODUyNzQyLDEzMDAxMDkwODAsMjEwMjc0MjMyM119
+eyJoaXN0b3J5IjpbLTIwNTA5MzgyNCw1MjIzNjg2ODMsLTQ2NT
+MzODU1NSwxNTY5NjYwMzU1LDc0OTM3MjIwLC02MzQyMjE4Nzcs
+MTE5MDc1MjkzMywxMTI4NTI3NDIsMTMwMDEwOTA4MCwyMTAyNz
+QyMzIzXX0=
 -->
