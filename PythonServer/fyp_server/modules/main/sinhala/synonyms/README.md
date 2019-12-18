@@ -26,7 +26,127 @@ The synonym sets which we crawled from Madhura dictionary doesn’t need any pre
 
 In this phase we mainly used Fasttext tool as our main model building tool to build the vector model. We used Fasttext model training parameters as given below to train this model.
 
-Here we only have changed the dataset by adding synonyms sets which we extracted from Madhura and Concise dictionaries to the dataset row by row. Therefore, one row will get one synonym set. The Fasttext will identify words in the same row as synonyms, because here we considered a context window size of 5. Therefore, surrounding words will obtain similar vectors. Then the cosine similarity between those vectors become closer to 1. So, we can find the related synonyms more accurately by feeding synonym sets into the dataset.
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="596" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
+ mso-border-alt:solid black 1.0pt;mso-yfti-tbllook:1536;mso-padding-alt:5.0pt 5.0pt 5.0pt 5.0pt;
+ mso-border-insideh:1.0pt solid black;mso-border-insidev:1.0pt solid black">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:13.05pt">
+  <td width="298" valign="top" style="width:223.5pt;border:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt;height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><b style="mso-bidi-font-weight:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;">Parameter <o:p></o:p></span></b></p>
+  </td>
+  <td width="298" valign="top" style="width:223.5pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+  height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><b style="mso-bidi-font-weight:normal"><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;">Changed Value<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;height:13.05pt">
+  <td width="298" valign="top" style="width:223.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+  height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span class="SpellE"><span lang="EN-GB" style="font-size:
+  12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">lr</span></span><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="298" valign="top" style="width:223.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt;height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span lang="EN-GB" style="font-size:12.0pt;font-family:
+  &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">0.025<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2;height:13.05pt">
+  <td width="298" valign="top" style="width:223.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+  height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span lang="EN-GB" style="font-size:12.0pt;font-family:
+  &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">dim<o:p></o:p></span></p>
+  </td>
+  <td width="298" valign="top" style="width:223.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt;height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span lang="EN-GB" style="font-size:12.0pt;font-family:
+  &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">300<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;height:13.05pt">
+  <td width="298" valign="top" style="width:223.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+  height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span lang="EN-GB" style="font-size:12.0pt;font-family:
+  &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">epoch<o:p></o:p></span></p>
+  </td>
+  <td width="298" valign="top" style="width:223.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt;height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span lang="EN-GB" style="font-size:12.0pt;font-family:
+  &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">10<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;height:13.05pt">
+  <td width="298" valign="top" style="width:223.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+  height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span class="SpellE"><span lang="EN-GB" style="font-size:
+  12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">minCount</span></span><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></p>
+  </td>
+  <td width="298" valign="top" style="width:223.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt;height:13.05pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span lang="EN-GB" style="font-size:12.0pt;font-family:
+  &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">2<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:5;mso-yfti-lastrow:yes;height:13.8pt">
+  <td width="298" valign="top" style="width:223.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt;
+  height:13.8pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span class="SpellE"><span lang="EN-GB" style="font-size:
+  12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">minn</span></span><span lang="EN-GB" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;">, <span class="SpellE">maxn</span><span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
+  </td>
+  <td width="298" valign="top" style="width:223.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt;height:13.8pt">
+  <p class="MsoNormal" align="center" style="text-align:center;line-height:normal;
+  mso-pagination:none;page-break-after:avoid;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+  mso-border-shadow:yes"><span lang="EN-GB" style="font-size:12.0pt;font-family:
+  &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;">0<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+ Here we only have changed the dataset by adding synonyms sets which we extracted from Madhura and Concise dictionaries to the dataset row by row. Therefore, one row will get one synonym set. The Fasttext will identify words in the same row as synonyms, because here we considered a context window size of 5. Therefore, surrounding words will obtain similar vectors. Then the cosine similarity between those vectors become closer to 1. So, we can find the related synonyms more accurately by feeding synonym sets into the dataset.
 
 After we successfully trained our model, we have identified that model gives many related synonyms words (higher percentage), while providing some contextually similar words (lower percentage).
 
@@ -47,8 +167,8 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 <figcaption align=center>Results for word ‘අම්මා’</figcaption>  
 </figure>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM5ODUxMTQyLC0yMDUwOTM4MjQsLTQ2NT
-MzODU1NSwxNTY5NjYwMzU1LDc0OTM3MjIwLC02MzQyMjE4Nzcs
-MTE5MDc1MjkzMywxMTI4NTI3NDIsMTMwMDEwOTA4MCwyMTAyNz
-QyMzIzXX0=
+eyJoaXN0b3J5IjpbMjExMTQyMzI1OCw5Mzk4NTExNDIsLTIwNT
+A5MzgyNCwtNDY1MzM4NTU1LDE1Njk2NjAzNTUsNzQ5MzcyMjAs
+LTYzNDIyMTg3NywxMTkwNzUyOTMzLDExMjg1Mjc0MiwxMzAwMT
+A5MDgwLDIxMDI3NDIzMjNdfQ==
 -->
