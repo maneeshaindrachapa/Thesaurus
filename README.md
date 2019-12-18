@@ -64,7 +64,9 @@ This is the main module that responsible for return meaningful output from the s
  - Word example sentence extractor
  - Language Translation module
  - Text-to-speech module
-
+```
+- Implemntation details written inside each module
+```
 **3. End-points Layer**
 
 
@@ -72,8 +74,8 @@ This is the main module that responsible for return meaningful output from the s
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMzE3ODk5LC0yMTI1NzA2MjAxLDEzOD
-g1NDAyNjcsLTQ1NTQyMDE2MywtNTk1ODgzNTk4LC0xMzIwNjc4
-MTk2LC03OTA3ODk4NzEsMTQwMTMzNTUyNCwtNDEyNDg4ODMxLD
-gyNDQ0MzE3MCwxMTI3Nzc0NDY4LC0xNjk2NzkyMDldfQ==
+eyJoaXN0b3J5IjpbMjA2MDc3NzEzOSwtMjEyNTcwNjIwMSwxMz
+g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
+ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
+w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
 -->
