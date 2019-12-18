@@ -56,11 +56,7 @@ This layer is responsible for storing the datasets and models which needed to ea
 
 This is the main module that responsible for return meaningful output from the system. In this layer there are separate modules which specified to execute specific tasks related to the user requests. The design diagram for this layer with separate modules as follows.
 
-![Vector spaces](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/vecotor_space.jpg?raw=true)
-
-**4. End-points Layer**
-
-
+![Internal architecture of Data accessing and processing layer](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/System%20Diagram.png?raw=true)
 
  - **Language identifier module**: Mainly used the Deep Learning based approch with the character level diffrent things in the both Sinhala & English languages.
  - **Spell Checker Module**: Use the spell checker module developing by parrallel research group.
@@ -73,11 +69,14 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
 ![Equations](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/equations.jpg)
  - **Word example sentence extractor**: This module is basically used to give and supportive sentence for a given word. In our system implementation, we hope to extract the example sentence from a text corpus. We planned to extract sentences that include the user input word and which is able to give an idea about the word.
 
+**3. End-points Layer**
+
+
 ## System Upto Now
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjU2MzM1NywtMjEyNTcwNjIwMSwxMz
+eyJoaXN0b3J5IjpbLTg3Mzg4MjIzOCwtMjEyNTcwNjIwMSwxMz
 g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
 ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
 w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
