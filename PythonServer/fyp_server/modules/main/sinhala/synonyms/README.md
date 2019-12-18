@@ -20,7 +20,7 @@ When training a Fasttext model under a text corpus, there are a lot of parameter
 
 #### Data Preparation & Pre-processing
 
-The synonym sets which we crawled from Madhura dictionary doesn’t need any pre-processing work. But the synonym sets which we extracted from Concise dictionary needed fair amount of data pre-processing work. It is because the conversion of the dictionary pdf file format to word/txt format dictionary had a lot of unwanted data for our model training including numbers, special characters, emojis and etc. Therefore, we had to pre-process andclean data and Unicode errors. As the first thing we had to clean this data set using pre-processing script. Then we trained a Fasttext model using this cleaned dataset. But it did not contain substantial Sinhala synonyms as we expected. The reason for that was this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sitesand correct the data sets and then we wrote a python script to clean this dictionary data and extract synonyms sets. But we had to fix some errors by manually, because there are some unidentifiable errors using scripts. After extracting synonyms sets from Concise dictionary, we feed all of these synonyms sets to the Fasttext model.
+The synonym sets which we crawled from Madhura dictionary doesn’t need any pre-processing work. But the synonym sets which we extracted from Concise dictionary needed fair amount of data pre-processing work. It is because the conversion of the dictionary pdf file format to word/txt format dictionary had a lot of unwanted data for our model training including numbers, special characters, emojis and etc. Therefore, we had to pre-process andclean data and Unicode errors. As the first thing we had to clean this data set using pre-processing script. Then we trained a Fasttext model using this cleaned dataset. But it did not contain substantial Sinhala synonyms as we expected. The reason for that was this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sitesand correct the data sets and then we wrote a python script to clean this dictionary data and extract synonyms sets. But to fix some errors by manually, because there are some unidentifiable errors using scripts. After extracting synonyms sets from Concise dictionary, we feed all of these synonyms setl.
 
 #### Model Training
 
@@ -30,7 +30,7 @@ After we successfully trained our model, we have identified that model gives man
 
 #### Synonyms Extraction
 
-After successfully trained the Fasttext model, we loaded model into python library called Gensim to extract the synonyms. We mainly extract the nearest vectors based on cosine distance-based approach.
+After successfully trained the Fasttext model, we loaded model inlled Gensim to extract the synonyms. We mainly extract the nearest vectors based on cosine distance-based approach.
 
 After we successfully get the output from the Gensim tool then we have filtered the words based on the similarity measure to get the best synonym set for the input word. As an average value for the similarity threshold we have identified that with in cosine similarity 1 to 0.85 we can get best synonyms for the word. Therefore, we have configured the synset extractor with 0.85 similarity threshold filtering after the Gensim extract the words. This model gave us far more better results than the previous Fasttext model which we built just using the text corpus. That is because now the Fasttext model is rich with synonym sets.
 
@@ -45,7 +45,7 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 <figcaption align=center>Results for word ‘අම්මා’</figcaption>  
 </figure>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDczMTY5NDUsMTU2OTY2MDM1NSw3ND
-kzNzIyMCwtNjM0MjIxODc3LDExOTA3NTI5MzMsMTEyODUyNzQy
-LDEzMDAxMDkwODAsMjEwMjc0MjMyM119
+eyJoaXN0b3J5IjpbLTQ2NTMzODU1NSwtMTI0NzMxNjk0NSwxNT
+Y5NjYwMzU1LDc0OTM3MjIwLC02MzQyMjE4NzcsMTE5MDc1Mjkz
+MywxMTI4NTI3NDIsMTMwMDEwOTA4MCwyMTAyNzQyMzIzXX0=
 -->
