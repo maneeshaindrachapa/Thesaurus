@@ -18,11 +18,11 @@ If a user enters a word to the system, the system will search for the sentence t
 
 <figure>  
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/spell_correct.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
-<figcaption align=center>Correct spellings indicator</figcaption>  
+<figcaption align=center>Example Sentences for a word</figcaption>  
 </figure>
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MTI2MTk5MV19
+eyJoaXN0b3J5IjpbLTk5NzU0Mjg2M119
 -->
