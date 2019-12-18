@@ -11,9 +11,9 @@ Although there exists an error, the user can search for incorrect word in the sy
 
 <figure>  
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/spell_incorrect.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
-<figcaption align=center>orrect spellings indicator ultihot vector eample</figcaption>  
+<figcaption align=center>Correct spellings indicator</figcaption>  
 </figure>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MzY5MjM1Niw5NDQ2NjE4Niw1NTg3Mz
-E1ODldfQ==
+eyJoaXN0b3J5IjpbMTUyNTUyOTY0MSwtMjgzNjkyMzU2LDk0ND
+Y2MTg2LDU1ODczMTU4OV19
 -->
