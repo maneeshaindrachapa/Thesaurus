@@ -74,7 +74,7 @@ This is the layer in the server-side application which handle all the requests c
 ![Endpints of the system](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/end-points.jpg?raw=true)
 
 
-## Installation of System
+## System Deployment
  #### Client side ([Web Client](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/AngularClient))
  This client side of the application developed with [Angular CLI](https://cli.angular.io/). when we need to deploy we had to [build](https://angular.io/cli/build) the application and serve on web server. As the deployment steps,
  1. Build angular Application ([ng build](https://angular.io/cli/build))
@@ -82,7 +82,7 @@ This is the layer in the server-side application which handle all the requests c
  3. Deploy app on Apache server
 
 #### Server side ([Falsk Server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server))
-
+Server side of the application built on python [flask](http://flask.palletsprojects.com/en/1.1.x/) server as a REST Api. As the deployment 
 
 
 ## System Up to Now
@@ -103,11 +103,11 @@ This is the layer in the server-side application which handle all the requests c
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NjU5MTU3Nyw1ODQ1MDI0NjAsMTcyNj
-Q4MDg2MSwyNDQ0MDI0MDMsNzE0MTE2OTI1LDYzMjMzMjM0LDQz
-MTYzMDE3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC
-0zMjgwNDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1
-NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OT
-g3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwXX0=
-
+eyJoaXN0b3J5IjpbLTE3MDMyMzI4MTksMTA2NjU5MTU3Nyw1OD
+Q1MDI0NjAsMTcyNjQ4MDg2MSwyNDQ0MDI0MDMsNzE0MTE2OTI1
+LDYzMjMzMjM0LDQzMTYzMDE3Nyw3OTM4NjQ5ODcsNzUwNjcwNj
+AsNzg1NjM0OTM5LC0zMjgwNDY3OTUsLTIxMjU3MDYyMDEsMTM4
+ODU0MDI2NywtNDU1NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2Nz
+gxOTYsLTc5MDc4OTg3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzFd
+fQ==
 -->
