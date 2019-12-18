@@ -21,7 +21,7 @@ The system is taking the user input and then find the corresponding definition f
 If a user entereds a word, definition of that word is to the system, the system will search for the sentence that includes input word and then shown it in the web application asinterface as shown below.
 
 <figure>  
-<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/defexamples.jpg?raw=true"  alt="Working system interfaces for the language identifier"  style="width:100%">  
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/def.jpg?raw=true" style="width:100%">  
 <figcaption align=center>Word definitions</figcaption>  
 </figure>
 Example Sentences for a word</figcaption>  
@@ -32,5 +32,6 @@ For English language, we extracted example sentences from the Thesaurus API beca
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwNjc0OTMyLC0xMzc4NzY4NDY0XX0=
+eyJoaXN0b3J5IjpbMTQyNzc0MDg4OCwyOTA2NzQ5MzIsLTEzNz
+g3Njg0NjRdfQ==
 -->
