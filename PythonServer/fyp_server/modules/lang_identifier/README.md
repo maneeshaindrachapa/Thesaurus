@@ -29,8 +29,9 @@ One-hot vector encoding is an approach mostly used with the machine learning dat
 In this scenario, when creating the one-hot vector approach because we can create that easily on English letter word by using the alphabet as the vector vocabulary. Then we created a one-hot vectors for each letter in single word with length of 26(length of English alphabet). After creating all the one hot vectors for a word, algorithm combines all the one hot vector and create single multi-hot vector for that word. But one problem we have to solve here is we need to have the same length multi-hot vector while we are feeding data to the neural network. To solve this, we post-padded our multi hot vectors into same length by initially declaring max word length for the words. Then we padded words with lower length than the max word length by putting 26*(max length - word length) times 0’s into the word. (26 0’s for each letter) Also we avoided all the word which length is greater than the declared max word length.
 
 In our implementation we put maximum word length as 30 and created multi hot vectors with length of 780(30*max_word_length). That vector represents the character properties for a particular word.
-<img src=
+
+<img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hot%20vector.png?raw=true" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNDYxNzE2NSwtMjA4ODc0NjYxMiw3Mz
+eyJoaXN0b3J5IjpbMTA1NTY2MTU4NCwtMjA4ODc0NjYxMiw3Mz
 A5OTgxMTZdfQ==
 -->
