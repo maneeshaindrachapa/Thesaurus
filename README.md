@@ -88,10 +88,8 @@ Server side of the application built on python [flask](http://flask.palletsproje
  2. Navigate to [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory in the project.
  3. open the terminal and install requirements on [requirements.txt](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/PythonServer/requirements.txt "requirements.txt").
 
-   
-
-    enter code here
      pip3 install -r requirements.txt
+     
 4. Add required data sets to the server.
  <br>i. Inside language identifier module we have to add trained model. <br>
  ii. Add example sentence data set to the [main/sinhala/example_sentences](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/example_sentences) folder. <br>
@@ -122,7 +120,7 @@ iii. Add definitions data corpus to [man/sinhala/definitions](https://github.com
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODcxMjM1NywtMTAxMTM0MjQ5NywtNT
+eyJoaXN0b3J5IjpbLTEzMjY0MjkyMDAsMTcyODcxMjM1NywtNT
 YxNDYwMDc3LDY5NDA2MDk5NSwtMTkyNjExMDc2LC0xNTAwNTA1
 MTgxLDEwNjY1OTE1NzcsNTg0NTAyNDYwLDE3MjY0ODA4NjEsMj
 Q0NDAyNDAzLDcxNDExNjkyNSw2MzIzMzIzNCw0MzE2MzAxNzcs
