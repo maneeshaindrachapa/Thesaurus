@@ -60,10 +60,10 @@ This is the main module that responsible for return meaningful output from the s
  - [Pos-tagger module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/main/sinhala/pos_tag)
  - [Similar word cluster generator](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/main/sinhala/synonyms)
  - [Word definition extractor module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/main/sinhala/definitions)
- - Language translation module
- - Word example sentence extractor
- - Language Translation module
- - Text-to-speech module
+ - [Word example sentence extractor](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/main/sinhala/example_sentences)
+ - [Language translation module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/translator)
+ - [Text-to-speech module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/tts)
+ - Final output combiner
 ```
 - Implemntation details written inside each module
 ```
@@ -74,7 +74,7 @@ This is the main module that responsible for return meaningful output from the s
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDk1MDk0MiwtMjEyNTcwNjIwMSwxMz
+eyJoaXN0b3J5IjpbMTE0MDU2MTgwMSwtMjEyNTcwNjIwMSwxMz
 g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
 ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
 w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
