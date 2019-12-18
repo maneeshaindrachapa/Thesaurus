@@ -92,7 +92,11 @@ Server side of the application built on python [flask](http://flask.palletsproje
 
     enter code here
      pip3 install -r requirements.txt
-4. Navigate to fyp_server
+4. Add r
+5. Navigate to [fyp_server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server) directory inside [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory and start the flask server.
+
+    python3 app.py
+
 ## System Up to Now
 
 
@@ -113,11 +117,11 @@ Server side of the application built on python [flask](http://flask.palletsproje
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDA1MDUxODEsMTMwNDgxODUwNCwxMD
-Y2NTkxNTc3LDU4NDUwMjQ2MCwxNzI2NDgwODYxLDI0NDQwMjQw
-Myw3MTQxMTY5MjUsNjMyMzMyMzQsNDMxNjMwMTc3LDc5Mzg2ND
-k4Nyw3NTA2NzA2MCw3ODU2MzQ5MzksLTMyODA0Njc5NSwtMjEy
-NTcwNjIwMSwxMzg4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4Mz
-U5OCwtMTMyMDY3ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjRd
-fQ==
+eyJoaXN0b3J5IjpbODQ2NjU3NDEzLC0xNTAwNTA1MTgxLDEwNj
+Y1OTE1NzcsNTg0NTAyNDYwLDE3MjY0ODA4NjEsMjQ0NDAyNDAz
+LDcxNDExNjkyNSw2MzIzMzIzNCw0MzE2MzAxNzcsNzkzODY0OT
+g3LDc1MDY3MDYwLDc4NTYzNDkzOSwtMzI4MDQ2Nzk1LC0yMTI1
+NzA2MjAxLDEzODg1NDAyNjcsLTQ1NTQyMDE2MywtNTk1ODgzNT
+k4LC0xMzIwNjc4MTk2LC03OTA3ODk4NzEsMTQwMTMzNTUyNF19
+
 -->
