@@ -94,7 +94,8 @@ Server side of the application built on python [flask](http://flask.palletsproje
      pip3 install -r requirements.txt
 4. Add required data sets to the server.
  i. Inside language identifier module we have to add trained model. 
- ii. Add
+ ii. Add example sentence data set to the [main/sinhala/example_sentences](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/example_sentences) folder.
+iii. 
  
 6
 5. Navigate to [fyp_server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server) directory inside [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory and start the flask server.
@@ -121,11 +122,11 @@ Server side of the application built on python [flask](http://flask.palletsproje
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTc1MzQ3ODcsNjk0MDYwOTk1LC0xOT
-I2MTEwNzYsLTE1MDA1MDUxODEsMTA2NjU5MTU3Nyw1ODQ1MDI0
-NjAsMTcyNjQ4MDg2MSwyNDQ0MDI0MDMsNzE0MTE2OTI1LDYzMj
-MzMjM0LDQzMTYzMDE3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1
-NjM0OTM5LC0zMjgwNDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MD
-I2NywtNDU1NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTZd
-fQ==
+eyJoaXN0b3J5IjpbMjA4MzExODgxMSw2OTQwNjA5OTUsLTE5Mj
+YxMTA3NiwtMTUwMDUwNTE4MSwxMDY2NTkxNTc3LDU4NDUwMjQ2
+MCwxNzI2NDgwODYxLDI0NDQwMjQwMyw3MTQxMTY5MjUsNjMyMz
+MyMzQsNDMxNjMwMTc3LDc5Mzg2NDk4Nyw3NTA2NzA2MCw3ODU2
+MzQ5MzksLTMyODA0Njc5NSwtMjEyNTcwNjIwMSwxMzg4NTQwMj
+Y3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3ODE5Nl19
+
 -->
