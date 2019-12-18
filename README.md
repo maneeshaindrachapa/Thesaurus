@@ -93,11 +93,11 @@ Server side of the application built on python [flask](http://flask.palletsproje
     enter code here
      pip3 install -r requirements.txt
 4. Add required data sets to the server.
- i. Inside language identifier module we have to add trained model. 
- ii. Add example sentence data set to the [main/sinhala/example_sentences](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/example_sentences) folder.
-iii. Add definitions data corpus to [man/sinhala/definitions](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/definitions) folder.
- iii.
- Add pos tagger trained model to [main/sinhala/pos_tag](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/pos_tag) folder
+ i. Inside language identifier module we have to add trained model. <br>
+ ii. Add example sentence data set to the [main/sinhala/example_sentences](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/example_sentences) folder. <br>
+iii. Add definitions data corpus to [man/sinhala/definitions](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/definitions) folder. <br>
+ iv. Add pos tagger trained model to [main/sinhala/pos_tag](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server/modules/main/sinhala/pos_tag) folder.
+ 
 5. Navigate to [fyp_server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server) directory inside [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory and start the flask server.
 
     python3 app.py
@@ -122,7 +122,7 @@ iii. Add definitions data corpus to [man/sinhala/definitions](https://github.com
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDczNjY0OTcsLTU2MTQ2MDA3Nyw2OT
+eyJoaXN0b3J5IjpbLTIwMzA3MTQxNTksLTU2MTQ2MDA3Nyw2OT
 QwNjA5OTUsLTE5MjYxMTA3NiwtMTUwMDUwNTE4MSwxMDY2NTkx
 NTc3LDU4NDUwMjQ2MCwxNzI2NDgwODYxLDI0NDQwMjQwMyw3MT
 QxMTY5MjUsNjMyMzMyMzQsNDMxNjMwMTc3LDc5Mzg2NDk4Nyw3
