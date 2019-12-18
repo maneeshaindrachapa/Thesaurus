@@ -30,8 +30,12 @@ In this scenario, when creating the one-hot vector approach because we can creat
 
 In our implementation we put maximum word length as 30 and created multi hot vectors with length of 780(30*max_word_length). That vector represents the character properties for a particular word.
 
+<figure>  
+<img src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hot%20vector.png?raw=true"  alt="Trulli"  style="width:100%">  
+<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>  
+</figure>
 <img align=center src="https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/multi-hot%20vector.png?raw=true" />
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTY2MTU4NCwtMjA4ODc0NjYxMiw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE3NTE2MTgxNDIsLTIwODg3NDY2MTIsNz
+MwOTk4MTE2XX0=
 -->
