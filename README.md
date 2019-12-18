@@ -81,17 +81,19 @@ This is the layer in the server-side application which handle all the requests c
 
 ![Web Interface 2](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/web_interface_2.png?raw=true)
 
-![stemupto now> Mobile Application
+![stemupto now<h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
+
+> Mobile Application
 
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_1.jpg?raw=true)
 
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
-<h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyMzMyMzQsNDMxNjMwMTc3LDc5Mzg2ND
-k4Nyw3NTA2NzA2MCw3ODU2MzQ5MzksLTMyODA0Njc5NSwtMjEy
-NTcwNjIwMSwxMzg4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4Mz
-U5OCwtMTMyMDY3ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQs
-LTQxMjQ4ODgzMSw4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Nj
-c5MjA5XX0=
+eyJoaXN0b3J5IjpbLTU5Njk0MDM0LDYzMjMzMjM0LDQzMTYzMD
+E3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgw
+NDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMT
+YzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MSwx
+NDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLDExMjc3Nz
+Q0NjgsLTE2OTY3OTIwOV19
 -->
