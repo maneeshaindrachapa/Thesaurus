@@ -79,7 +79,9 @@ This is the layer in the server-side application which handle all the requests c
  This client side of the application developed with [Angular CLI](https://cli.angular.io/). when we need to deploy we had to [build](https://angular.io/cli/build) the application and serve on web server. As the deployment steps,
  1. Build angular Application ([ng build](https://angular.io/cli/build))
  2. Set up apache on server ([on ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart))
- 3. Deploy app on Apache server 
+ 3. Deploy app on Apache server
+
+
 
 ## System Up to Now
 
@@ -99,7 +101,7 @@ This is the layer in the server-side application which handle all the requests c
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTYwMjQzMywxNzI2NDgwODYxLDI0ND
+eyJoaXN0b3J5IjpbMTU3NjEwMjY5NywxNzI2NDgwODYxLDI0ND
 QwMjQwMyw3MTQxMTY5MjUsNjMyMzMyMzQsNDMxNjMwMTc3LDc5
 Mzg2NDk4Nyw3NTA2NzA2MCw3ODU2MzQ5MzksLTMyODA0Njc5NS
 wtMjEyNTcwNjIwMSwxMzg4NTQwMjY3LC00NTU0MjAxNjMsLTU5
