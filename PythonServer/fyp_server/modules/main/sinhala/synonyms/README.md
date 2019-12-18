@@ -4,13 +4,21 @@
 
 #### Introduction
 
-This chapter mainly includes the work carried by responsible team member of the group related to the main task of the research project. For the synonym identification of the research here tried to develop a word embedding model with Fasttext tool. As the first step prepared the data set for the model training by pre-processing the WMT19 (World Machine Translation 2019) common crawl data set. Then trained the word embedding model with the Fasttext. After that for the synonym extraction we used Gensim tool as the VSM (Vector Space Modelling) for the Fasttext model. Then we extracted the synonym words from vector space model based on the cosine distance of the word vectors with word count threshold and similarity threshold.
+We didn’t get results as expected by using the Fasttext model which we created by collecting data from Sinhala monolingual corpus available on WMT19 (World Machine Translation 2019). It gave us less synonyms while giving more contextual words. It is because, this text corpus did not contain substantial Sinhala synonyms as we expected. The reason for that was this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sites. Therefore, we fed synonyms sets to the Fasttext model.
 
-POS Tagger Module</h2>#### Literature Review
+Data sources like Sinhala textbooks (Ordinary Level) include some number of synonyms, but not considerable number of synonyms for a thesaurus. Therefore, we investigated synonyms rich data sources such as Madhura online dictionary and Concise dictionary.
 
-Word embeddings are word representation, most common usage building continuous word vectors based on their contexts in a large corpus. Fasttext is one of lightweight approaches which used to build vector representation for large corpus data without any language dependency. Fasttext can used to build the vector model based on the character level with n-grams or word levels with word n-grams based on the purpose of the model building.  As researchers of the Facebook identified model building with character n-grams are important to identify the morphological variations of the word and the analogy of the words. But in our requirement of vector modelling is extract the meaningfully similarity or contextual similarity from text corpus. Therefore, the word n-gram (word window) is more important than the character level to get the contextual related properties of the words. Then using Fasttext we build the vector space model on corpus with word n-grams by tuning the parameter of the Fasttext. After successfully build the vector space model we can use the different types of approaches to get the similarity measure as Cosine Similarity, Euclidean distance. With the cosine similarity we can get the bounded similarity values with 0-1 range and with these values we can get the similarity threshold to filter out the unrelated words in the results of the synonym extraction than the Euclidean distance approach.
+As the synonym datasets for the system we crawled Sinhala synonym sets from Madhura dictionary by submitting an English dataset to the Madhura application URL and extract the similar meaning word from the response. These synonym sets were not enough to feed the model. So, we used the Concise dictionary to extract furthermore synonym sets.
 
-After we successfully build the vector space model next thing is defining the approach to get the synonyms-based cosine similarity. Gensim is a Natural Language Processing package that does ‘Topic Modelling for Humans’. It is a leading and a state-of-the-art package for processing texts, working with word vector models (such as Word2Vec, Fasttext etc) and for building topic models. Here Gensim is mainly used to load the vector space model and get the similarity words from vector space using cosine similarity. Then we can extract the word synonyms by inserting the word count threshold value to the Gensim module.
+There are lot of issues in the data. Therefore, we fixed those issues before feeding synonym sets into the Fasttext model. The synonym sets which we crawled from the Madura online dictionary contained related synonyms as well as unrelated words. Therefore, we had to manually look some of those words and fix them. Also, Concise dictionary contained lot of garbage data and Unicode errors. Therefore, we had to write script to clean those data and fix Unicode errors. Generally, a dictionary is providing both synonyms and definitions for the words. Therefore, we had to filter synonyms from the Concise dictionary when extracting the data. All the synonyms and definitions for a particular word is separated by ‘;’ sign. Thus, we split each of these phrases by ‘;’ at first. Then if a corresponding phrase has less than 3 words, we assumed it as a synonym of that word. Otherwise we assumed it as a definition.
+
+#### Literature Review
+
+<![endif]-->
+
+A web crawler is a program or automated script which browses the World Wide Web in an automated methodological manner. This process is known as we are crawling. People can crawl lot of data from the internet by using crawlers without applying much effort. In modern world, crawling become very straight forward with the help of advanced programming concepts.
+
+When training a Fasttext model under a text corpus, there are a lot of parameters need to be adjusted in order to optimize the model. This procedure will help to find the most appropriate parameters set that provide the best results for a given Fasttext model.
 
 #### Data Preparation & Pre-processing
 
@@ -24,5 +32,5 @@ When our model training, we used few parameter changes related to our model buil
 
 After we successfully trained our model, we have identified that model gives synonyms words with contextually similar words and not related words. Therefore, we fed crawled synsets to the model to replace those unwanted words by having threshold with cosine similarity and for some words we had to feed the synsets by manually. To optimize the model.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDMwMDA5NDUsMjEwMjc0MjMyM119
+eyJoaXN0b3J5IjpbMTMwMDEwOTA4MCwyMTAyNzQyMzIzXX0=
 -->
