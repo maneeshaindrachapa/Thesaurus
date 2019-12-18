@@ -26,12 +26,6 @@ When training a Fasttext model under a text corpus, there are a lot of parameter
 
 #### Data Preparation & Pre-processing
 
-Mainly used a text corpus which we created by collecting data from Sinhala monolingual corpus available on WMT19 (World Machine Translation 2019) to train the Fasttext model. It contained approximately 110M words. This datasetrawl lot of data from the internet by using crawlers without applying much effort. In modern world, crawling become very straight forward with the help of advanced programming concepts.
-
-When training a Fasttext model under a text corpus, there are a lot of parameters need to be adjusted in order to optimize the model. This procedure will help to find the most appropriate parameters set that provide the best results for a given Fasttext model.
-
-#### Data Preparation & Pre-processing
-
 The synonym sets which we crawled from Madhura dictionary doesn’t need any pre-processing work. But the synonym sets which we extracted from Concise dictionary needed fair amount of data pre-processing work. It is because the conversion of the dictionary pdf file format to word/txt format dictionary had a lot of unwanted data for our model training including numbers, special characters, emojis and etc. Therefore, we had to pre-process andclean data and Unicode errors. As the first thing we had to clean this data set using pre-processing script. Then we trained a Fasttext model using this cleaned dataset. But it did not contain substantial Sinhala synonyms as we expected. The reason for that was this dataset does not include Sinhala synonym data, because this dataset is crawled from a Sinhala public news websites and social media sitesand correct the data sets and then we wrote a python script to clean this dictionary data and extract synonyms sets. But we had to fix some errors by manually, because there are some unidentifiable errors using scripts. After extracting synonyms sets from Concise dictionary, we feed all of these synonyms sets to the Fasttext model.
 
 #### Model Training
@@ -60,6 +54,7 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNDIyMTg3NywxMTkwNzUyOTMzLDExMj
-g1Mjc0MiwxMzAwMTA5MDgwLDIxMDI3NDIzMjNdfQ==
+eyJoaXN0b3J5IjpbLTEyMjcxNjk5MDIsLTYzNDIyMTg3NywxMT
+kwNzUyOTMzLDExMjg1Mjc0MiwxMzAwMTA5MDgwLDIxMDI3NDIz
+MjNdfQ==
 -->
