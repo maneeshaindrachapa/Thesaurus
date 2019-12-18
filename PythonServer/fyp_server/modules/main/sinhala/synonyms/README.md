@@ -36,7 +36,9 @@ The synonym sets which we crawled from Madhura dictionary doesn’t need any pre
 
 #### Model Training
 
-In this phase we mainly used Fasttext tool as our main model building tool. With the Fasttext model we can to build athe vector mode with 100 - 300 dimensions. As we mentioned in previous topics Fasttext is very light weight tool for word embedding model training. In our model training followed Fasttext documentation as the reference for tune-up the parameters of the tool. In Fasttext model training there are few parameters we can tune-up to get the model asl. We used Fasttext model training parameters as before without doing any changes. Here we only have changed the dataset by adding synonyms sets which we expetracted. With our dataset we followed unsupervised training approach with Fasttext.
+In this phase we mainly used Fasttext tool as our main model building tool. With the Fasttext model we can to build athe vector mode with 100 - 300 dimensions. As we mentioned in previous topics Fasttext is very light weight tool for word embedding model training. In our model training followed Fasttext documentation as the reference for tune-up the parameters of the tool. In Fasttext model training there are few parameters we can tune-up to get the model asl. We used Fasttext model training parameters as given in below.
+
+Here we only have changed the dataset by adding synonyms sets which we expetracted. With our dataset we followed unsupervised training approach with Fasttext.
 
 When our model training, we used few parameter changes related to our model building on the dataset. We tried different types of model training by changing the parameter values of the model training. Then we evaluate the model given word results with word extractio from Madhura and Concise dictionaries to the dataset row by row. Therefore, one row will get one synonym set. The Fasttext will identify words in the same row as synonyms, because here we considered a context window size of 5. Therefore, surrounding words will obtain using python library called Gensim. Gensim is one of nearest neighbour vector extraction tools that are available for most common word embedding approaches.  With this Gensim we initially provided threshold as the 10 and extracted nearest neighbour according to cosine similarity and evaluated the built models and finally come up with the suitable model with below parameters.
 
@@ -58,6 +60,6 @@ With the Fasttext model we successfully retrieved synsets with some level of acc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDc1MjkzMywtMTQ5Njk0ODUyNiwxMT
-I4NTI3NDIsMTMwMDEwOTA4MCwyMTAyNzQyMzIzXX0=
+eyJoaXN0b3J5IjpbLTYzNDIyMTg3NywxMTkwNzUyOTMzLDExMj
+g1Mjc0MiwxMzAwMTA5MDgwLDIxMDI3NDIzMjNdfQ==
 -->
