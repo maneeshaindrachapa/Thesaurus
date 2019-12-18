@@ -45,7 +45,23 @@ When our model training, we used few parameter changes related to our model buil
 After we successfully trained our model, we have identified that model gives synonyms words with contextually similar words and not related words. Therefore, we fed crawled synsets to the model to replace those unwanted words by having threshold with cosine similarity and for some words we had to feed the synsets by manually. To optimize the modelmilar vectors. Then the cosine similarity between those vectors become closer to 1. So, we can find the related synonyms more accurately by feeding synonym sets into the dataset.
 
 After we successfully trained our model, we have identified that model gives many related synonyms words (higher percentage), while providing some contextually similar words (lower percentage).
+
+#### Synonyms Extraction
+
+After successfully trained the Fasttext model, we loaded model into python library called Gensim to extract the synonyms. We mainly extract the nearest vectors based on cosine distance-based approach.
+
+After we successfully get the output from the Gensim tool then we have filtered the words based on the similarity measure to get the best synonym set for the input word. As an average value for the similarity threshold we have identified that with in cosine similarity 1 to 0.85 we can get best synonyms for the word. Therefore, we have configured the synset extractor with 0.85 similarity threshold filtering after the Gensim extract the words. This model gave us far more better results than the previous Fasttext model which we built just using the text corpus. That is because now the Fasttext model is rich with synonym sets.
+
+#### Summary & Results
+
+<![endif]-->
+
+After we successfully built the model, we evaluated the model results with our previous implementations with the synset identification. Then we identified that Fasttext model gives more accurate results than all other implementations. Then we implemented the system with this Fasttext model as the primary synset identification.
+
+With the Fasttext model we successfully retrieved synsets with some level of accuracy and after we fed the synsets for the model for optimization, then model behave more accurate than the previous and show the most similar words for an input word to the system.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk5ODgyMTUsMTEyODUyNzQyLDEzMD
-AxMDkwODAsMjEwMjc0MjMyM119
+eyJoaXN0b3J5IjpbMzUyNDA1OTg0LDExMjg1Mjc0MiwxMzAwMT
+A5MDgwLDIxMDI3NDIzMjNdfQ==
 -->
