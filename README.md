@@ -87,11 +87,9 @@ Server side of the application built on python [flask](http://flask.palletsproje
  1. Setup python3 and pip3 on the server.
  2. Navigate to [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory in the project.
  3. open the terminal and install requirements on [requirements.txt](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/PythonServer/requirements.txt "requirements.txt").
-   
 
-    enter code here
-     pip3 install -r requirements.txt
-
+    pip3 install -r requirements.txt
+4. Navigate to fyp_server
 ## System Up to Now
 
 
@@ -110,8 +108,9 @@ Server side of the application built on python [flask](http://flask.palletsproje
 ![Mobile Application 1](https://github.com/maneeshaindrachapa/Thesaurus/blob/master/WorkInProgress/Docs/images/mobile_interface_2.jpg?raw=true)
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDg5ODQzOCwxMDY2NTkxNTc3LDU4ND
+eyJoaXN0b3J5IjpbMTMwNDgxODUwNCwxMDY2NTkxNTc3LDU4ND
 UwMjQ2MCwxNzI2NDgwODYxLDI0NDQwMjQwMyw3MTQxMTY5MjUs
 NjMyMzMyMzQsNDMxNjMwMTc3LDc5Mzg2NDk4Nyw3NTA2NzA2MC
 w3ODU2MzQ5MzksLTMyODA0Njc5NSwtMjEyNTcwNjIwMSwxMzg4
