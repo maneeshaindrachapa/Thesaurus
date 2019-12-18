@@ -44,7 +44,7 @@ The goal of this research project is to develop an Intelligent Sinhala-English D
  
 ## System Design Diagram
 
-![System Design Diagram]([https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/System%20Diagram%20(Data%20Accessing%20%26%20Processing%20Layer).png](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/System%20Diagram%20(Data%20Accessing%20%26%20Processing%20Layer).png))
+![System Design Diagram](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/System%20Diagram%20Data%20Accessing%20&%20Processing%20Layer.png)
 
  - **Language identifier module**: Mainly used the Deep Learning based approch with the character level diffrent things in the both Sinhala & English languages.
  - **Spell Checker Module**: Use the spell checker module developing by parrallel research group.
@@ -61,8 +61,8 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNzEyMDE4NSwxMzg4NTQwMjY3LC00NT
-U0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3ODE5NiwtNzkwNzg5
-ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMSw4MjQ0NDMxNzAsMT
-EyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtND
+U1NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4
+OTg3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLD
+ExMjc3NzQ0NjgsLTE2OTY3OTIwOV19
 -->
