@@ -93,7 +93,8 @@ Server side of the application built on python [flask](http://flask.palletsproje
     enter code here
      pip3 install -r requirements.txt
 4. Add required data sets to the server.
- i. 
+ i. Inside language identifier module we have to add trained model. 
+ ii. Add
  
 6
 5. Navigate to [fyp_server](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer/fyp_server) directory inside [PythonServer](https://github.com/maneeshaindrachapa/Thesaurus/tree/master/PythonServer) directory and start the flask server.
@@ -120,11 +121,11 @@ Server side of the application built on python [flask](http://flask.palletsproje
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk0MDYwOTk1LC0xOTI2MTEwNzYsLTE1MD
-A1MDUxODEsMTA2NjU5MTU3Nyw1ODQ1MDI0NjAsMTcyNjQ4MDg2
-MSwyNDQ0MDI0MDMsNzE0MTE2OTI1LDYzMjMzMjM0LDQzMTYzMD
-E3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1NjM0OTM5LC0zMjgw
-NDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtNDU1NDIwMT
-YzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4OTg3MV19
-
+eyJoaXN0b3J5IjpbLTEwNTc1MzQ3ODcsNjk0MDYwOTk1LC0xOT
+I2MTEwNzYsLTE1MDA1MDUxODEsMTA2NjU5MTU3Nyw1ODQ1MDI0
+NjAsMTcyNjQ4MDg2MSwyNDQ0MDI0MDMsNzE0MTE2OTI1LDYzMj
+MzMjM0LDQzMTYzMDE3Nyw3OTM4NjQ5ODcsNzUwNjcwNjAsNzg1
+NjM0OTM5LC0zMjgwNDY3OTUsLTIxMjU3MDYyMDEsMTM4ODU0MD
+I2NywtNDU1NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTZd
+fQ==
 -->
