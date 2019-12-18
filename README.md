@@ -42,7 +42,7 @@ A thesaurus can be used to find synonyms. In general, a thesaurus is a reference
 
 The goal of this research project is to develop an Intelligent Sinhala-English Dictionary, Thesaurus & Word-Lookup tool to translate and find the context of words in Sinhala and English languages. 
  
-## System Design Diagram
+## Key Layers in Implementation (Server-side) 
 
 ![System Design Diagram](https://github.com/maneeshaindrachapa/FYP/blob/master/WorkInProgress/Docs/images/System%20Diagram%20Data%20Accessing%20&%20Processing%20Layer.png)
 
@@ -61,8 +61,8 @@ d1 & d2 distances canbe calculated with the euclidean distance based approach or
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjU3MDYyMDEsMTM4ODU0MDI2NywtND
-U1NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2NzgxOTYsLTc5MDc4
-OTg3MSwxNDAxMzM1NTI0LC00MTI0ODg4MzEsODI0NDQzMTcwLD
-ExMjc3NzQ0NjgsLTE2OTY3OTIwOV19
+eyJoaXN0b3J5IjpbLTE1MTc2NjM5NTksLTIxMjU3MDYyMDEsMT
+M4ODU0MDI2NywtNDU1NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2
+NzgxOTYsLTc5MDc4OTg3MSwxNDAxMzM1NTI0LC00MTI0ODg4Mz
+EsODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OTY3OTIwOV19
 -->
