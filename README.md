@@ -63,19 +63,21 @@ This is the main module that responsible for return meaningful output from the s
  - [Word example sentence extractor](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/main/sinhala/example_sentences)
  - [Language translation module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/translator)
  - [Text-to-speech module](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/tts)
- - Final output combiner
+ - [Final output combiner](https://github.com/maneeshaindrachapa/FYP/tree/master/PythonServer/fyp_server/modules/formatter)
 ```
 - Implemntation details written inside each module
 ```
 **3. End-points Layer**
+<![endif]-->
 
+This is the layer in the server-side application which handle all the requests comes to the server in initial stage. This is the layer which responsible to initiate the server-side responsible module for the user request. In the end point layer, there are few different endpoints with different input data as below.
 
 ## System Upto Now
 ![System upto now](https://raw.githubusercontent.com/maneeshaindrachapa/FYP/master/WorkInProgress/Docs/images/screenshot.png)
 <h6 align="center"><a href="http://thesaurus.projects.uom.lk">thesaurus.projects.uom.lk</a></h6>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MDU2MTgwMSwtMjEyNTcwNjIwMSwxMz
-g4NTQwMjY3LC00NTU0MjAxNjMsLTU5NTg4MzU5OCwtMTMyMDY3
-ODE5NiwtNzkwNzg5ODcxLDE0MDEzMzU1MjQsLTQxMjQ4ODgzMS
-w4MjQ0NDMxNzAsMTEyNzc3NDQ2OCwtMTY5Njc5MjA5XX0=
+eyJoaXN0b3J5IjpbLTE5NzM4NDc4MzAsLTIxMjU3MDYyMDEsMT
+M4ODU0MDI2NywtNDU1NDIwMTYzLC01OTU4ODM1OTgsLTEzMjA2
+NzgxOTYsLTc5MDc4OTg3MSwxNDAxMzM1NTI0LC00MTI0ODg4Mz
+EsODI0NDQzMTcwLDExMjc3NzQ0NjgsLTE2OTY3OTIwOV19
 -->
