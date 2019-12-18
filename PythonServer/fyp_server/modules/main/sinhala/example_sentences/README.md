@@ -21,8 +21,10 @@ If a user enters a word to the system, the system will search for the sentence t
 <figcaption align=center>Example Sentences for a word</figcaption>  
 </figure>
 
+For English language, we extracted example sentences from the Thesaurus API because it is already existing and that is not relevant to our research area.
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0Mjg5ODIxMV19
+eyJoaXN0b3J5IjpbMTk4NTM4NzUyNF19
 -->
