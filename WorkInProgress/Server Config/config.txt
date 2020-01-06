@@ -1,4 +1,3 @@
-File handling
-=============
-Remove file from write protected : sudo rm -rf /var/www/html
-copy : copy : sudo cp -r /home/thesau/FYP/AngularClient/dist/Thesaurus /var/www/html
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a0ce9abb5f36064a29eac9338f69850ca3900c58f8f059223760a9a6bb1b042
+size 178
