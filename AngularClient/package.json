@@ -27,7 +27,7 @@
     "bootstrap": "4.0.0-beta",
     "core-js": "^2.5.4",
     "flag-icon-css": "^3.3.0",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "ngx-animate": "^1.0.1",
     "ngx-flag-icon-css": "^1.0.1",
     "ngx-speech": "0.0.8",
