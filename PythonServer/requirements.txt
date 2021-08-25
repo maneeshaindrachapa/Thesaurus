@@ -13,7 +13,7 @@ PyYAML
 scipy
 six
 tensorboard
-tensorflow==1.7.0
+tensorflow==2.5.1
 termcolor
 Werkzeug
 Flask
